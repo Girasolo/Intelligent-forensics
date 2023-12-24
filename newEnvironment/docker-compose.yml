@@ -33,10 +33,11 @@ services:
       dockerfile: Dockerfile_servidor
     cap_add:
       - NET_ADMIN
-    #privileged: true
+    privileged: true
     #shared-volumes between fluentd and the host
     volumes:
       - ./professor-fluentd/shared-volume:/shared-volume
+      - ./servidor/output:/servidor/output
     depends_on:
       - professor-fluentd
     #links establishes a link to the fluentd service enabling communication with that container
