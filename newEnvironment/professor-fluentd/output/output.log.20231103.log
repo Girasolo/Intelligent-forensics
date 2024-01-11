@@ -1,8 +1,0 @@
-2023-11-03T12:44:48+00:00	fluent.info	{"pid":13,"ppid":7,"worker":0,"message":"starting fluentd worker pid=13 ppid=7 worker=0"}
-2023-11-03T12:44:48+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
-2023-11-03T12:44:48+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
-2023-11-03T12:44:48+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
-2023-11-03T12:49:52+00:00	fluent.info	{"pid":13,"ppid":7,"worker":0,"message":"starting fluentd worker pid=13 ppid=7 worker=0"}
-2023-11-03T12:49:52+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
-2023-11-03T12:49:52+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
-2023-11-03T12:49:52+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}

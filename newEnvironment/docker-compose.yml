@@ -34,6 +34,7 @@ services:
     cap_add:
       - NET_ADMIN
     privileged: true
+    entrypoint: entrypoints/ep_servidor.sh
     #shared-volumes between fluentd and the host
     volumes:
       - ./professor-fluentd/shared-volume:/shared-volume

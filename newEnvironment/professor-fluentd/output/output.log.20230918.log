@@ -1,2 +1,0 @@
-2023-09-18T15:01:14+00:00	fluent.info	{"message":"detected rotation of ./shared-volume/frr/frr2.log; waiting 5 seconds"}
-2023-09-18T15:01:14+00:00	fluent.info	{"message":"detected rotation of ./shared-volume/frr/frr1.log; waiting 5 seconds"}
