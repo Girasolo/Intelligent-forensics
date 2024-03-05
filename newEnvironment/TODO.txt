@@ -1,1 +1,6 @@
-1) provare a cancellare la parte relativa a ports nel progetto originale e vedere se funziona lo stesso
+1) creare il file .c con comandi ebpf per un semplice controllo dei pacchetti
+2) creare il file python per agganciare il file ebpf e runnarlo
+3) aggiungere al file .c come ricavare informazioni dal pacchetto
+4) esportare il modello dal file di Ionut
+5) eseguire il modello all'interno del file bpf come funzione di check sul pacchetto
+5bis) eseguire il modello nell'admin dopo aver ricevuto tutte le informazioni relative al pacchetto
