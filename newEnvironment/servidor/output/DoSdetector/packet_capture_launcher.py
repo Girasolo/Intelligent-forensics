@@ -16,8 +16,7 @@ def handle_sigterm(signum, frame):
 
 # Load and compile the eBPF program from the source file
 def load_bpf_program():
-    bpf_source = Path('simple.c').read_text()
-    print(bpf_source)
+    bpf_source = Path('packet_capture.c').read_text()
     sleep(5)
     bpf = BPF(text=bpf_source)
     return bpf
@@ -25,7 +24,7 @@ def load_bpf_program():
 
 # Attach the eBPF program to the specified interface
 def attach_xdp_program(bpf, interface):
-    xdp_fn = bpf.load_func("flat", BPF.XDP)
+    xdp_fn = bpf.load_func("packet_capture", BPF.XDP)
     bpf.attach_xdp(interface, xdp_fn, 0)
     return bpf
 
@@ -41,7 +40,7 @@ def main():
     signal.signal(signal.SIGTERM, handle_sigterm)
 
     # Define the network interface to monitor
-    INTERFACE = "eth0"
+    INTERFACE = "lo"
 
     # Load the eBPF program and attach it to the network interface
     bpf = load_bpf_program()

@@ -2,21 +2,10 @@
 #include "network.h"
 #include <bcc/proto.h>
 #include <linux/pkt_cls.h>
-#include "packet.h"
-#include "vmlinux.h"
-
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/types.h>
-#include <linux/version.h>
-#include <linux/tcp.h>
+#include <linux/in.h>
 #include <linux/udp.h>
-#include <linux/skbuff.h>
-#include <linux/pkt_cls.h>
 
-#include <bpf/bpf_helpers.h>
-#include <bpf/bpf_tracing.h>
+
 
 
 struct packet{
@@ -27,11 +16,10 @@ struct packet{
     // Add other fields as needed
 };
 
-BPF_HASH(packet_info_map, int, struct packet);
+BPF_HASH(packet_info_map, u64, struct packet);
 
-int key=0;
 
-SEC("xdp")
+
 int packet_capture(struct xdp_md *ctx) {
     
     void *data = (void *)(long)ctx->data;
@@ -66,11 +54,10 @@ int packet_capture(struct xdp_md *ctx) {
     // TODO: Extract other information like TCP/UDP ports, payload, etc.
 
     // Send data to user space
-    packet_info_map.update(&key, &packet);
-    key++;
-    bpf_perf_event_output(skb, &packet_info_map, BPF_F_CURRENT_CPU, &packet, sizeof(packet));
+    //packet_info_map.update(&packet.timestamp, &packet);
+    //bpf_perf_event_output(ctx, &packet_info_map, BPF_F_CURRENT_CPU, &packet, sizeof(struct packet));
+
 
     return 0;
 }
 
-char _license[] SEC("license") = "Dual BSD/GPL";
