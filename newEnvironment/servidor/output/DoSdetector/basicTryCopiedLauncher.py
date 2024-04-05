@@ -5,7 +5,7 @@ import os
 from time import sleep
 from bcc.utils import printb
 
-interface = "lo" #2
+interface = "eth0" #2
 kernel_headers = "/usr/src/linux-headers-6.5.0-21-generic/include/"
 b = BPF(src_file="basicTryCopied.bpf.c", cflags=["-I", kernel_headers]) #3
 fx = b.load_func("udp_counter", BPF.XDP) #4

@@ -23,7 +23,8 @@ RUN git clone --recurse-submodules https://github.com/libbpf/bpftool.git && \
     cd bpftool/src && \
     make install && \
     cd ../..
-    
+
+RUN cd sbin && cd ..    
 COPY entrypoints/ep_servidor.sh entrypoints/ep_servidor.sh
 
 #make the scripts executable 

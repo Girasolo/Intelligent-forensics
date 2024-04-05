@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 # Run the command to install the required packages. This command adds a layer to the image.
-RUN apt-get update && apt-get install -y iputils-ping && apt-get install -y iproute2 iptables
+RUN apt-get update && apt-get install -y iputils-ping && apt-get install -y iproute2 iptables socat
 #the packet installed are the one util to add a route or ping a node.
 
 COPY entrypoints/ep_red1.sh entrypoints/ep_red1.sh

@@ -4,3 +4,9 @@
 4) esportare il modello dal file di Ionut
 5) eseguire il modello all'interno del file bpf come funzione di check sul pacchetto
 5bis) eseguire il modello nell'admin dopo aver ricevuto tutte le informazioni relative al pacchetto
+
+1) trovare e provare tcptracer e tcplife. Più connessioni per vedere cosa succede
+2)script in cui lancio tcptrace o tcplife in loop ogni 5 secondi. Instaurare connessioni con nping e vedere cosa succede
+2b) instaurare connessioni per testare meglio
+3)provare a fare il merge di entrambe le funzioni
+4) provare a sincronizzare le due funzioni oppure ad unire gli output

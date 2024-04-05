@@ -5,8 +5,6 @@
 #include <linux/udp.h>
 
 
-BPF_HISTOGRAM(counter, u64);
-
 struct _packet{
     __u32 src_ip;
     __u32 dst_ip;
@@ -16,8 +14,6 @@ struct _packet{
 };
 
 BPF_HASH(packet_info_map, u64, struct _packet);
-
-
 
 int udp_counter(struct xdp_md *ctx)
 {
@@ -48,18 +44,6 @@ int udp_counter(struct xdp_md *ctx)
     	
     		packet_info_map.update(&packet.timestamp, &packet);
 	
-	
-            /*if (ip->protocol == IPPROTO_UDP)
-            {
-
-                struct udphdr *udp = (void *)ip + sizeof(*ip);
-                if ((void *)udp + sizeof(*udp) <= data_end)
-                {
-                    bpf_trace_printk("Got udp packet");	
-                    u64 value = htons(udp->dest);
-                    counter.increment(value);
-                }
-            }*/
         }
     }
     return XDP_PASS;
