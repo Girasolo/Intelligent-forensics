@@ -27,7 +27,7 @@ while True:
     if output == b'' and process.poll() is not None:
     	print("primo if")
     	continue
-    with open("/servidor/output/DoSdetector" + "/" + output_filex, "w") as output_file:
+    with open("/servidor/output/DoSdetector" + "/" + output_filex, "a") as output_file:
         try:
             print("try")
             output_file.write(output.decode("utf-8"))

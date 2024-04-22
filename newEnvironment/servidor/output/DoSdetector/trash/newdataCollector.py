@@ -40,7 +40,7 @@ def save_output_to_file():
         lock.acquire()
         print("in-lock-savefile")
         # Open the file in write mode and save the content of the queue
-        with open(filename, 'w') as f:
+        with open(filename, 'a') as f:
             while not output_queue.empty():
                 output_line = output_queue.get()
                 print(output_line)

@@ -1,12 +1,33 @@
-1) creare il file .c con comandi ebpf per un semplice controllo dei pacchetti
-2) creare il file python per agganciare il file ebpf e runnarlo
-3) aggiungere al file .c come ricavare informazioni dal pacchetto
-4) esportare il modello dal file di Ionut
-5) eseguire il modello all'interno del file bpf come funzione di check sul pacchetto
-5bis) eseguire il modello nell'admin dopo aver ricevuto tutte le informazioni relative al pacchetto
+1) trovare e provare tcptracer e tcplife. Più connessioni per vedere cosa succede -> fatto
+2)script in cui lancio tcptrace o tcplife in loop ogni 5 secondi. Instaurare connessioni con nping e vedere cosa succede -> DA PROVARE CON NPING O ALTRI SISTEMI
+2b) instaurare connessioni per testare meglio -> su Readme.md in DoSdetector
+2z)provare a runnare tcplife da tcplife.py e a passare l'output su file -> fatto
 
-1) trovare e provare tcptracer e tcplife. Più connessioni per vedere cosa succede
-2)script in cui lancio tcptrace o tcplife in loop ogni 5 secondi. Instaurare connessioni con nping e vedere cosa succede
-2b) instaurare connessioni per testare meglio
-3)provare a fare il merge di entrambe le funzioni
-4) provare a sincronizzare le due funzioni oppure ad unire gli output
+
+3a)capire il formato richiesto dal modello -> su Integration of an already existent AI model.pdf 
+
+3b)ricavare da un file life le varie medie -> fatto
+3c)ricavare da un file trace le varie medie -> fatto
+3d)preparare domande relative ai vari campi time, anche in relazione ad un possibile cambiamento di database -> fatto
+
+
+4)ricavare il modello e fare un test con qualcosa che non è un attacco
+5)chiedere come è meglio testare attacchi. Fare atttacchi
+
+
+6)provare a fare il merge di entrambe le funzioni:
+	- runnare di volta in volta i programmi e creare un programma che unisca gli output all'interno dello stesso
+	- runnare una volta i programmi, unire gli output e metterli in un file diverso di volta in volta
+7)mandare all'admin il file e la linea da testare
+
+
+8a)studiare i file bpf e pensare a possibili merge o migliorie
+8b)rifare l'intelligenza artificale con altri dati:
+	Tx = total length of Fwd Packets
+	Rx = Total length of Bwd Packets
+	Latency (duration of connection) = Flow Duration
+	
+	Open connection = SYN+ACK
+	Closed connection = FIN
+	Diff of time (time difference between one packet and another) = Flow IAT Mean & Flow IAT Std
+
