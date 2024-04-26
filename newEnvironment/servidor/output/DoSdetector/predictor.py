@@ -3,7 +3,7 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
 
 # Load the trained model
-classifierLoad = tf.keras.models.load_model('MLP_11agosto.h5', compile=False)
+classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
 
 # Function to parse resultLife file
 def parse_result_life(file_path):
@@ -44,7 +44,7 @@ openC, closedC, mean_time, variance_time = resultTrace_data
 
 # Define fields list
 fields = [float(mediabtx), float(mediabrx), float(varbtx), float(varbrx), float(medialat),
-          float(varlat), float(openC), float(closedC), float(mean_time, float(variance_time))]
+          float(varlat), float(openC), float(closedC), float(mean_time), float(variance_time)]
 
 # Scale the data if needed
 scaler = StandardScaler()

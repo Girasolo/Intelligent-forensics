@@ -5,15 +5,17 @@
 
 
 3a)capire il formato richiesto dal modello -> su Integration of an already existent AI model.pdf 
-
 3b)ricavare da un file life le varie medie -> fatto
 3c)ricavare da un file trace le varie medie -> fatto
 3d)preparare domande relative ai vari campi time, anche in relazione ad un possibile cambiamento di database -> fatto
 
+4)ricavare il modello e fare un test con qualcosa che non è un attacco -> fatto
+4a) cambiare il formato del modello in uno più nuovo -> fatto 
+4b) cambiare leggermente il codice per il nuovo modello -> fatto
+4c) testare con una linea completa -> fatto
 
-4)ricavare il modello e fare un test con qualcosa che non è un attacco
-5)chiedere come è meglio testare attacchi. Fare atttacchi
-
+5)chiedere come è meglio testare attacchi. Fare atttacchi.
+5a)quali attacchi? ->
 
 6)provare a fare il merge di entrambe le funzioni:
 	- runnare di volta in volta i programmi e creare un programma che unisca gli output all'interno dello stesso
@@ -31,3 +33,5 @@
 	Closed connection = FIN
 	Diff of time (time difference between one packet and another) = Flow IAT Mean & Flow IAT Std
 
+
+quando runni la rete, in automatico con gli entrypoints, parte il programma di raccolta dei dati. Ogni 30 secondi (per il momento, perchè la cosa più giusta sarebbe usare gli stessi intervalli temporali e per il vecchio modello era di 0.5 secondi) manda solo la linea da testare all'admin. L'admin invece, in automatico con gli entrypoints, fa partire il modello che, tramite un sistema di alarms, comunica se hanno appena effettuato un attacco o no. In alternativa l'admin riceve tutte le linee tramite fluentd e quando decide analizza il file. 
