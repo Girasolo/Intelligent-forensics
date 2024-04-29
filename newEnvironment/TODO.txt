@@ -15,7 +15,12 @@
 4c) testare con una linea completa -> fatto
 
 5)chiedere come è meglio testare attacchi. Fare atttacchi.
-5a)quali attacchi? ->
+5a)quali attacchi? -> Slow HTTP DDoS e SYN flood attack
+5b) Slow come? -> slowhttptest tool -> installato
+5c) SYN flood -> Async Hulk tool -> installato
+5d) mettere su un server
+5d) testare gli attacchi
+
 
 6)provare a fare il merge di entrambe le funzioni:
 	- runnare di volta in volta i programmi e creare un programma che unisca gli output all'interno dello stesso
@@ -32,6 +37,7 @@
 	Open connection = SYN+ACK
 	Closed connection = FIN
 	Diff of time (time difference between one packet and another) = Flow IAT Mean & Flow IAT Std
+8c)other types of attacks
 
 
 quando runni la rete, in automatico con gli entrypoints, parte il programma di raccolta dei dati. Ogni 30 secondi (per il momento, perchè la cosa più giusta sarebbe usare gli stessi intervalli temporali e per il vecchio modello era di 0.5 secondi) manda solo la linea da testare all'admin. L'admin invece, in automatico con gli entrypoints, fa partire il modello che, tramite un sistema di alarms, comunica se hanno appena effettuato un attacco o no. In alternativa l'admin riceve tutte le linee tramite fluentd e quando decide analizza il file. 

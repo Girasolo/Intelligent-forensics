@@ -24,7 +24,19 @@ RUN git clone --recurse-submodules https://github.com/libbpf/bpftool.git && \
     make install && \
     cd ../..
 
-RUN cd sbin && cd ..    
+RUN apt-get install nodejs npm
+
+COPY ./server/package.json /app/package.json
+COPY ./server/server.js	/app/server.js	
+WORKDIR /app
+
+RUN npm install
+
+EXPOSE 3000 
+
+WORKDIR /
+
+   
 COPY entrypoints/ep_servidor.sh entrypoints/ep_servidor.sh
 
 #make the scripts executable 

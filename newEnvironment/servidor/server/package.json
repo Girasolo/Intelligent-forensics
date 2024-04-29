@@ -1,0 +1,15 @@
+{
+  "name": "my-test-server",
+  "version": "1.0.0",
+  "description": "A test server created with npm",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Girasolo",
+  "license": "MIT", 
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
+

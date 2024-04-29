@@ -54,6 +54,8 @@ services:
         #makes the execution non-blocking
         fluentd-async: 'true'
     #put the container in a loop in order to access it with bash
+    ports:
+      - "3000:3000"
     command: 
       - "/bin/sleep"
       - "infinity"  
@@ -240,6 +242,23 @@ services:
     networks:
       RCnet_left:
         ipv4_address: 10.0.1.20
+  attacker:
+    build: 
+      context: ./attacker
+      dockerfile: Dockerfile_attacker
+    entrypoint: entrypoints/ep_attacker.sh
+    #privedges for network needed to add a new ip route
+    cap_add:
+      - NET_ADMIN
+    depends_on:
+      - rc_router
+    #put the container in a loop in order to access it with bash
+    command: 
+      - "/bin/sleep"
+      - "infinity"  
+    networks:
+      RCnet_left:
+        ipv4_address: 10.0.1.99
   red2:
     build: 
       context: ./client
