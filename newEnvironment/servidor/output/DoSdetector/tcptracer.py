@@ -690,6 +690,37 @@ def send_interrupt(time):
     # Set the alarm to go off after 25 seconds
     signal.alarm(time)
 #
+#added by Girasolo
+def handler(signum, frame):
+    global f
+    global start_ts
+    if signum == signal.SIGTERM:
+        f.close()
+        print("trace terminates here")
+    elif signum == signal.SIGUSR1:
+        print("New file")
+        f.close()
+        timestamp = datetime.now().strftime("%y%m%d_%H:%M:%S")
+        f = open(f"trace{timestamp}.txt", 'a')
+        if args.verbose:
+            if args.timestamp:
+                f.write("%-14s" % ("TIME(ns)"), end="")
+            f.write("%-12s %-6s %-16s %-2s %-16s %-16s %-6s %-7s" % ("TYPE",
+                "PID", "COMM", "IP", "SADDR", "DADDR", "SPORT", "DPORT"))
+            if not args.netns:
+                f.write("%-8s" % "NETNS")
+            f.write("\n")
+        else:
+            if args.timestamp:
+                f.write("%-9s" % ("TIME(s)"))
+            f.write("%-2s %-6s %-16s %-2s %-16s %-16s %-6s %-6s" %
+                ("T", "PID", "COMM", "IP", "SADDR", "DADDR", "SPORT", "DPORT"))
+            f.write("\n")
+
+        start_ts = 0
+    else: 
+        print("sig not handled")
+#
 
 pid_filter = ""
 netns_filter = ""
@@ -783,7 +814,10 @@ b["tcp_ipv6_event"].open_perf_buffer(print_ipv6_event)
 
 #added by Girasolo
 if args.file:
-    send_interrupt(25)
+    print("tracer starts here")
+    signal.signal(signal.SIGUSR1, handler)
+    signal.signal(signal.SIGTERM, handler)
+#    send_interrupt(25)
 #
 
 while True:

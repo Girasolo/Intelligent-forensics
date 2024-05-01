@@ -1,0 +1,3 @@
+sostituire la scrittura su file con la scrittura su due blocchi di shared memory.
+
+fare in modo che clock1 possa leggere tramite due thread che lavorano contemporaneamente i dati dai due flow di memoria.

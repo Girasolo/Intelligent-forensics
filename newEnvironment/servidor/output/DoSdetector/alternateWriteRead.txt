@@ -1,0 +1,96 @@
+ciclo while con true e false:
+true: leggi primo blocco di memoria
+false: leggi secondo blocco di memoria
+
+la lettura avviene solo quando è terminata. Usare locks: il writer prenota il lock di un blocco e lascia l'altro. Il reader può leggere l'altro.
+
+secondo programma scrive prima in un blocco e poi nell'altro.
+
+
+il programma che legge temporaneamente scrive su un file: successivamente manda direttamente all'admin. Magari tramite fluentd oppure tramite connessione tcp.
+
+PROGRAM1
+import signal
+import time
+import multiprocessing as mp
+
+# Shared memory block size
+BLOCK_SIZE = 1024
+
+# Flag to stop the program
+stop_flag = False
+
+def signal_handler(sig, frame):
+    global stop_flag
+    print("Ctrl+C pressed. Stopping Program 1...")
+    stop_flag = True
+
+# Register the signal handler for Ctrl+C
+signal.signal(signal.SIGINT, signal_handler)
+
+def program1(block1, lock1, lock2):
+    global stop_flag
+    while not stop_flag:
+        with lock2:
+            # Read from block2
+            print("Program 1 reading from block2:", block1.decode('utf-8'))
+            time.sleep(1)  # Simulate some processing time
+
+# Start the program
+if __name__ == "__main__":
+    with mp.shared_memory.SharedMemory(name='block1') as block1:
+        lock1 = mp.Lock()
+        lock2 = mp.Lock()
+        program1_process = mp.Process(target=program1, args=(block1.buf, lock1, lock2))
+        program1_process.start()
+        program1_process.join()
+        
+PROGRAM2
+import signal
+import time
+import multiprocessing as mp
+
+# Shared memory block size
+BLOCK_SIZE = 1024
+
+# Flag to stop the program
+stop_flag = False
+
+def signal_handler(sig, frame):
+    global stop_flag
+    print("Ctrl+C pressed. Stopping Program 2...")
+    stop_flag = True
+
+# Register the signal handler for Ctrl+C
+signal.signal(signal.SIGINT, signal_handler)
+
+def program2(block2, lock1, lock2):
+    global stop_flag
+    cycle = 1
+    while not stop_flag:
+        if cycle % 2 == 1:  # Cycle 1, 3, 5, ...
+            with lock2:
+                # Write to block2
+                data = "Data written by Program 2 for Cycle {}".format(cycle)
+                block2[:len(data)] = data.encode('utf-8')
+                print("Program 2 writing to block2:", data)
+                time.sleep(1)  # Simulate some processing time
+        else:  # Cycle 2, 4, 6, ...
+            with lock1:
+                # Write to block1
+                data = "Data written by Program 2 for Cycle {}".format(cycle)
+                block2[:len(data)] = data.encode('utf-8')
+                print("Program 2 writing to block1:", data)
+                time.sleep(1)  # Simulate some processing time
+        cycle += 1
+
+# Start the program
+if __name__ == "__main__":
+    with mp.shared_memory.SharedMemory(name='block2') as block2:
+        lock1 = mp.Lock()
+        lock2 = mp.Lock()
+        program2_process = mp.Process(target=program2, args=(block2.buf, lock1, lock2))
+        program2_process.start()
+        program2_process.join()
+
+

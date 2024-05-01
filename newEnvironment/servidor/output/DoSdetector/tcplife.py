@@ -294,7 +294,7 @@ TRACEPOINT_PROBE(sock, inet_sock_set_state)
          * that for sure, match all early states to increase chances a
          * timestamp is set.
          * Note that this needs to be set before the PID filter later on,
-         * since the PID isn't reliable for these early stages, so we must
+         * since the PID isn't reliable fore these early stages, so we must
          * save all timestamps and do the PID filter later when we can.
          */
         u64 ts = bpf_ktime_get_ns();
@@ -522,6 +522,35 @@ def send_interrupt(time):
     # Set the alarm to go off after 25 seconds
     signal.alarm(time)
 #
+
+#added by Girasolo
+def handler(signum, frame):
+    global f
+    if signum == signal.SIGTERM:
+        f.close()
+        print("life terminates here")
+    elif signum == signal.SIGUSR1:
+        print("New file")
+        f.close()
+        timestamp = datetime.now().strftime("%y%m%d_%H:%M:%S")
+        f = open(f"life{timestamp}.txt", 'a')
+        if args.time:
+            if args.csv:
+                f.write("%s," % ("TIME"))
+            else:
+                f.write("%-8s " % ("TIME"))
+        if args.timestamp:
+            if args.csv:
+                f.write("%s," % ("TIME(s)"))
+            else:
+                f.write("%-9s " % ("TIME(s)"))
+        f.write(header_string % ("PID", "COMM",
+            "IP" if args.wide or args.csv else "", "LADDR",
+            "LPORT", "RADDR", "RPORT", "TX_KB", "RX_KB", "MS") + "\n")
+    else: 
+        print("sig not handled")
+
+#
 # initialize BPF
 b = BPF(text=bpf_text)
 
@@ -564,7 +593,10 @@ b["ipv4_events"].open_perf_buffer(print_ipv4_event, page_cnt=64)
 b["ipv6_events"].open_perf_buffer(print_ipv6_event, page_cnt=64)
 #added by Girasolo
 if args.file:
-    send_interrupt(25)
+    print("life starts here")
+    signal.signal(signal.SIGUSR1, handler)
+    signal.signal(signal.SIGTERM, handler)
+#    send_interrupt(25)
 #
 while 1:
     try:
