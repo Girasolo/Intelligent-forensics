@@ -25,6 +25,7 @@ from struct import pack
 from datetime import datetime
 import signal
 import sys
+import socket
 #
 
 #added by Girasolo
@@ -54,6 +55,7 @@ parser.add_argument("--ebpf", action="store_true",
 
 #added by Girasolo
 parser.add_argument("-f","--file", const=f"trace{timestamp}.txt", nargs='?', help="print on one or a timestamp series of output files.")
+parser.add_argument("-sc","--socketconnection", action='store_true', help="send the print straight to the 1clock connection. Every SIGUSR1 sends a divisor message")
 #
 args = parser.parse_args()
 
@@ -597,6 +599,56 @@ def print_ipv4_event(cpu, data, size):
             f.write(" %-8d" % event.netns)
         else:
             f.write("\n")
+    elif args.socketconnection:
+        global client_socket
+        message = ""
+        if args.timestamp:
+            if start_ts == 0:
+                start_ts = event.ts_ns
+                #added by Girasolo
+                tdif1 = 0
+                tbef1 = (event.ts_ns - start_ts) / 1000000000.0
+            else:
+                tdif1 = ((event.ts_ns - start_ts) / 1000000000.0 ) - tbef1
+                tbef1 = ((event.ts_ns - start_ts) / 1000000000.0 )
+            if args.verbose:
+                #f.write("%-14d" % (event.ts_ns - start_ts))
+                message = message + ("%-14d" % (tdif1*1000000000.0))
+            else:
+                #f.write("%-9.3f" % ((event.ts_ns - start_ts) / 1000000000.0))
+                message = message + ("%-9.3f" % (tdif1))
+                #
+        if event.type == 1:
+            type_str = "C"
+        elif event.type == 2:
+            type_str = "A"
+        elif event.type == 3:
+            type_str = "X"
+        else:
+            type_str = "U"
+
+        if args.verbose:
+            message = message + ("%-12s " % (verbose_types[type_str]))
+        else:
+            message = message + ("%-2s " % (type_str))
+
+        message = message + ("%-6d %-16s %-2d %-16s %-16s %-6d %-6d" %
+            (event.pid, event.comm.decode('utf-8', 'replace'),
+            event.ip,
+            inet_ntop(AF_INET, pack("I", event.saddr)),
+            inet_ntop(AF_INET, pack("I", event.daddr)),
+            event.sport,
+            event.dport))
+        if args.verbose and not args.netns:
+            message = message + (" %-8d" % event.netns)
+        else:
+            message = message + ("\n")
+        try:
+            # Your code snippet here
+            client_socket.sendall(message.encode())
+        except OSError as e:
+            print("Socket error:", e)
+        # Handle the error gracefully, possibly by closing the socket and/or retrying
 
     else:
         if args.timestamp:
@@ -691,7 +743,7 @@ def send_interrupt(time):
     signal.alarm(time)
 #
 #added by Girasolo
-def handler(signum, frame):
+def handlerFile(signum, frame):
     global f
     global start_ts
     if signum == signal.SIGTERM:
@@ -722,6 +774,22 @@ def handler(signum, frame):
         print("sig not handled")
 #
 
+#added by Girasolo
+def handlerSocket(signum, frame):
+    global client_socket
+    global start_ts
+    if signum == signal.SIGTERM:
+        client_socket.close()
+        print("life terminates here")
+    if signum == signal.SIGUSR1:
+        print("New chunk")
+        separation = "SIGNAL HERE ---\n"
+        start_ts = 0 #???
+        client_socket.send(separation.encode())   
+    else: 
+        print("sig not handled")
+#
+
 pid_filter = ""
 netns_filter = ""
 
@@ -748,6 +816,15 @@ if args.file:
 if args.ebpf:
     print(bpf_text)
     exit()
+#added by Girasolo
+if args.socketconnection:  
+    # Define host and port
+    HOST = '127.0.0.1'
+    PORT = 65432
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Connect to the server
+    client_socket.connect((HOST, PORT))   
+#
 
 # initialize BPF
 b = BPF(text=bpf_text)
@@ -790,6 +867,9 @@ if args.file:
         f.write("\n")
 
     start_ts = 0
+elif args.socketconnection:
+    print("useless headers")
+    start_ts = 0
 else:
     if args.verbose:
         if args.timestamp:
@@ -815,11 +895,17 @@ b["tcp_ipv6_event"].open_perf_buffer(print_ipv6_event)
 #added by Girasolo
 if args.file:
     print("tracer starts here")
-    signal.signal(signal.SIGUSR1, handler)
-    signal.signal(signal.SIGTERM, handler)
+    signal.signal(signal.SIGUSR1, handlerFile)
+    signal.signal(signal.SIGTERM, handlerFile)
 #    send_interrupt(25)
 #
+#added by Girasolo
 
+if args.socketconnection:
+    print("handler here")
+    signal.signal(signal.SIGUSR1, handlerSocket)
+    signal.signal(signal.SIGTERM, handlerSocket)
+#
 while True:
     try:
         b.perf_buffer_poll()

@@ -69,6 +69,9 @@ if __name__ == "__main__":
         HOST = '127.0.0.1'
         PORT = 65432
         lifedata = []
+        tracerTimes = []
+        open_connections = 0
+        closed_connections = 0
         # Create a socket object
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
         # Bind the socket to the address and port
@@ -79,11 +82,11 @@ if __name__ == "__main__":
         # Accept a connection
         # Start two subprocesses
         subprocesses = []
-        
-        life = subprocess.Popen(['python3', 'tcplife.py', '-sc'])
-        subprocesses.append(life)
-        #trace = subprocess.Popen(['python3', 'tcptracer.py', '-f'])
-        #subprocesses.append(trace)
+        #TODO: put the socket host and port as arguments
+        #life = subprocess.Popen(['python3', 'tcplife.py', '-sc'])
+        #subprocesses.append(life)
+        tracer = subprocess.Popen(['python3', 'tcptracer.py', '-t' ,'-sc'])
+        subprocesses.append(tracer)
 
         event = mp.Event()
         # Create a new thread for the send_signal function
@@ -101,6 +104,7 @@ if __name__ == "__main__":
         #time.sleep(25)
         signal_thread.start()
         print("Connected by:", client_address)
+        """
         while True:
             # Receive data from the client
             data = client_socket.recv(1024)
@@ -122,6 +126,33 @@ if __name__ == "__main__":
             rx_kb = float(data[7])
             ms = float(data[8])
             lifedata.append((tx_kb, rx_kb, ms))
+            # Print the received data
+        """
+        while True:
+            # Receive data from the client
+            #data = client_socket.recv(1024)
+            data = receive_line(client_socket)
+            print("Received:", data.decode())
+            if not data:
+                break
+            data = data.decode()
+            if data == "SIGNAL HERE ---":
+                print("25 sec: " , open_connections, closed_connections, tracerTimes)
+                if tracerTimes != []:
+                    mean_time = np.mean(tracerTimes)
+                    variance_time = np.var(tracerTimes)
+                    print("openC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
+                tracerTimes = []
+                open_connections = 0
+                closed_connections = 0
+                continue
+            data = data.strip().split()
+            #print(data)
+            if data[1] == 'C':
+                open_connections += 1
+            elif data[1] == 'X':
+                closed_connections += 1
+            tracerTimes.append(float(data[0]))
             # Print the received data
             
     except KeyboardInterrupt:

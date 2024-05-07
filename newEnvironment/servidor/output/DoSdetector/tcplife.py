@@ -81,9 +81,7 @@ parser.add_argument("--ebpf", action="store_true",
     help=argparse.SUPPRESS)
 #added by Girasolo
 parser.add_argument("-f","--file", const=f"life{timestamp}.txt", nargs='?', help="print on one or a timestamp series of output files.")
-#
-#added by Girasolo
-parser.add_argument("-sc","--socketconnection", action='store_true', help="send the print straight to the 1clock connection. Every 25 secs sends a divisor message")
+parser.add_argument("-sc","--socketconnection", action='store_true', help="send the print straight to the 1clock connection. Every SIGUSR1 sends a divisor message")
 #
 args = parser.parse_args()
 debug = 0
@@ -666,7 +664,8 @@ if args.file:
 if args.socketconnection:
     print("handler here")
     signal.signal(signal.SIGUSR1, handlerSocket)
-    #signal.signal(signal.SIGTERM, handlerSocket)
+    signal.signal(signal.SIGTERM, handlerSocket)
+#
 while 1:
     try:
         b.perf_buffer_poll()
