@@ -1,3 +1,9 @@
 sostituire la scrittura su file con la scrittura su due blocchi di shared memory.
 
 fare in modo che clock1 possa leggere tramite due thread che lavorano contemporaneamente i dati dai due flow di memoria.
+
+
+
+NEW:
+
+sostituire la scrittura su shared memory con socket connection. In questo modo evito tutta la sincronizzazione. per comunicare il cambio di timestamp usare un messaggio speciale.

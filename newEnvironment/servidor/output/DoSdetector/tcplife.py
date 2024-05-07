@@ -32,6 +32,10 @@ from time import strftime
 from datetime import datetime
 import signal
 import sys
+import multiprocessing as mpù
+from multiprocessing import shared_memory
+import time
+import socket
 #
 
 # arguments
@@ -77,6 +81,9 @@ parser.add_argument("--ebpf", action="store_true",
     help=argparse.SUPPRESS)
 #added by Girasolo
 parser.add_argument("-f","--file", const=f"life{timestamp}.txt", nargs='?', help="print on one or a timestamp series of output files.")
+#
+#added by Girasolo
+parser.add_argument("-sc","--socketconnection", action='store_true', help="send the print straight to the 1clock connection. Every 25 secs sends a divisor message")
 #
 args = parser.parse_args()
 debug = 0
@@ -466,6 +473,35 @@ def print_ipv4_event(cpu, data, size):
         inet_ntop(AF_INET, pack("I", event.saddr)), event.ports >> 32,
         inet_ntop(AF_INET, pack("I", event.daddr)), event.ports & 0xffffffff,
         event.tx_b / 1024, event.rx_b / 1024, float(event.span_us) / 1000) + "\n")
+    elif args.socketconnection:
+        global client_socket
+        message = ""
+        if args.time:
+            if args.csv:
+                message = message + ("%s," % strftime("%H:%M:%S"))              
+            else:
+                message = message + (("%-8s " % strftime("%H:%M:%S")))
+        if args.timestamp:
+            if start_ts == 0:
+                start_ts = event.ts_us
+            delta_s = (float(event.ts_us) - start_ts) / 1000000
+            if args.csv:
+                message = message + ("%.6f," % delta_s)
+            else:
+                message = message + (("%-9.6f " % delta_s))
+        message = message + ((format_string % (event.pid, event.task.decode('utf-8', 'replace'),
+        "4" if args.wide or args.csv else "",
+        inet_ntop(AF_INET, pack("I", event.saddr)), event.ports >> 32,
+        inet_ntop(AF_INET, pack("I", event.daddr)), event.ports & 0xffffffff,
+        event.tx_b / 1024, event.rx_b / 1024, float(event.span_us) / 1000) + "\n"))
+        try:
+            # Your code snippet here
+            client_socket.sendall(message.encode())
+        except OSError as e:
+            print("Socket error:", e)
+        # Handle the error gracefully, possibly by closing the socket and/or retrying
+
+        #client_socket.sendall(message.encode())    
     else:
         #
         if args.time:
@@ -524,7 +560,7 @@ def send_interrupt(time):
 #
 
 #added by Girasolo
-def handler(signum, frame):
+def handlerFile(signum, frame):
     global f
     if signum == signal.SIGTERM:
         f.close()
@@ -549,8 +585,32 @@ def handler(signum, frame):
             "LPORT", "RADDR", "RPORT", "TX_KB", "RX_KB", "MS") + "\n")
     else: 
         print("sig not handled")
-
 #
+
+#added by Girasolo
+def handlerSocket(signum, frame):
+    global client_socket
+    if signum == signal.SIGTERM:
+        client_socket.close()
+        print("life terminates here")
+    if signum == signal.SIGUSR1:
+        print("New chunk")
+        separation = "SIGNAL HERE ---\n"
+        client_socket.send(separation.encode())   
+    else: 
+        print("sig not handled")
+#
+
+#added by Girasolo
+if args.socketconnection:  
+    # Define host and port
+    HOST = '127.0.0.1'
+    PORT = 65432
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Connect to the server
+    client_socket.connect((HOST, PORT))   
+#
+
 # initialize BPF
 b = BPF(text=bpf_text)
 
@@ -570,6 +630,8 @@ if args.file:
     f.write(header_string % ("PID", "COMM",
         "IP" if args.wide or args.csv else "", "LADDR",
         "LPORT", "RADDR", "RPORT", "TX_KB", "RX_KB", "MS") + "\n")
+elif args.socketconnection:
+    print("useless headers")
 else:
     #
     if args.time:
@@ -594,10 +656,17 @@ b["ipv6_events"].open_perf_buffer(print_ipv6_event, page_cnt=64)
 #added by Girasolo
 if args.file:
     print("life starts here")
-    signal.signal(signal.SIGUSR1, handler)
-    signal.signal(signal.SIGTERM, handler)
+    signal.signal(signal.SIGUSR1, handlerFile)
+    signal.signal(signal.SIGTERM, handlerFile)
 #    send_interrupt(25)
 #
+
+#added by Girasolo
+
+if args.socketconnection:
+    print("handler here")
+    signal.signal(signal.SIGUSR1, handlerSocket)
+    #signal.signal(signal.SIGTERM, handlerSocket)
 while 1:
     try:
         b.perf_buffer_poll()
