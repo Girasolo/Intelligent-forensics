@@ -33,7 +33,7 @@ RUN pip install -r requirements_linux.txt
 
 WORKDIR /
 
-
+RUN apt-get install socat
 
 COPY entrypoints/ep_attacker.sh entrypoints/ep_attacker.sh
 

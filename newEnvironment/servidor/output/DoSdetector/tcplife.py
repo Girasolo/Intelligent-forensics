@@ -36,6 +36,7 @@ import multiprocessing as mpù
 from multiprocessing import shared_memory
 import time
 import socket
+import os
 #
 
 # arguments
@@ -447,6 +448,17 @@ if args.csv:
     header_string = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s"
     format_string = "%d,%s,%s,%s,%s,%s,%d,%d,%d,%.2f"
 
+#added by Girasolo
+def fill_string_to_bytes(input_string, target_bytes, fill_character=' '):
+    current_bytes = len(input_string.encode('utf-8'))
+    if current_bytes >= target_bytes:
+        return input_string
+    else:
+        fill_count = target_bytes - current_bytes
+        filled_string = input_string + fill_character * fill_count
+        return filled_string
+#
+   
 # process event
 def print_ipv4_event(cpu, data, size):
     event = b["ipv4_events"].event(data)
@@ -493,11 +505,11 @@ def print_ipv4_event(cpu, data, size):
         inet_ntop(AF_INET, pack("I", event.daddr)), event.ports & 0xffffffff,
         event.tx_b / 1024, event.rx_b / 1024, float(event.span_us) / 1000) + "\n"))
         try:
-            # Your code snippet here
+            #fill the message to 15 bytes approx the longest
+            #message = fill_string_to_bytes(message,15)
             client_socket.sendall(message.encode())
         except OSError as e:
             print("Socket error:", e)
-        # Handle the error gracefully, possibly by closing the socket and/or retrying
 
         #client_socket.sendall(message.encode())    
     else:
@@ -592,11 +604,12 @@ def handlerSocket(signum, frame):
         client_socket.close()
         print("life terminates here")
     if signum == signal.SIGUSR1:
-        print("New chunk")
+        print("LIFE (pid: ", os.getpid(), ")RECEIVED THE SIGNAL SIGUSR1")
         separation = "SIGNAL HERE ---\n"
+        #separation = fill_string_to_bytes(separation, 15)
         client_socket.send(separation.encode())   
     else: 
-        print("sig not handled")
+        print("sig not handled: ", signum)
 #
 
 #added by Girasolo

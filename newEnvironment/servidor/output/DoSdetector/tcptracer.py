@@ -26,6 +26,7 @@ from datetime import datetime
 import signal
 import sys
 import socket
+import os
 #
 
 #added by Girasolo
@@ -549,6 +550,16 @@ int trace_accept_return(struct pt_regs *ctx)
 verbose_types = {"C": "connect", "A": "accept",
                  "X": "close", "U": "unknown"}
 
+#added by Girasolo
+def fill_string_to_bytes(input_string, target_bytes, fill_character=' '):
+    current_bytes = len(input_string.encode())
+    if current_bytes >= target_bytes:
+        return input_string
+    else:
+        fill_count = target_bytes - current_bytes
+        filled_string = input_string + fill_character * fill_count
+        return filled_string
+#
 
 def print_ipv4_event(cpu, data, size):
     event = b["tcp_ipv4_event"].event(data)
@@ -644,7 +655,7 @@ def print_ipv4_event(cpu, data, size):
         else:
             message = message + ("\n")
         try:
-            # Your code snippet here
+            #message = fill_string_to_bytes(message, 15)
             client_socket.sendall(message.encode())
         except OSError as e:
             print("Socket error:", e)
@@ -782,9 +793,10 @@ def handlerSocket(signum, frame):
         client_socket.close()
         print("life terminates here")
     if signum == signal.SIGUSR1:
-        print("New chunk")
+        print("TRACER (pid: ", os.getpid(), ")RECEIVED THE SIGNAL SIGUSR1")
         separation = "SIGNAL HERE ---\n"
-        start_ts = 0 #???
+        start_ts = 0 #??? should it be reset or not? better continuity?
+        #separation = fill_string_to_bytes(separation, 15)
         client_socket.send(separation.encode())   
     else: 
         print("sig not handled")
@@ -820,7 +832,7 @@ if args.ebpf:
 if args.socketconnection:  
     # Define host and port
     HOST = '127.0.0.1'
-    PORT = 65432
+    PORT = 65433
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # Connect to the server
     client_socket.connect((HOST, PORT))   
