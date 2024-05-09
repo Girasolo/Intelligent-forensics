@@ -4,6 +4,8 @@ import multiprocessing as mp
 import time
 import numpy as np
 import threading
+import logging
+from fluent import sender
 
 import socket
 
@@ -80,9 +82,31 @@ def tcplife_receiver(client_socket, lifedata):
                     #print("LIFE\t25 sec: " ,  lifedata)
                     if lifedata != []:
                         mean, variance = compute_mean_variance(lifedata)
+                        data = {
+                        'life' : socket.gethostbyname(socket.gethostname()),
+                        'tx_mean' : mean[0],
+                        'rx_mean,' : mean[1],
+                        "ms_mean)" : mean[2],
+                        "tx_var" : variance[0],
+                        "rx_var" : variance[1],
+                        "ms_var" : variance[2]
+                        }
+                        # Send data to Fluentd
+                        logger.emit('tracer.logs', data)
                         print("LIFE\tmean: ", mean, "variance", variance)
                     else:
-                        mean, variance = 0,0
+                        mean, variance = [(0,0,0),(0,0,0)]
+                        data = {
+                        'life' : socket.gethostbyname(socket.gethostname()),
+                        'tx_mean' : mean[0],
+                        'rx_mean,' : mean[1],
+                        "ms_mean)" : mean[2],
+                        "tx_var" : variance[0],
+                        "rx_var" : variance[1],
+                        "ms_var" : variance[2]
+                        }
+                        # Send data to Fluentd
+                        logger.emit('tracer.logs', data)
                         print("LIFE\tmean: ", mean, "variance", variance)
                     lifedata = []
 #                    printBarrirer.wait()
@@ -117,9 +141,27 @@ def tcptracer_receiver(client_socket, tracerTimes, open_connections, closed_conn
                 if tracerTimes != []:
                     mean_time = np.mean(tracerTimes)
                     variance_time = np.var(tracerTimes)
+                    data = {
+                        'tracer' : socket.gethostbyname(socket.gethostname()),
+                        'open_connections' : open_connections,
+                        'closed_connections' : closed_connections,
+                        "mean_time" : mean_time,
+                        "variance_time" : variance_time
+                        }
+                    # Send data to Fluentd
+                    logger.emit('tracer.logs', data)
                     print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
                 else:
                     mean_time ,variance_time = 0,0
+                    data = {
+                        'tracer' : socket.gethostbyname(socket.gethostname()),
+                        'open_connections' : open_connections,
+                        'closed_connections' : closed_connections,
+                        "mean_time" : mean_time,
+                        "variance_time" : variance_time
+                        }
+                    # Send data to Fluentd
+                    logger.emit('tracer.logs', data)
                     print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
                 tracerTimes = []
                 open_connections = 0
@@ -207,6 +249,8 @@ if __name__ == "__main__":
         #time.sleep(25)
         # Start the signaling
         signal_thread.start()
+
+        logger = sender.FluentSender('dos', host='10.200.0.2', port=24224)
 
         lifereceiver_thread.start()
         tracerreceiver_thread.start()

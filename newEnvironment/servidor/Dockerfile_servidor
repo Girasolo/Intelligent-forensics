@@ -37,7 +37,7 @@ EXPOSE 3000
 
 WORKDIR /
 
-RUN pip install numpy
+RUN pip install numpy fluent-logger
 RUN apt-get install socat   
 COPY entrypoints/ep_servidor.sh entrypoints/ep_servidor.sh
 
