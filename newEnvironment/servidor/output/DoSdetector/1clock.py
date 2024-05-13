@@ -52,6 +52,27 @@ def manageEvent(event):
         time.sleep(25)  # Delay for 25 seconds before sending the next signal
         event.set()  # Send the signal to both subprocesses simultaneously
         
+def sendResult():
+    global mean, variance, open_connections, closed_connections, mean_time, variance_time, logger
+    while True:
+        barrier_result.wait()
+        #mediaBT	mediaRX	varBT	varRX	medialat	varlat	Open	Close	mediadift	varDifT	Attack
+        data = {
+                'final result' : socket.gethostbyname(socket.gethostname()),
+                'tx_mean' : mean[0],
+                'rx_mean' : mean[1],
+                "tx_var" : variance[0],
+                "rx_var" : variance[1],
+                "ms_mean" : mean[2],
+                "ms_var" : variance[2],
+                'open_connections' : open_connections,
+                'closed_connections' : closed_connections,
+                "mean_time" : mean_time,
+                "variance_time" : variance_time
+                }
+                # Send data to Fluentd
+        logger.emit('tracer.logs', data)
+        barrier_result.wait()
 
 
 def receive_line(sock):
@@ -67,7 +88,9 @@ def receive_line(sock):
     return data
 
 
-def tcplife_receiver(client_socket, lifedata):
+def tcplife_receiver(client_socket):
+    global mean, variance
+    lifedata = []
     print("life thread works")
     try:
         while True:
@@ -82,33 +105,29 @@ def tcplife_receiver(client_socket, lifedata):
                     #print("LIFE\t25 sec: " ,  lifedata)
                     if lifedata != []:
                         mean, variance = compute_mean_variance(lifedata)
+                        '''
                         data = {
                         'life' : socket.gethostbyname(socket.gethostname()),
                         'tx_mean' : mean[0],
-                        'rx_mean,' : mean[1],
-                        "ms_mean)" : mean[2],
+                        'rx_mean' : mean[1],
+                        "ms_mean" : mean[2],
                         "tx_var" : variance[0],
                         "rx_var" : variance[1],
                         "ms_var" : variance[2]
                         }
                         # Send data to Fluentd
                         logger.emit('tracer.logs', data)
+                        '''
                         print("LIFE\tmean: ", mean, "variance", variance)
                     else:
-                        mean, variance = [(0,0,0),(0,0,0)]
-                        data = {
-                        'life' : socket.gethostbyname(socket.gethostname()),
-                        'tx_mean' : mean[0],
-                        'rx_mean,' : mean[1],
-                        "ms_mean)" : mean[2],
-                        "tx_var" : variance[0],
-                        "rx_var" : variance[1],
-                        "ms_var" : variance[2]
-                        }
-                        # Send data to Fluentd
-                        logger.emit('tracer.logs', data)
+                        #mean, variance = [(0,0,0),(0,0,0)]
+                        
                         print("LIFE\tmean: ", mean, "variance", variance)
+                    barrier_result.wait()
+                    barrier_result.wait()
                     lifedata = []
+                    mean, variance = [(0,0,0),(0,0,0)]
+
 #                    printBarrirer.wait()
                     continue
                 data = data.strip().split()
@@ -123,7 +142,9 @@ def tcplife_receiver(client_socket, lifedata):
 
 
 
-def tcptracer_receiver(client_socket, tracerTimes, open_connections, closed_connections):
+def tcptracer_receiver(client_socket):
+    global mean_time, variance_time, open_connections, closed_connections
+    tracerTimes = []
     print("tracer thread works")
     try:
         while True:
@@ -141,6 +162,7 @@ def tcptracer_receiver(client_socket, tracerTimes, open_connections, closed_conn
                 if tracerTimes != []:
                     mean_time = np.mean(tracerTimes)
                     variance_time = np.var(tracerTimes)
+                    '''
                     data = {
                         'tracer' : socket.gethostbyname(socket.gethostname()),
                         'open_connections' : open_connections,
@@ -150,22 +172,20 @@ def tcptracer_receiver(client_socket, tracerTimes, open_connections, closed_conn
                         }
                     # Send data to Fluentd
                     logger.emit('tracer.logs', data)
+                    '''
                     print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
                 else:
-                    mean_time ,variance_time = 0,0
-                    data = {
-                        'tracer' : socket.gethostbyname(socket.gethostname()),
-                        'open_connections' : open_connections,
-                        'closed_connections' : closed_connections,
-                        "mean_time" : mean_time,
-                        "variance_time" : variance_time
-                        }
+                    #mean_time ,variance_time = 0,0
                     # Send data to Fluentd
                     logger.emit('tracer.logs', data)
                     print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
+                barrier_result.wait()
+                barrier_result.wait()
                 tracerTimes = []
                 open_connections = 0
                 closed_connections = 0
+                mean_time ,variance_time = 0,0
+
 #                printBarrirer.wait()
                 continue
             data = data.strip().split()
@@ -186,10 +206,10 @@ if __name__ == "__main__":
         PORTLIFE = 65432
         PORTTRACER = 65433
 
-        lifedata = []
-        tracerTimes = []
-        open_connections = 0
-        closed_connections = 0
+        mean , variance = (0,0,0),(0,0,0)
+        open_connections, closed_connections, mean_time , variance_time = 0,0,0,0
+        
+        barrier_result = threading.Barrier(3)
         # Create a socket object
         server_socketLife = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
         # Bind the socket to the address and port
@@ -237,15 +257,18 @@ if __name__ == "__main__":
         print("Connected by:", client_addressTracer)
 
 
-        lifereceiver_thread = threading.Thread(target=tcplife_receiver, args=[client_socketLife, lifedata])
+        lifereceiver_thread = threading.Thread(target=tcplife_receiver, args=[client_socketLife])
         # Set the daemon flag to True so that the thread will exit when the main program exits
         lifereceiver_thread.daemon = True
 
-        tracerreceiver_thread = threading.Thread(target=tcptracer_receiver, args=[client_socketTracer, tracerTimes, open_connections, closed_connections])
+        tracerreceiver_thread = threading.Thread(target=tcptracer_receiver, args=[client_socketTracer])
         # Set the daemon flag to True so that the thread will exit when the main program exits
         tracerreceiver_thread.daemon = True
 
 
+        sendResult_thread = threading.Thread(target=sendResult)
+        # Set the daemon flag to True so that the thread will exit when the main program exits
+        sendResult_thread.daemon = True
         #time.sleep(25)
         # Start the signaling
         signal_thread.start()
@@ -254,9 +277,11 @@ if __name__ == "__main__":
 
         lifereceiver_thread.start()
         tracerreceiver_thread.start()
+        sendResult_thread.start()
 
         lifereceiver_thread.join()
         tracerreceiver_thread.join()
+        sendResult_thread.join()
             
     except KeyboardInterrupt:
         print("Terminating...")

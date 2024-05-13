@@ -7,6 +7,9 @@ USER root
 #RUN gem install faraday-net_http -v 2.8.1
 RUN gem install fluent-plugin-elasticsearch --no-document --version 5.0.3
 #RUN cat /fluentd/etc/fluent.conf >> /usr/lib/ruby/gems/3.1.0/gems/fluentd-1.16.2/fluent.conf
+
+RUN apk add python3
+
 COPY ep_fluentd.sh /ep_fluentd.sh
 
 RUN chmod +x /ep_fluentd.sh

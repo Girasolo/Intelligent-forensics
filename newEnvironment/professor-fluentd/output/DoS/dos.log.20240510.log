@@ -1,0 +1,354 @@
+2024-05-10T12:05:48+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:05:48+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:06:13+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:06:13+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:06:38+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:06:38+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:07:03+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":501.93,"tx_var":0.0,"rx_var":0.0,"ms_var":0.17252500000000193}
+2024-05-10T12:07:03+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":8,"mean_time":0.23956249999999996,"variance_time":0.07622937109375}
+2024-05-10T12:07:28+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.3333333333333335,"rx_mean,":5.0,"ms_mean)":1206.95,"tx_var":0.8888888888888888,"rx_var":0.0,"ms_var":878260.3828666667}
+2024-05-10T12:07:28+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":1.9831666666666667,"variance_time":10.389442805555559}
+2024-05-10T12:07:53+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":1.0,"rx_mean,":2.5,"ms_mean)":225.14000000000001,"tx_var":1.0,"rx_var":6.25,"ms_var":24970.320400000004}
+2024-05-10T12:07:53+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":1.74,"variance_time":7.9933235}
+2024-05-10T12:08:18+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:08:18+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:08:43+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:08:43+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:09:08+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:09:08+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:09:33+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":3.0,"ms_mean)":60750.94,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:09:33+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:09:58+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:09:58+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:10:23+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:10:23+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:10:48+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:10:48+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:11:13+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.5,"rx_mean,":5.0,"ms_mean)":1262.52,"tx_var":0.25,"rx_var":0.0,"ms_var":139.94889999999828}
+2024-05-10T12:11:13+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":2,"mean_time":1.2103333333333335,"variance_time":1.2272415555555556}
+2024-05-10T12:11:38+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:11:38+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:12:03+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":501.76,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:12:03+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.2045,"variance_time":0.041820249999999996}
+2024-05-10T12:12:28+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:12:28+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:12:53+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":212.25,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:12:53+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.053,"variance_time":0.002809}
+2024-05-10T12:13:18+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:13:18+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:13:43+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:13:43+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:14:08+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:14:08+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:14:33+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":3.0,"ms_mean)":60675.98,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:14:33+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":4.046,"variance_time":16.370116000000003}
+2024-05-10T12:14:58+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:14:58+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:15:23+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:15:23+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:15:48+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:15:48+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:16:13+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:16:13+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:16:38+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:16:38+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:17:03+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:17:03+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:17:28+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":443.0,"rx_mean,":2.0,"ms_mean)":6.0,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:17:28+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:17:54+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":67.91,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:17:54+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.0175,"variance_time":0.00030625000000000004}
+2024-05-10T12:18:19+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.5,"rx_mean,":5.0,"ms_mean)":235.435,"tx_var":0.25,"rx_var":0.0,"ms_var":1370.8506249999994}
+2024-05-10T12:18:19+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":0.579,"variance_time":0.5912689999999999}
+2024-05-10T12:18:44+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:18:44+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:19:09+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":443.0,"rx_mean,":4.0,"ms_mean)":2.0,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:19:09+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":6.666,"variance_time":44.435556000000005}
+2024-05-10T12:19:34+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.25,"rx_mean,":4.5,"ms_mean)":15661.997500000001,"tx_var":3.6875,"rx_var":0.75,"ms_var":676571382.1886187}
+2024-05-10T12:19:34+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":4,"mean_time":0.9144285714285713,"variance_time":1.1731376734693877}
+2024-05-10T12:19:59+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":12.5,"rx_mean,":5.0,"ms_mean)":1123.02,"tx_var":0.25,"rx_var":0.0,"ms_var":14335.272900000004}
+2024-05-10T12:19:59+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":3,"mean_time":2.0245714285714285,"variance_time":6.159144530612244}
+2024-05-10T12:20:24+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.5,"rx_mean,":5.0,"ms_mean)":467.49,"tx_var":0.75,"rx_var":0.0,"ms_var":4062.261349999998}
+2024-05-10T12:20:24+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":3.189833333333333,"variance_time":18.838881472222223}
+2024-05-10T12:20:49+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.25,"rx_mean,":5.0,"ms_mean)":449.0775,"tx_var":3.1875,"rx_var":0.0,"ms_var":2714.04631875}
+2024-05-10T12:20:49+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":4,"mean_time":2.180875,"variance_time":13.172455109375}
+2024-05-10T12:21:14+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:21:14+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:21:39+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:21:39+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:22:04+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:22:04+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:22:29+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":6.2,"rx_mean,":5.4,"ms_mean)":36585.328,"tx_var":9.36,"rx_var":0.6399999999999999,"ms_var":5158531483.051975}
+2024-05-10T12:22:29+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":5,"mean_time":1.6280000000000001,"variance_time":7.573362666666666}
+2024-05-10T12:22:54+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":68.04,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:22:54+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.0175,"variance_time":0.00030625000000000004}
+2024-05-10T12:23:19+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:23:19+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:23:44+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":9.0,"rx_mean,":5.0,"ms_mean)":534.28,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:23:44+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":1.4883333333333335,"variance_time":3.346272222222223}
+2024-05-10T12:24:09+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":1.0,"rx_mean,":7.0,"ms_mean)":127.81,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:24:09+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":0.5463333333333333,"variance_time":0.49436022222222215}
+2024-05-10T12:24:34+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":125.75,"rx_mean,":5.75,"ms_mean)":71590.9025,"tx_var":34009.6875,"rx_var":6.6875,"ms_var":14044977980.873617}
+2024-05-10T12:24:34+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":4,"mean_time":2.7832857142857144,"variance_time":10.60547048979592}
+2024-05-10T12:24:59+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":4.333333333333333,"ms_mean)":20708.126666666667,"tx_var":2.6666666666666665,"rx_var":0.888888888888889,"ms_var":802589952.7230887}
+2024-05-10T12:24:59+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":3.7343333333333333,"variance_time":14.312660888888887}
+2024-05-10T12:25:24+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":443.0,"rx_mean,":1.2,"ms_mean)":27.4,"tx_var":0.0,"rx_var":0.9600000000000002,"ms_var":2337.8399999999992}
+2024-05-10T12:25:24+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":11,"closed_connections":5,"mean_time":0.7391875,"variance_time":1.97873515234375}
+2024-05-10T12:25:49+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:25:49+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:26:14+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:26:14+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:26:39+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:26:39+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:27:04+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":47.5,"rx_mean,":4.0,"ms_mean)":78726.495,"tx_var":1056.25,"rx_var":9.0,"ms_var":6197546113.005024}
+2024-05-10T12:27:04+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":2,"mean_time":4.8053333333333335,"variance_time":27.220814888888892}
+2024-05-10T12:27:29+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:27:29+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:27:54+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":221.5,"rx_mean,":3.0,"ms_mean)":39.93,"tx_var":49062.25,"rx_var":9.0,"ms_var":1438.6849}
+2024-05-10T12:27:54+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":3,"mean_time":3.9455,"variance_time":32.55125125}
+2024-05-10T12:28:19+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":443.0,"rx_mean,":2.0,"ms_mean)":4.5,"tx_var":0.0,"rx_var":1.0,"ms_var":0.25}
+2024-05-10T12:28:19+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":5,"mean_time":2.51925,"variance_time":19.647982937500004}
+2024-05-10T12:28:44+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":443.0,"rx_mean,":2.5,"ms_mean)":3168.5,"tx_var":0.0,"rx_var":0.25,"ms_var":10033056.25}
+2024-05-10T12:28:44+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":2,"mean_time":3.4636666666666662,"variance_time":20.68708655555555}
+2024-05-10T12:29:09+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":201.0,"rx_mean,":2.6666666666666665,"ms_mean)":4.666666666666667,"tx_var":29282.0,"rx_var":0.22222222222222224,"ms_var":1.5555555555555554}
+2024-05-10T12:29:09+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":3,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:29:34+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:29:34+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:29:59+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":5.666666666666667,"rx_mean,":4.333333333333333,"ms_mean)":20884.883333333335,"tx_var":17.555555555555557,"rx_var":0.888888888888889,"ms_var":798459951.0633556}
+2024-05-10T12:29:59+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":2.9945000000000004,"variance_time":30.471144583333338}
+2024-05-10T12:30:24+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.5,"rx_mean,":5.0,"ms_mean)":1168.53,"tx_var":6.25,"rx_var":0.0,"ms_var":596447.2899999999}
+2024-05-10T12:30:24+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":2.088,"variance_time":6.255042}
+2024-05-10T12:30:49+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":149.0,"rx_mean,":4.333333333333333,"ms_mean)":5902.389999999999,"tx_var":43218.0,"rx_var":0.888888888888889,"ms_var":54180190.279800005}
+2024-05-10T12:30:49+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":3,"mean_time":3.4921999999999995,"variance_time":15.091156559999998}
+2024-05-10T12:31:14+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:31:14+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:31:39+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:31:39+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:32:04+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:32:04+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:32:29+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:32:29+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:32:54+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.6666666666666665,"rx_mean,":3.3333333333333335,"ms_mean)":486.5,"tx_var":3.555555555555556,"rx_var":5.555555555555556,"ms_var":88052.07706666664}
+2024-05-10T12:32:54+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":2.4783333333333335,"variance_time":14.896511555555556}
+2024-05-10T12:33:19+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":663.55,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:33:19+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.252,"variance_time":0.063504}
+2024-05-10T12:33:44+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":201.79,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:33:44+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":3.7283333333333335,"variance_time":26.530888222222227}
+2024-05-10T12:34:09+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":741.55,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:34:09+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.29,"variance_time":0.0841}
+2024-05-10T12:34:34+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:34:34+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:34:59+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":4.0,"ms_mean)":30762.120000000003,"tx_var":4.0,"rx_var":1.0,"ms_var":900769364.3524001}
+2024-05-10T12:34:59+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":2,"mean_time":4.050666666666666,"variance_time":27.99108622222222}
+2024-05-10T12:35:24+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":720.325,"tx_var":0.0,"rx_var":0.0,"ms_var":3784.0952250000055}
+2024-05-10T12:35:24+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":3.09675,"variance_time":21.895345687499997}
+2024-05-10T12:35:49+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":36.5,"rx_mean,":6.0,"ms_mean)":169667.53,"tx_var":1056.25,"rx_var":1.0,"ms_var":28597816677.032093}
+2024-05-10T12:35:49+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":2,"mean_time":1.9100000000000001,"variance_time":5.744466666666667}
+2024-05-10T12:36:15+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:36:15+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:36:40+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:36:40+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:37:05+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:37:05+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:37:30+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:37:30+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:37:55+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":1.5,"rx_mean,":2.5,"ms_mean)":366.44,"tx_var":2.25,"rx_var":6.25,"ms_var":87811.46889999999}
+2024-05-10T12:37:55+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":3.80275,"variance_time":39.441055187500005}
+2024-05-10T12:38:20+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:38:20+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:38:45+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:38:45+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:39:10+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":6.0,"rx_mean,":6.0,"ms_mean)":124219.48,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:39:10+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":8.387,"variance_time":70.34176900000001}
+2024-05-10T12:39:35+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:39:35+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:40:00+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":3.0,"ms_mean)":60781.69,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:40:00+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:40:25+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:40:25+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:40:50+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:40:50+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:41:15+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:41:15+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:41:40+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:41:40+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:42:05+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:42:05+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:42:30+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":6.6,"rx_mean,":5.0,"ms_mean)":520.788,"tx_var":24.639999999999997,"rx_var":0.0,"ms_var":6563.032615999997}
+2024-05-10T12:42:30+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":6,"closed_connections":5,"mean_time":2.1056363636363633,"variance_time":4.247596958677686}
+2024-05-10T12:42:55+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":2.5,"ms_mean)":387.41999999999996,"tx_var":16.0,"rx_var":6.25,"ms_var":24024.999999999996}
+2024-05-10T12:42:55+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":0.5445,"variance_time":0.42917825000000004}
+2024-05-10T12:43:20+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":578.3050000000001,"tx_var":0.0,"rx_var":0.0,"ms_var":1553.5422250000015}
+2024-05-10T12:43:20+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":3.20525,"variance_time":25.269900687500005}
+2024-05-10T12:43:45+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.0,"rx_mean,":5.0,"ms_mean)":560.28,"tx_var":1.0,"rx_var":0.0,"ms_var":511.2121000000006}
+2024-05-10T12:43:45+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":1.2075,"variance_time":2.53440725}
+2024-05-10T12:44:10+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":543.43,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:44:10+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":1.4136666666666666,"variance_time":2.922494888888888}
+2024-05-10T12:44:35+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":381.6,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:44:35+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":2.4273333333333333,"variance_time":10.45446422222222}
+2024-05-10T12:45:00+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":4.0,"ms_mean)":30725.085,"tx_var":4.0,"rx_var":1.0,"ms_var":895310823.8450251}
+2024-05-10T12:45:00+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":2,"mean_time":0.711,"variance_time":0.337014}
+2024-05-10T12:45:25+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":1420.7,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:45:25+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.6295,"variance_time":0.39627024999999994}
+2024-05-10T12:45:50+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:45:50+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:46:15+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":349.62,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:46:15+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.163,"variance_time":0.026569000000000002}
+2024-05-10T12:46:40+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.0,"rx_mean,":5.0,"ms_mean)":545.9350000000001,"tx_var":1.0,"rx_var":0.0,"ms_var":198706.43522500002}
+2024-05-10T12:46:40+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":1.9652500000000002,"variance_time":8.3945296875}
+2024-05-10T12:47:05+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":612.2933333333334,"tx_var":0.0,"rx_var":0.0,"ms_var":6172.93242222222}
+2024-05-10T12:47:05+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":2.546,"variance_time":18.513400333333333}
+2024-05-10T12:47:30+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":67.85714285714286,"rx_mean,":4.571428571428571,"ms_mean)":417.4842857142857,"tx_var":23469.55102040816,"rx_var":1.1020408163265303,"ms_var":42672.55836734693}
+2024-05-10T12:47:30+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":6,"closed_connections":7,"mean_time":1.269923076923077,"variance_time":1.4800096094674553}
+2024-05-10T12:47:55+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.8,"rx_mean,":4.0,"ms_mean)":379.688,"tx_var":2.56,"rx_var":4.0,"ms_var":26384.069656000007}
+2024-05-10T12:47:55+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":5,"closed_connections":5,"mean_time":2.3137000000000003,"variance_time":10.021730210000001}
+2024-05-10T12:48:20+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.5,"rx_mean,":5.0,"ms_mean)":490.0,"tx_var":2.25,"rx_var":0.0,"ms_var":96.23610000000005}
+2024-05-10T12:48:20+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":0.6040000000000001,"variance_time":0.4020055}
+2024-05-10T12:48:45+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":902.235,"tx_var":0.0,"rx_var":0.0,"ms_var":19053.661224999993}
+2024-05-10T12:48:45+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":0.8984999999999999,"variance_time":0.6521382499999999}
+2024-05-10T12:49:10+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":1103.79,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:49:10+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":3.5240000000000005,"variance_time":18.795304666666667}
+2024-05-10T12:49:35+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:49:35+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:50:00+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":3.0,"ms_mean)":60818.41,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T12:50:00+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T12:50:25+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.5,"rx_mean,":5.0,"ms_mean)":1153.88,"tx_var":0.75,"rx_var":0.0,"ms_var":1070201.5337}
+2024-05-10T12:50:25+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":4,"mean_time":2.5860000000000003,"variance_time":10.140628499999998}
+2024-05-10T12:50:50+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":1077.8,"tx_var":2.0,"rx_var":0.0,"ms_var":662449.4661500001}
+2024-05-10T12:50:50+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":4,"mean_time":1.38925,"variance_time":1.7271899375000004}
+2024-05-10T12:51:15+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":5.333333333333333,"rx_mean,":5.0,"ms_mean)":755.37,"tx_var":8.222222222222221,"rx_var":0.0,"ms_var":15557.141266666667}
+2024-05-10T12:51:15+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":1.0575,"variance_time":0.8628022500000001}
+2024-05-10T12:51:40+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":826.85,"tx_var":0.0,"rx_var":0.0,"ms_var":23415.120399999996}
+2024-05-10T12:51:40+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":0.731,"variance_time":0.3327375}
+2024-05-10T12:52:05+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":674.48,"tx_var":0.0,"rx_var":0.0,"ms_var":68.22759999999985}
+2024-05-10T12:52:05+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":0.90075,"variance_time":0.9784441875000003}
+2024-05-10T12:52:30+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:52:30+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:53:04+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.15384615384615385,"rx_mean,":0.38461538461538464,"ms_mean)":507.83538461538467,"tx_var":0.2840236686390533,"rx_var":1.775147928994082,"ms_var":411.0816402366858}
+2024-05-10T12:53:04+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":7,"closed_connections":13,"mean_time":0.3991153846153846,"variance_time":0.8052417943786979}
+2024-05-10T12:58:45+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":501.70400000000006,"tx_var":0.0,"rx_var":0.0,"ms_var":0.1588440000000008}
+2024-05-10T12:58:45+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":5,"closed_connections":10,"mean_time":0.20550000000000002,"variance_time":0.053820049999999994}
+2024-05-10T12:58:45+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:59:10+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:59:10+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":0,"mean_time":6.232666666666667,"variance_time":77.69226755555556}
+2024-05-10T12:59:10+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:59:35+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T12:59:35+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T12:59:35+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:03:06+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":1.0,"rx_mean,":0.7142857142857143,"ms_mean)":510.0514285714285,"tx_var":6.0,"rx_var":3.061224489795918,"ms_var":433.48026938775456}
+2024-05-10T13:03:06+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":4,"closed_connections":7,"mean_time":0.7506428571428572,"variance_time":3.4445193724489798}
+2024-05-10T13:03:06+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0.7506428571428572,"variance_time":3.4445193724489798}
+2024-05-10T13:03:31+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.5,"rx_mean,":5.0,"ms_mean)":128.43,"tx_var":0.25,"rx_var":0.0,"ms_var":5.475600000000016}
+2024-05-10T13:03:31+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":2,"mean_time":3.797833333333333,"variance_time":53.52221813888888}
+2024-05-10T13:03:31+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":3.797833333333333,"variance_time":53.52221813888888}
+2024-05-10T13:03:56+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":686.81,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:03:56+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.2595,"variance_time":0.06734025}
+2024-05-10T13:03:56+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0.2595,"variance_time":0.06734025}
+2024-05-10T13:04:21+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":2.0,"rx_mean,":5.0,"ms_mean)":746.85,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:04:21+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":0.22566666666666665,"variance_time":0.06763088888888887}
+2024-05-10T13:04:21+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0.22566666666666665,"variance_time":0.06763088888888887}
+2024-05-10T13:04:46+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:04:46+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:04:46+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:05:11+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":3.0,"ms_mean)":60797.9,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:05:11+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:05:11+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:05:36+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.5,"rx_mean,":5.0,"ms_mean)":594.525,"tx_var":2.25,"rx_var":0.0,"ms_var":5868.326025000003}
+2024-05-10T13:05:36+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":2,"mean_time":1.01025,"variance_time":1.5339001875}
+2024-05-10T13:05:36+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":1.01025,"variance_time":1.5339001875}
+2024-05-10T13:06:01+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.0,"rx_mean,":5.0,"ms_mean)":1870.85,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:06:01+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":2,"mean_time":3.5833333333333335,"variance_time":15.17089155555555}
+2024-05-10T13:06:01+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":3.5833333333333335,"variance_time":15.17089155555555}
+2024-05-10T13:06:42+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":501.6366666666666,"tx_var":0.0,"rx_var":0.0,"ms_var":0.006555555555555187}
+2024-05-10T13:06:42+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":6,"mean_time":0.22616666666666663,"variance_time":0.07246197222222221}
+2024-05-10T13:06:42+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:07:07+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:07:07+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:07:07+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:07:32+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:07:32+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:07:32+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:07:57+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":69.06,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:07:57+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.0175,"variance_time":0.00030625000000000004}
+2024-05-10T13:07:57+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:08:22+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:08:22+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:08:22+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:08:47+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:08:47+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:08:47+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:09:12+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:09:12+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:09:12+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:09:37+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean,":0,"ms_mean)":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:09:37+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:09:37+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:10:02+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":0.0,"ms_mean)":501.56499999999994,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0039249999999976925}
+2024-05-10T13:10:02+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":4,"mean_time":0.185375,"variance_time":0.057203984374999996}
+2024-05-10T13:10:02+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:10:27+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean,":3.0,"ms_mean)":60654.24,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:10:27+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:10:27+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:10:52+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":4.833333333333333,"rx_mean,":5.0,"ms_mean)":694.1066666666667,"tx_var":5.805555555555556,"rx_var":0.0,"ms_var":27948.55455555556}
+2024-05-10T13:10:52+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":6,"closed_connections":6,"mean_time":1.0534166666666667,"variance_time":0.48271140972222226}
+2024-05-10T13:10:52+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:11:17+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.6666666666666665,"rx_mean,":5.0,"ms_mean)":1407.6866666666665,"tx_var":1.5555555555555556,"rx_var":0.0,"ms_var":31852.61228888886}
+2024-05-10T13:11:17+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":5,"closed_connections":3,"mean_time":0.98,"variance_time":0.41487700000000005}
+2024-05-10T13:11:17+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:11:42+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":6.0,"rx_mean,":5.0,"ms_mean)":549.4,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:11:42+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.215,"variance_time":0.046224999999999995}
+2024-05-10T13:11:42+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:12:07+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":7.0,"rx_mean,":5.0,"ms_mean)":803.4633333333335,"tx_var":14.0,"rx_var":0.0,"ms_var":35600.309755555565}
+2024-05-10T13:12:07+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":3,"closed_connections":3,"mean_time":1.7913333333333334,"variance_time":4.05439288888889}
+2024-05-10T13:12:07+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean,":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:12:54+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"ms_mean":210.83,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:12:54+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.053,"variance_time":0.002809}
+2024-05-10T13:12:54+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":210.83,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.053,"variance_time":0.002809}
+2024-05-10T13:13:19+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:13:19+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:13:19+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:13:44+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:13:44+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:13:44+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:14:09+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:14:09+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:14:09+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:14:34+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:14:34+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":2,"closed_connections":1,"mean_time":3.101333333333333,"variance_time":16.224496888888883}
+2024-05-10T13:14:34+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":2,"closed_connections":1,"mean_time":3.101333333333333,"variance_time":16.224496888888883}
+2024-05-10T13:14:59+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:14:59+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:14:59+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:15:24+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0.0,"rx_mean":3.0,"ms_mean":60694.21,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:15:24+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:15:24+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":3.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":60694.21,"ms_var":0.0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:15:49+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:15:49+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:15:49+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:16:14+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:16:14+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:16:14+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:16:39+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":0,"rx_mean":0,"ms_mean":0,"tx_var":0,"rx_var":0,"ms_var":0}
+2024-05-10T13:16:39+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:16:39+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:17:04+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":3.0,"rx_mean":5.0,"ms_mean":661.3,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:17:04+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":1,"closed_connections":1,"mean_time":0.25,"variance_time":0.0625}
+2024-05-10T13:17:04+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":3.0,"rx_mean":5.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":661.3,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.25,"variance_time":0.0625}
+2024-05-10T13:17:29+00:00	dos.tracer.logs	{"life":"10.100.0.2","tx_mean":443.0,"rx_mean":2.0,"ms_mean":1.0,"tx_var":0.0,"rx_var":0.0,"ms_var":0.0}
+2024-05-10T13:17:29+00:00	dos.tracer.logs	{"tracer":"10.100.0.2","open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:17:29+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":443.0,"rx_mean":2.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":1.0,"ms_var":0.0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:19:56+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+2024-05-10T13:20:21+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":2.745,"ms_var":0.007224999999999994,"open_connections":1,"closed_connections":3,"mean_time":4.7966,"variance_time":91.98152784000004}
+2024-05-10T13:20:47+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:21:37+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":50051.315,"ms_var":0.0020250000001702574,"open_connections":0,"closed_connections":2,"mean_time":10.8145,"variance_time":116.95341025000002}
+2024-05-10T13:22:02+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:22:27+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":1,"mean_time":1.9320000000000002,"variance_time":7.465248}
+2024-05-10T13:22:52+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":67.21,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.017,"variance_time":0.00028900000000000003}
+2024-05-10T13:23:42+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":75057.05,"ms_var":0.0025000000002910385,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:24:07+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":1,"mean_time":12.3845,"variance_time":153.37584024999998}
+2024-05-10T13:24:32+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":1.0,"rx_mean":6.0,"tx_var":0.0,"rx_var":9.0,"ms_mean":4114.63,"ms_var":16135485.61,"open_connections":3,"closed_connections":2,"mean_time":2.8635,"variance_time":13.63382025}
+2024-05-10T13:25:22+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":147.66666666666666,"rx_mean":0.6666666666666666,"tx_var":43610.8888888889,"rx_var":0.888888888888889,"ms_mean":33371.48,"ms_var":556660993.7968665,"open_connections":1,"closed_connections":2,"mean_time":4.772666666666667,"variance_time":45.19493422222221}
+2024-05-10T13:25:47+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":3.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":60674.66,"ms_var":0.0,"open_connections":0,"closed_connections":2,"mean_time":1.3935,"variance_time":1.9418422499999999}
+2024-05-10T13:26:12+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:27:02+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":50050.205,"ms_var":0.002024999999842839,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+2024-05-10T13:27:27+00:00	dos.tracer.logs	{"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
