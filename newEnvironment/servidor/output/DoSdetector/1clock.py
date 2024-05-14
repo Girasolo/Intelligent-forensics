@@ -57,7 +57,7 @@ def sendResult():
     while True:
         barrier_result.wait()
         #mediaBT	mediaRX	varBT	varRX	medialat	varlat	Open	Close	mediadift	varDifT	Attack
-        data = {
+        dataToSend = {
                 'final result' : socket.gethostbyname(socket.gethostname()),
                 'tx_mean' : mean[0],
                 'rx_mean' : mean[1],
@@ -71,7 +71,7 @@ def sendResult():
                 "variance_time" : variance_time
                 }
                 # Send data to Fluentd
-        logger.emit('tracer.logs', data)
+        logger.emit('tracer.logs', dataToSend)
         barrier_result.wait()
 
 

@@ -6,7 +6,7 @@ fifo_path = '/fluentd/output/DoS/dospredictorPIPE'
 # Open the named pipe file for reading
 with open(fifo_path, 'r') as fifo:
     # Loop indefinitely to continuously read log lines from the named pipe
-    with open('temp.txt','w') as file:
+    with open('temp.txt','a') as file:
         while True:
             # Read a line from the named pipe
             line = fifo.readline()
@@ -15,6 +15,7 @@ with open(fifo_path, 'r') as fifo:
             if line:
                 # Process the log line here
                 # For demonstration purposes, let's just print the log line
+                print("kjadfj")
                 file.write("Received log line:", line.strip())
                 # Perform your custom processing on the log line
                 # Replace this with your actual processing logic

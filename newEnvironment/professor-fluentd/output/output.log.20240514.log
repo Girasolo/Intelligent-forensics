@@ -1,0 +1,1043 @@
+2024-05-14T15:00:55+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-05-14T15:00:55+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-05-14T15:00:55+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-05-14T15:00:55+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-05-14T15:00:54+00:00	servidor	{"container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Reading package lists..."}
+2024-05-14T15:00:54+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"Building dependency tree...","container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482"}
+2024-05-14T15:00:54+00:00	servidor	{"container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Reading state information..."}
+2024-05-14T15:00:54+00:00	servidor	{"source":"stderr","log":"E: Unable to locate package linux-headers-6.5.0-35-generic","container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1"}
+2024-05-14T15:00:54+00:00	servidor	{"container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1","source":"stderr","log":"E: Couldn't find any package by glob 'linux-headers-6.5.0-35-generic'"}
+2024-05-14T15:00:54+00:00	servidor	{"container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1","source":"stderr","log":"E: Couldn't find any package by regex 'linux-headers-6.5.0-35-generic'"}
+2024-05-14T15:00:55+00:00	servidor	{"source":"stdout","log":"","container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1"}
+2024-05-14T15:00:55+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"> my-test-server@1.0.0 start","container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482"}
+2024-05-14T15:00:55+00:00	servidor	{"container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1","source":"stdout","log":"> node server.js"}
+2024-05-14T15:00:55+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"","container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482"}
+2024-05-14T15:00:55+00:00	servidor	{"container_id":"611d6c6e84e3d85038dd5352fba3eaa5cff80bd0afa06d141711f6c1f3593482","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Server is listening at http://localhost:3000"}
+2024-05-14T15:00:57+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":" * Starting system logging syslog-ng","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5"}
+2024-05-14T15:00:57+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stderr","log":"[2024-05-14T15:00:57.950186] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5"}
+2024-05-14T15:00:58+00:00	routerA	{"source":"stderr","log":"[2024-05-14T15:00:58.009406] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:00:58+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:00:58+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:00:58+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"   ...done."}
+2024-05-14T15:00:58+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[YFT0P-5Q5YX] Forked background command [pid 38]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:00:58+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:00:58+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:00:58+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"56","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:00:58+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from vethbc6198f"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-da7f9a7af8ae: port 2(veth71e3cf0) entered blocking state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-da7f9a7af8ae: port 2(veth71e3cf0) entered forwarding state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth2444a16"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-c8a0074fca9c: port 2(veth29b9f5e) entered blocking state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-c8a0074fca9c: port 2(veth29b9f5e) entered forwarding state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth1: renamed from veth3f5efe1"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"zebra","pid":"58","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"bgpd","pid":"63","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:58+00:00	syslog.daemon.info	{"host":"RArouter","ident":"staticd","pid":"73","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:58+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:00:58+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:00:58+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:00:58+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:00:58+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"37","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:00:58+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-c8a0074fca9c: port 1(vethd67fdb1) entered blocking state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-c8a0074fca9c: port 1(vethd67fdb1) entered forwarding state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth1: renamed from vethf5e5ef2"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 1(veth27b36b2) entered blocking state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 1(veth27b36b2) entered forwarding state"}
+2024-05-14T15:00:58+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth2: renamed from veth8141717"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth2: renamed from veth7bfbb31"}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-14T15:00:59+00:00	routerA	{"log":"Hello, this is FRRouting (version 8.1).","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-14T15:00:59+00:00	routerA	{"source":"stdout","log":"RArouter# conf t","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# log file /shared-volume/frr/frrRouterA.log"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-e51300cc2ec9: port 2(vethfa63d81) entered blocking state"}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"can't open logfile /shared-volume/frr/frrRouterA.log"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-e51300cc2ec9: port 2(vethfa63d81) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 1(vethdf898d4) entered blocking state"}
+2024-05-14T15:00:59+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# router ospf","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 1(vethdf898d4) entered forwarding state"}
+2024-05-14T15:00:59+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.100.0.0/24 area 0","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5"}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.200.0.0/24 area 0"}
+2024-05-14T15:00:59+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.1.0.0/24 area 0","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5"}
+2024-05-14T15:00:59+00:00	routerA	{"source":"stdout","log":"RArouter(config-router)# end","container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:00:59+00:00	routerA	{"container_id":"f8b43b65830e05a5330709a7ab56f7b9a6df5a1eb364b3c72ddd5839ccb3d7a5","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter# "}
+2024-05-14T15:00:59+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":" * Starting system logging syslog-ng","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d"}
+2024-05-14T15:00:59+00:00	routerB	{"log":"[2024-05-14T15:00:59.078926] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stderr"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from vethcf96834"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-14T15:00:59.108223] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stderr","log":"[2024-05-14T15:00:59.115198] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-14T15:00:59+00:00	routerB	{"log":"   ...done.","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-e51300cc2ec9: port 1(vethd6c42be) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-e51300cc2ec9: port 1(vethd6c42be) entered forwarding state"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-14T15:00:59.144141] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-14T15:00:59+00:00	routerC	{"log":"   ...done.","container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth1: renamed from veth118d28b"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-68c7c49b8f34: port 1(vethe2cf568) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-68c7c49b8f34: port 1(vethe2cf568) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth2: renamed from veth98ff5d1"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 1(vethe3d46c7) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 1(vethe3d46c7) entered forwarding state"}
+2024-05-14T15:00:59+00:00	routerB	{"log":" * Started watchfrr","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-14T15:00:59+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":" * Started watchfrr","container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b"}
+2024-05-14T15:00:59+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Starting system logging syslog-ng","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec"}
+2024-05-14T15:00:59+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-14T15:00:59.707098] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":""}
+2024-05-14T15:00:59+00:00	routerB	{"source":"stdout","log":"Hello, this is FRRouting (version 8.1).","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":""}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# conf t"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config)# router ospf "}
+2024-05-14T15:00:59+00:00	routerB	{"source":"stdout","log":"RBrouter(config-router)# network 10.1.0.0/24 area 0","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.2.0.0/24 area 0"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.3.0.0/24 area 0"}
+2024-05-14T15:00:59+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# end","container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d"}
+2024-05-14T15:00:59+00:00	routerB	{"container_id":"d63b19eee774bfadc0959f4553234091192801b69b617dcdf9c10bab2f0ed75d","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# "}
+2024-05-14T15:00:59+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-14T15:00:59.746857] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-14T15:00:59+00:00	routerD	{"source":"stdout","log":"   ...done.","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":""}
+2024-05-14T15:00:59+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1).","container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":""}
+2024-05-14T15:00:59+00:00	routerC	{"source":"stdout","log":"RCrouter# conf t","container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config)# router ospf "}
+2024-05-14T15:00:59+00:00	routerC	{"log":"RCrouter(config-router)# network 10.2.0.0/24 area 0","container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:00:59+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# network 10.0.1.0/24 area 0","container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# network 10.0.2.0/24 area 0"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# end"}
+2024-05-14T15:00:59+00:00	routerC	{"container_id":"6109dbaff8785beec64ad2a330d48d97a61fa09784ab7bda761c4875d9fe559b","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter# "}
+2024-05-14T15:01:00+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-14T15:01:00+00:00	routerD	{"log":"","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:01:00+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1)."}
+2024-05-14T15:01:00+00:00	routerD	{"source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al.","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:01:00+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":"","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec"}
+2024-05-14T15:01:00+00:00	routerD	{"log":"RDrouter# conf t","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:01:00+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config)# router ospf "}
+2024-05-14T15:01:00+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# network 10.3.0.0/24 area 0","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec"}
+2024-05-14T15:01:00+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# network 10.0.3.0/24 area 0","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:01:00+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# network 10.0.4.0/24 area 0","container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:01:00+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# end"}
+2024-05-14T15:01:00+00:00	routerD	{"container_id":"cd20027ded19e4de6d75ac8a3a9d357a9f0e70e13da8f64704881a2d909a6bec","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter# "}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth881d581: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth881d581: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth89e3d90: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth89e3d90: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth4294363: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth4294363: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth5d05b4d: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth5d05b4d: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethb48682b: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethb48682b: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth6f8c47f"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth32a8678"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth53c8ad5"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from vethea0d224"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from vethf684311"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:44+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"70","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-14T15:00:59+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[YFT0P-5Q5YX] Forked background command [pid 39]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth1: renamed from veth118d28b"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 1(vethe2cf568) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 1(vethe2cf568) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth2: renamed from veth98ff5d1"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 1(vethe3d46c7) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 1(vethe3d46c7) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"zebra","pid":"57","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"ospfd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"bgpd","pid":"62","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"staticd","pid":"72","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth881d581: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth881d581: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:00:59+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-e51300cc2ec9: port 1(vethd6c42be) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-e51300cc2ec9: port 1(vethd6c42be) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[YFT0P-5Q5YX] Forked background command [pid 38]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"48","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"54","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth1: renamed from veth118d28b"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-68c7c49b8f34: port 1(vethe2cf568) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-68c7c49b8f34: port 1(vethe2cf568) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth2: renamed from veth98ff5d1"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 1(vethe3d46c7) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 1(vethe3d46c7) entered forwarding state"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"zebra","pid":"58","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"bgpd","pid":"63","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"staticd","pid":"73","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth881d581: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth881d581: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth89e3d90: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth89e3d90: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth4294363: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth4294363: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth5d05b4d: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth5d05b4d: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:00:59+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:00:59+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:00:59+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[YFT0P-5Q5YX] Forked background command [pid 38]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"54","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:00:59+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:01:00+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"zebra","pid":"58","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:01:00+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:01:00+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"bgpd","pid":"63","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:01:00+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"staticd","pid":"73","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:01:00+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:01:00+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:01:00+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:01:00+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:01:00+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"37","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth881d581: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth881d581: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth89e3d90: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth89e3d90: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth4294363: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth4294363: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth5d05b4d: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth5d05b4d: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethb48682b: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethb48682b: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth6f8c47f"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth32a8678"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth53c8ad5"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from vethea0d224"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from vethf684311"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:40+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"70","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-14T15:02:07+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth89e3d90: entered allmulticast mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth89e3d90: entered promiscuous mode"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:03+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth4294363: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth4294363: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth5d05b4d: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth5d05b4d: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethb48682b: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethb48682b: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth6f8c47f"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth32a8678"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth53c8ad5"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from vethea0d224"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from vethf684311"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:02:07+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethb48682b: entered allmulticast mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethb48682b: entered promiscuous mode"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:01:04+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth6f8c47f"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth32a8678"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth53c8ad5"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from vethea0d224"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered forwarding state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from vethf684311"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered blocking state"}
+2024-05-14T15:01:06+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered forwarding state"}
+2024-05-14T15:01:44+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"70","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.2.0.20 Negotiation done (Master)."}
+2024-05-14T15:02:07+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth6f8c47f: renamed from eth0"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth6f8c47f: renamed from eth0"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth53c8ad5: renamed from eth0"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth53c8ad5: renamed from eth0"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth89e3d90 (unregistering): left allmulticast mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth89e3d90 (unregistering): left promiscuous mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth89e3d90 (unregistering): left allmulticast mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth89e3d90 (unregistering): left promiscuous mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-8b0049af80fa: port 2(veth89e3d90) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth4294363 (unregistering): left allmulticast mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth4294363 (unregistering): left promiscuous mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth4294363 (unregistering): left allmulticast mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth4294363 (unregistering): left promiscuous mode"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-22a93e73b441: port 2(veth4294363) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 2(veth5d05b4d) entered disabled state"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethea0d224: renamed from eth0"}
+2024-05-14T15:03:49+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethea0d224: renamed from eth0"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethf684311: renamed from eth0"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethf684311: renamed from eth0"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-52e80ef44a43: port 3(vethb48682b) entered disabled state"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth32a8678: renamed from eth0"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth32a8678: renamed from eth0"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered disabled state"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-68c7c49b8f34: port 2(veth881d581) entered disabled state"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethb56d228: renamed from eth0"}
+2024-05-14T15:03:50+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethb56d228: renamed from eth0"}
+2024-05-14T15:27:59+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-05-14T15:27:59+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-05-14T15:27:59+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-05-14T15:27:59+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-05-14T15:27:18+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-14T15:27:20+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stderr","log":"[2024-05-14T15:27:20.292620] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f"}
+2024-05-14T15:27:28+00:00	routerB	{"log":"[2024-05-14T15:27:28.375966] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stderr"}
+2024-05-14T15:27:28+00:00	routerB	{"log":"   ...done.","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-14T15:27:30+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-14T15:27:31+00:00	routerB	{"log":"","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerB	{"log":"Hello, this is FRRouting (version 8.1).","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":""}
+2024-05-14T15:27:31+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# conf t","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f"}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config)# router ospf "}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.1.0.0/24 area 0"}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.2.0.0/24 area 0"}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.3.0.0/24 area 0"}
+2024-05-14T15:27:31+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# end","container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f"}
+2024-05-14T15:27:31+00:00	routerB	{"container_id":"93b90a2b5677dc5327f17c4661e7213e9bc09738b9fe76e8289d35ecdf69283f","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# "}
+2024-05-14T15:27:21+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-14T15:27:21+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-14T15:27:21.895928] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5"}
+2024-05-14T15:27:28+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-14T15:27:28.375773] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-14T15:27:28+00:00	routerD	{"source":"stdout","log":"   ...done.","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:27:30+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Started watchfrr","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5"}
+2024-05-14T15:27:31+00:00	routerD	{"source":"stdout","log":"","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:27:31+00:00	routerD	{"log":"Hello, this is FRRouting (version 8.1).","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:27:31+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":""}
+2024-05-14T15:27:31+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter# conf t"}
+2024-05-14T15:27:31+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config)# router ospf "}
+2024-05-14T15:27:31+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# network 10.3.0.0/24 area 0"}
+2024-05-14T15:27:31+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# network 10.0.3.0/24 area 0","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:27:31+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# network 10.0.4.0/24 area 0","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:27:31+00:00	routerD	{"container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# end"}
+2024-05-14T15:27:31+00:00	routerD	{"log":"RDrouter# ","container_id":"39b9900b1c26a19ee7a08abadcea8a7ca20821501f1332fb1ee71f21fb25cad5","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:27:21+00:00	routerA	{"source":"stdout","log":" * Starting system logging syslog-ng","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:27:21+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stderr","log":"[2024-05-14T15:27:21.895646] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae"}
+2024-05-14T15:27:28+00:00	routerA	{"source":"stderr","log":"[2024-05-14T15:27:28.375968] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:27:28+00:00	routerA	{"container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"   ...done."}
+2024-05-14T15:27:30+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":" * Started watchfrr","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae"}
+2024-05-14T15:27:31+00:00	routerA	{"container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-14T15:27:31+00:00	routerA	{"log":"Hello, this is FRRouting (version 8.1).","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerA	{"container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:27:31+00:00	routerA	{"container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-14T15:27:31+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter# conf t","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae"}
+2024-05-14T15:27:31+00:00	routerA	{"source":"stdout","log":"RArouter(config)# log file /shared-volume/frr/frrRouterA.log","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:27:31+00:00	routerA	{"log":"can't open logfile /shared-volume/frr/frrRouterA.log","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerA	{"container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# router ospf"}
+2024-05-14T15:27:31+00:00	routerA	{"source":"stdout","log":"RArouter(config-router)# network 10.100.0.0/24 area 0","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:27:31+00:00	routerA	{"source":"stdout","log":"RArouter(config-router)# network 10.200.0.0/24 area 0","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:27:31+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.1.0.0/24 area 0","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae"}
+2024-05-14T15:27:31+00:00	routerA	{"container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# end"}
+2024-05-14T15:27:31+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter# ","container_id":"e2675d31e6e356eb8e313d5f13e3960ba5dbba9309670b28bb79416a62f494ae"}
+2024-05-14T15:27:22+00:00	routerC	{"source":"stdout","log":" * Starting system logging syslog-ng","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:27:22+00:00	routerC	{"container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-14T15:27:22.516004] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'"}
+2024-05-14T15:27:28+00:00	routerC	{"container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-14T15:27:28.376153] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-14T15:27:28+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"   ...done.","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4"}
+2024-05-14T15:27:30+00:00	routerC	{"source":"stdout","log":" * Started watchfrr","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:27:31+00:00	routerC	{"container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout","log":""}
+2024-05-14T15:27:31+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1).","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4"}
+2024-05-14T15:27:31+00:00	routerC	{"container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:27:31+00:00	routerC	{"log":"","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerC	{"container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter# conf t"}
+2024-05-14T15:27:31+00:00	routerC	{"source":"stdout","log":"RCrouter(config)# router ospf ","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:27:31+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# network 10.2.0.0/24 area 0","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4"}
+2024-05-14T15:27:31+00:00	routerC	{"log":"RCrouter(config-router)# network 10.0.1.0/24 area 0","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerC	{"container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# network 10.0.2.0/24 area 0"}
+2024-05-14T15:27:31+00:00	routerC	{"log":"RCrouter(config-router)# end","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:27:31+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter# ","container_id":"75ea9f1ab1102fd9d2e5ee0c1df30be69e39096ee4f5b5eab353f579fcd31cf4"}
+2024-05-14T15:27:10+00:00	servidor	{"log":"Reading package lists...","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:11+00:00	servidor	{"log":"Building dependency tree...","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:11+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Reading state information..."}
+2024-05-14T15:27:11+00:00	servidor	{"log":"The following additional packages will be installed:","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:11+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"  linux-hwe-6.5-headers-6.5.0-35","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d"}
+2024-05-14T15:27:11+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"The following NEW packages will be installed:"}
+2024-05-14T15:27:11+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"  linux-headers-6.5.0-35-generic linux-hwe-6.5-headers-6.5.0-35"}
+2024-05-14T15:27:11+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"0 upgraded, 2 newly installed, 0 to remove and 13 not upgraded."}
+2024-05-14T15:27:11+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Need to get 16.7 MB of archives."}
+2024-05-14T15:27:11+00:00	servidor	{"log":"After this operation, 112 MB of additional disk space will be used.","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:11+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-hwe-6.5-headers-6.5.0-35 all 6.5.0-35.35~22.04.1 [13.3 MB]"}
+2024-05-14T15:27:13+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Get:2 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 linux-headers-6.5.0-35-generic amd64 6.5.0-35.35~22.04.1 [3450 kB]"}
+2024-05-14T15:27:20+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stderr","log":"debconf: delaying package configuration, since apt-utils is not installed"}
+2024-05-14T15:27:20+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"Fetched 16.7 MB in 3s (5931 kB/s)","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d"}
+2024-05-14T15:27:22+00:00	servidor	{"log":"Selecting previously unselected package linux-hwe-6.5-headers-6.5.0-35.\r","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:27+00:00	servidor	{"source":"stdout","log":"(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 49098 files and directories currently installed.)\r","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1"}
+2024-05-14T15:27:27+00:00	servidor	{"source":"stdout","log":"Preparing to unpack .../linux-hwe-6.5-headers-6.5.0-35_6.5.0-35.35~22.04.1_all.deb ...\r","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1"}
+2024-05-14T15:27:27+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Unpacking linux-hwe-6.5-headers-6.5.0-35 (6.5.0-35.35~22.04.1) ...\r"}
+2024-05-14T15:27:33+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Selecting previously unselected package linux-headers-6.5.0-35-generic.\r"}
+2024-05-14T15:27:33+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"Preparing to unpack .../linux-headers-6.5.0-35-generic_6.5.0-35.35~22.04.1_amd64.deb ...\r","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d"}
+2024-05-14T15:27:34+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Unpacking linux-headers-6.5.0-35-generic (6.5.0-35.35~22.04.1) ...\r"}
+2024-05-14T15:27:38+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Setting up linux-hwe-6.5-headers-6.5.0-35 (6.5.0-35.35~22.04.1) ...\r"}
+2024-05-14T15:27:40+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Setting up linux-headers-6.5.0-35-generic (6.5.0-35.35~22.04.1) ...\r"}
+2024-05-14T15:27:59+00:00	servidor	{"log":"","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:59+00:00	servidor	{"log":"> my-test-server@1.0.0 start","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:27:59+00:00	servidor	{"source":"stdout","log":"> node server.js","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1"}
+2024-05-14T15:27:59+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"","container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d"}
+2024-05-14T15:27:59+00:00	servidor	{"container_id":"8bc9fe3fb8552d9b4d09d865dbdf388ae5b4dee99e6bfcb6aac3f03940b5d25d","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Server is listening at http://localhost:3000"}
+2024-05-14T15:27:28+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:27:28+00:00	syslog.syslog.err	{"host":"RArouter","ident":"syslog-ng","pid":"17","message":"Syslog connection failed; fd='15', server='AF_INET(10.200.0.2:5140)', error='Connection refused (111)', time_reopen='60'"}
+2024-05-14T15:27:29+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[YFT0P-5Q5YX] Forked background command [pid 39]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethbd67936: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethbd67936: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethe7af471: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethe7af471: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethca8158d: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethca8158d: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethaf09e11: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"vethaf09e11: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth090f336: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"veth090f336: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RArouter","ident":"zebra","pid":"57","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RArouter","ident":"bgpd","pid":"62","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RArouter","ident":"staticd","pid":"72","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"38","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth4ca1484"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth02ccb19"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth8ba711b"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth8877960"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth87e1253"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:28:16+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"69","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"input: BT5.2 Mouse as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input24"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"input: BT5.2 Mouse Keyboard as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input25"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"hid-generic 0005:1235:AA22.0005: input,hidraw3: BLUETOOTH HID v0.01 Mouse [BT5.2 Mouse] on 80:c5:f2:99:75:18"}
+2024-05-14T15:28:28+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='28', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:27:28+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:27:28+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:27:29+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[YFT0P-5Q5YX] Forked background command [pid 40]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"54","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"56","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethbd67936: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethbd67936: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:28+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:27:29+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[YFT0P-5Q5YX] Forked background command [pid 39]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethbd67936: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethbd67936: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethe7af471: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethe7af471: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethca8158d: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethca8158d: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethaf09e11: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethaf09e11: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth090f336: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth090f336: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"zebra","pid":"57","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"ospfd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"bgpd","pid":"62","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:29+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:27:29+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[YFT0P-5Q5YX] Forked background command [pid 38]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"54","message":"Cannot stop ospfd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop zebra: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"48","message":"Cannot stop staticd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop bgpd: pid file not found"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethbd67936: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethbd67936: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethe7af471: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethe7af471: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethca8158d: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethca8158d: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethaf09e11: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"vethaf09e11: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth090f336: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"veth090f336: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"zebra","pid":"58","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"bgpd","pid":"63","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"staticd","pid":"73","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"37","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth4ca1484"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth02ccb19"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth8ba711b"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth8877960"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth87e1253"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:28:11+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"70","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.2.0.20 Negotiation done (Master)."}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"input: BT5.2 Mouse as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input24"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"input: BT5.2 Mouse Keyboard as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input25"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"hid-generic 0005:1235:AA22.0005: input,hidraw3: BLUETOOTH HID v0.01 Mouse [BT5.2 Mouse] on 80:c5:f2:99:75:18"}
+2024-05-14T15:28:36+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethe7af471: entered allmulticast mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethe7af471: entered promiscuous mode"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:29+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethca8158d: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethca8158d: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethaf09e11: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethaf09e11: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth090f336: entered allmulticast mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth090f336: entered promiscuous mode"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered disabled state"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"zebra","pid":"58","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"bgpd","pid":"63","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"staticd","pid":"73","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"39","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth4ca1484"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth02ccb19"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth8ba711b"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth8877960"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth87e1253"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:28:16+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"70","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"input: BT5.2 Mouse as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input24"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"input: BT5.2 Mouse Keyboard as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input25"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"hid-generic 0005:1235:AA22.0005: input,hidraw3: BLUETOOTH HID v0.01 Mouse [BT5.2 Mouse] on 80:c5:f2:99:75:18"}
+2024-05-14T15:28:36+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:27:30+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"staticd","pid":"72","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:27:30+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"38","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth4ca1484"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered blocking state"}
+2024-05-14T15:27:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-b63ddb0b0e8c: port 2(vethbd67936) entered forwarding state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth02ccb19"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered blocking state"}
+2024-05-14T15:27:36+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 2(vethe7af471) entered forwarding state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth8ba711b"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered blocking state"}
+2024-05-14T15:27:39+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-914df3d2f4c7: port 2(vethca8158d) entered forwarding state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth8877960"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered blocking state"}
+2024-05-14T15:27:40+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-17f9288d5135: port 2(vethaf09e11) entered forwarding state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"eth0: renamed from veth87e1253"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered blocking state"}
+2024-05-14T15:27:41+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-9ff5ef994d45: port 3(veth090f336) entered forwarding state"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"input: BT5.2 Mouse as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input24"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"input: BT5.2 Mouse Keyboard as /devices/virtual/misc/uhid/0005:1235:AA22.0005/input/input25"}
+2024-05-14T15:28:21+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"hid-generic 0005:1235:AA22.0005: input,hidraw3: BLUETOOTH HID v0.01 Mouse [BT5.2 Mouse] on 80:c5:f2:99:75:18"}
+2024-05-14T15:28:36+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:30:51+00:00	syslog.kern.notice	{"host":"RArouter","ident":"kernel","message":"audit: type=1107 audit(1715700651.433:80): pid=788 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor=\"DENIED\" operation=\"dbus_signal\"  bus=\"system\" path=\"/org/freedesktop/login1\" interface=\"org.freedesktop.DBus.Properties\" member=\"PropertiesChanged\" name=\":1.3\" mask=\"receive\" pid=8291 label=\"snap.firefox.firefox\" peer_pid=805 peer_label=\"unconfined\"\\x0a exe=\"/usr/bin/dbus-daemon\" sauid=102 hostname=? addr=? terminal=?'"}
+2024-05-14T15:30:51+00:00	syslog.kern.notice	{"host":"RCrouter","ident":"kernel","message":"audit: type=1107 audit(1715700651.433:80): pid=788 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor=\"DENIED\" operation=\"dbus_signal\"  bus=\"system\" path=\"/org/freedesktop/login1\" interface=\"org.freedesktop.DBus.Properties\" member=\"PropertiesChanged\" name=\":1.3\" mask=\"receive\" pid=8291 label=\"snap.firefox.firefox\" peer_pid=805 peer_label=\"unconfined\"\\x0a exe=\"/usr/bin/dbus-daemon\" sauid=102 hostname=? addr=? terminal=?'"}
+2024-05-14T15:30:51+00:00	syslog.kern.notice	{"host":"RDrouter","ident":"kernel","message":"audit: type=1107 audit(1715700651.433:80): pid=788 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor=\"DENIED\" operation=\"dbus_signal\"  bus=\"system\" path=\"/org/freedesktop/login1\" interface=\"org.freedesktop.DBus.Properties\" member=\"PropertiesChanged\" name=\":1.3\" mask=\"receive\" pid=8291 label=\"snap.firefox.firefox\" peer_pid=805 peer_label=\"unconfined\"\\x0a exe=\"/usr/bin/dbus-daemon\" sauid=102 hostname=? addr=? terminal=?'"}
+2024-05-14T15:30:51+00:00	syslog.kern.notice	{"host":"RBrouter","ident":"kernel","message":"audit: type=1107 audit(1715700651.433:80): pid=788 uid=102 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor=\"DENIED\" operation=\"dbus_signal\"  bus=\"system\" path=\"/org/freedesktop/login1\" interface=\"org.freedesktop.DBus.Properties\" member=\"PropertiesChanged\" name=\":1.3\" mask=\"receive\" pid=8291 label=\"snap.firefox.firefox\" peer_pid=805 peer_label=\"unconfined\"\\x0a exe=\"/usr/bin/dbus-daemon\" sauid=102 hostname=? addr=? terminal=?'"}
+2024-05-14T15:51:31+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-05-14T15:51:31+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-05-14T15:51:31+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-05-14T15:51:31+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-05-14T15:51:28+00:00	servidor	{"log":"Reading package lists...","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:51:28+00:00	servidor	{"container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Building dependency tree..."}
+2024-05-14T15:51:28+00:00	servidor	{"container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout","log":"Reading state information..."}
+2024-05-14T15:51:29+00:00	servidor	{"log":"linux-headers-6.5.0-35-generic is already the newest version (6.5.0-35.35~22.04.1).","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:51:29+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190"}
+2024-05-14T15:51:29+00:00	servidor	{"source":"stdout","log":"","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1"}
+2024-05-14T15:51:29+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"> my-test-server@1.0.0 start","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190"}
+2024-05-14T15:51:29+00:00	servidor	{"container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout","log":"> node server.js"}
+2024-05-14T15:51:29+00:00	servidor	{"log":"","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:51:29+00:00	servidor	{"log":"Server is listening at http://localhost:3000","container_id":"2869d09db404142e1a7df571bbd1fb64ff8c366c6a03acfe52879cd70fde4190","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-14T15:51:37+00:00	routerD	{"log":" * Starting system logging syslog-ng","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:51:37+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-14T15:51:37.311803] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'"}
+2024-05-14T15:51:37+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-14T15:51:37.350325] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73"}
+2024-05-14T15:51:37+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"   ...done."}
+2024-05-14T15:51:37+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-14T15:51:37+00:00	routerA	{"log":"[2024-05-14T15:51:37.493182] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stderr"}
+2024-05-14T15:51:37+00:00	routerA	{"source":"stderr","log":"[2024-05-14T15:51:37.533568] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:51:37+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:51:37+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:51:37+00:00	routerA	{"source":"stdout","log":"   ...done.","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[YFT0P-5Q5YX] Forked background command [pid 32]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop bgpd: pid 62 not running"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"48","message":"Cannot stop ospfd: pid 69 not running"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop staticd: pid 72 not running"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop zebra: pid 57 not running"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth1: renamed from veth27fd6f2"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8913729be18a: port 2(vethba928db) entered blocking state"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8913729be18a: port 2(vethba928db) entered forwarding state"}
+2024-05-14T15:51:37+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth2: renamed from veth0718683"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8900d0b4d92e: port 1(veth9177570) entered blocking state"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8900d0b4d92e: port 1(veth9177570) entered forwarding state"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"zebra","pid":"55","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"67","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"bgpd","pid":"60","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RArouter","ident":"staticd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	routerA	{"source":"stdout","log":" * Started watchfrr","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"31","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:51:38+00:00	routerD	{"log":"","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:51:38+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1).","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73"}
+2024-05-14T15:51:38+00:00	routerD	{"source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al.","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:51:38+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":""}
+2024-05-14T15:51:38+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter# conf t"}
+2024-05-14T15:51:38+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config)# router ospf "}
+2024-05-14T15:51:38+00:00	routerD	{"log":"RDrouter(config-router)# network 10.3.0.0/24 area 0","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-14T15:51:38+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# network 10.0.3.0/24 area 0"}
+2024-05-14T15:51:38+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# network 10.0.4.0/24 area 0","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:51:38+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# end","container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1"}
+2024-05-14T15:51:38+00:00	routerD	{"container_id":"8a02b060f34ddb311586e535838107aab2445c8f9f9585836558e8a457a59b73","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter# "}
+2024-05-14T15:51:38+00:00	routerB	{"source":"stdout","log":" * Starting system logging syslog-ng","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1"}
+2024-05-14T15:51:38+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stderr","log":"[2024-05-14T15:51:38.115893] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9"}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1)."}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-14T15:51:38+00:00	routerA	{"log":"RArouter# conf t","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# log file /shared-volume/frr/frrRouterA.log"}
+2024-05-14T15:51:38+00:00	routerA	{"log":"can't open logfile /shared-volume/frr/frrRouterA.log","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# router ospf"}
+2024-05-14T15:51:38+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.100.0.0/24 area 0","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1"}
+2024-05-14T15:51:38+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.200.0.0/24 area 0","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1"}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.1.0.0/24 area 0"}
+2024-05-14T15:51:38+00:00	routerA	{"container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# end"}
+2024-05-14T15:51:38+00:00	routerA	{"source":"stdout","log":"RArouter# ","container_id":"84c511a83eb5029b64fff3cac9bd92866d95cc3dc9bb7344077990e4734217f1","container_name":"/newenvironment_ra_router_1"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stderr","log":"[2024-05-14T15:51:38.146013] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-14T15:51:38+00:00	routerB	{"source":"stdout","log":"   ...done.","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth0: renamed from veth5321823"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8913729be18a: port 1(vetheee79fd) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-8913729be18a: port 1(vetheee79fd) entered forwarding state"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-14T15:51:38+00:00	routerB	{"log":"","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-14T15:51:38+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1).","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9"}
+2024-05-14T15:51:38+00:00	routerB	{"source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al.","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":""}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# conf t"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config)# router ospf "}
+2024-05-14T15:51:38+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.1.0.0/24 area 0","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.2.0.0/24 area 0"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.3.0.0/24 area 0"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth1: renamed from veth0afcb59"}
+2024-05-14T15:51:38+00:00	routerB	{"container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# end"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-dd0ed392c637: port 1(veth5c2234e) entered blocking state"}
+2024-05-14T15:51:38+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# ","container_id":"466326132d9de07db35a0cf1eeb40a1e30762563ef383e2d2c3b8bdff602bbc9"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-dd0ed392c637: port 1(veth5c2234e) entered forwarding state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"eth2: renamed from veth8f11afb"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b1fde4169f41: port 1(veth30ecb9c) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"br-b1fde4169f41: port 1(veth30ecb9c) entered forwarding state"}
+2024-05-14T15:51:39+00:00	routerC	{"container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-14T15:51:39+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-14T15:51:39.148397] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597"}
+2024-05-14T15:51:39+00:00	routerC	{"log":"[2024-05-14T15:51:39.203624] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stderr"}
+2024-05-14T15:51:39+00:00	routerC	{"container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"   ...done."}
+2024-05-14T15:51:39+00:00	routerC	{"container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-14T15:51:39+00:00	routerC	{"container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout","log":""}
+2024-05-14T15:51:39+00:00	routerC	{"container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1)."}
+2024-05-14T15:51:39+00:00	routerC	{"source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al.","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:51:39+00:00	routerC	{"source":"stdout","log":"","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:51:39+00:00	routerC	{"log":"RCrouter# conf t","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:51:39+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config)# router ospf ","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597"}
+2024-05-14T15:51:39+00:00	routerC	{"container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# network 10.2.0.0/24 area 0"}
+2024-05-14T15:51:39+00:00	routerC	{"log":"RCrouter(config-router)# network 10.0.1.0/24 area 0","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:51:39+00:00	routerC	{"log":"RCrouter(config-router)# network 10.0.2.0/24 area 0","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-14T15:51:39+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# end","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597"}
+2024-05-14T15:51:39+00:00	routerC	{"source":"stdout","log":"RCrouter# ","container_id":"ac528e8d26db9463ab73824c21c743e2585314ca71c42f85fb6eaeb7dfb42597","container_name":"/newenvironment_rc_router_1"}
+2024-05-14T15:52:23+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"67","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-14T15:51:38+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:51:39+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:51:39+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[YFT0P-5Q5YX] Forked background command [pid 32]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:51:39+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"47","message":"Cannot stop ospfd: pid 70 not running"}
+2024-05-14T15:51:39+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop staticd: pid 73 not running"}
+2024-05-14T15:51:39+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop bgpd: pid 63 not running"}
+2024-05-14T15:51:39+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop zebra: pid 58 not running"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"zebra","pid":"57","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"ospfd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"bgpd","pid":"62","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:39+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"staticd","pid":"72","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:39+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:51:39+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[YFT0P-5Q5YX] Forked background command [pid 32]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop bgpd: pid 62 not running"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"48","message":"Cannot stop zebra: pid 57 not running"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop ospfd: pid 69 not running"}
+2024-05-14T15:51:37+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop staticd: pid 72 not running"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth1: renamed from veth27fd6f2"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8913729be18a: port 2(vethba928db) entered blocking state"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8913729be18a: port 2(vethba928db) entered forwarding state"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"zebra","pid":"54","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"66","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"bgpd","pid":"59","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"staticd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:51:37+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"31","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth2: renamed from veth0718683"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8900d0b4d92e: port 1(veth9177570) entered blocking state"}
+2024-05-14T15:51:37+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8900d0b4d92e: port 1(veth9177570) entered forwarding state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth0: renamed from veth5321823"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8913729be18a: port 1(vetheee79fd) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-8913729be18a: port 1(vetheee79fd) entered forwarding state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth1: renamed from veth0afcb59"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-dd0ed392c637: port 1(veth5c2234e) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-dd0ed392c637: port 1(veth5c2234e) entered forwarding state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"eth2: renamed from veth8f11afb"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b1fde4169f41: port 1(veth30ecb9c) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-b1fde4169f41: port 1(veth30ecb9c) entered forwarding state"}
+2024-05-14T15:52:23+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"66","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-14T15:52:46+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:51:38+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[YFT0P-5Q5YX] Forked background command [pid 32]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-14T15:51:38+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"47","message":"Cannot stop staticd: pid 71 not running"}
+2024-05-14T15:51:38+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop ospfd: pid 68 not running"}
+2024-05-14T15:51:38+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop bgpd: pid 61 not running"}
+2024-05-14T15:51:38+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop zebra: pid 56 not running"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth0: renamed from veth5321823"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8913729be18a: port 1(vetheee79fd) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-8913729be18a: port 1(vetheee79fd) entered forwarding state"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"zebra","pid":"56","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"68","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"bgpd","pid":"61","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:39+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:51:39+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:51:39+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"31","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:52:46+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-14T15:51:38+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"staticd","pid":"71","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-14T15:51:38+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-14T15:51:38+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-14T15:51:38+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-14T15:51:38+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-14T15:51:38+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"31","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth1: renamed from veth0afcb59"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-dd0ed392c637: port 1(veth5c2234e) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-dd0ed392c637: port 1(veth5c2234e) entered forwarding state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"eth2: renamed from veth8f11afb"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b1fde4169f41: port 1(veth30ecb9c) entered blocking state"}
+2024-05-14T15:51:38+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"br-b1fde4169f41: port 1(veth30ecb9c) entered forwarding state"}
+2024-05-14T15:52:23+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"68","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.2.0.20 Negotiation done (Master)."}
+2024-05-14T15:52:46+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
