@@ -3,6 +3,10 @@
 #FROM fluent/fluentd:v1.12-1
 FROM fluentd
 USER root
+RUN apk add --update --no-cache python3 py3-pip
+RUN pip3 install --upgrade pip
+RUN pip3 install https://github.com/better/alpine-tensorflow/releases/download/alpine3.7-tensorflow1.7.0/tensorflow-1.7.0-cp36-cp36m-linux_x86_64.whl
+RUN pip install scikit-learn
 #RUN ["gem", "install", "fluent-plugin-elasticsearch", "--no-document", "--version", "5.0.3"]
 #RUN gem install faraday-net_http -v 2.8.1
 RUN gem install fluent-plugin-elasticsearch --no-document --version 5.0.3

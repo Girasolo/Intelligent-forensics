@@ -1,7 +1,56 @@
 #!/usr/bin/env python3
 import sys
+import numpy as np
+import tensorflow as tf
+from sklearn.preprocessing import StandardScaler
+import json
+import joblib
+
+
+
+
+def extract_values(log_line):
+    # Split the log line by tabs
+    parts = log_line.split('\t')
+    
+    # Extract the JSON part of the log line
+    json_str = parts[-1].strip()
+    
+    # Load the JSON object
+    data = json.loads(json_str)
+    
+    # Extract values from the dictionary
+    values = list(data.values())
+    
+    # Exclude the first value
+    values_except_first = values[1:]
+    
+    # Convert values to NumPy array and reshape it to (1, 10)
+    values_array = np.array(values_except_first).reshape(1, -1)
+    
+    return values_array
+
+def process_log_line(log_line):
+
+    
+    # Extract values from the log line
+    values = extract_values(log_line)
+    
+    # Scale the data
+    fields_scaled = scaler.transform(values)
+    
+    # Predict using the classifier
+    y = classifierLoad.predict(fields_scaled)
+    
+    return res
 
 # Check if there are command-line arguments
+classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
+
+# Load the StandardScaler
+scaler = joblib.load('std_scaler.bin')
+
+
 if len(sys.argv) > 1:
     input = open(sys.argv[-1],'r')
     output = open("/shared-volume/prediction/temp.txt", "a")
@@ -10,9 +59,10 @@ if len(sys.argv) > 1:
 
     for line in lines:
         # Process the line here
-        print("Received line:", line.strip())  # Example processing, printing the line
-        # You can replace the print statement with your actual processing logic
-        output.write("Received line: " + line.strip() + '\n')
+        res = 0
+        res = process_log_line(line)
+
+        output.write("Received line: " + line.strip() + '\n' + 'result: ' + res + '\n')
 else:
     output = open("/shared-volume/prediction/temp.txt", "a")
     print("No log data received.")

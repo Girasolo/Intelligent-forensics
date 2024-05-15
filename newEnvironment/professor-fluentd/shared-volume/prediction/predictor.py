@@ -1,25 +1,55 @@
-import os
-import time
+import numpy as np
+import tensorflow as tf
+from sklearn.preprocessing import StandardScaler
 
-fifo_path = '/fluentd/output/DoS/dospredictorPIPE'
+# Load the trained model
+classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
 
-# Open the named pipe file for reading
-with open(fifo_path, 'r') as fifo:
-    # Loop indefinitely to continuously read log lines from the named pipe
-    with open('temp.txt','a') as file:
-        while True:
-            # Read a line from the named pipe
-            line = fifo.readline()
-            
-            # Check if the line is not empty
-            if line:
-                # Process the log line here
-                # For demonstration purposes, let's just print the log line
-                print("kjadfj")
-                file.write("Received log line:", line.strip())
-                # Perform your custom processing on the log line
-                # Replace this with your actual processing logic
-            else:
-                # If the line is empty, it means there's no more data in the pipe
-                # Wait for a short duration before checking again
-                time.sleep(0.1)  # Adjust the sleep duration as needed
+# Function to parse resultLife file
+def parse_result_life(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+        metrics = {}
+        for line in lines[1:]:
+            parts = line.strip().split('\t')
+            metric = parts[0]
+            mean = float(parts[1])
+            variance = float(parts[2])
+            metrics[metric] = (mean, variance)
+        return metrics
+
+# Function to parse resultTrace file
+def parse_result_trace(file_path):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+        open_connections = int(lines[0].split(':')[1].strip())
+        closed_connections = int(lines[1].split(':')[1].strip())
+        mean_time = float(lines[2].split(':')[1].strip())
+        variance_time = float(lines[3].split(':')[1].strip())
+        return open_connections, closed_connections, mean_time, variance_time
+
+# Paths to result files
+resultLife_path = 'resultLife.txt'
+resultTrace_path = 'resultTrace.txt'
+
+# Parse resultLife and resultTrace files
+resultLife_data = parse_result_life(resultLife_path)
+resultTrace_data = parse_result_trace(resultTrace_path)
+
+# Extract required values
+mediabtx, varbtx = resultLife_data.get('TX', (0.0, 0.0))
+mediabrx, varbrx = resultLife_data.get('RX', (0.0, 0.0))
+medialat, varlat = resultLife_data.get('MS', (0.0, 0.0))
+openC, closedC, mean_time, variance_time = resultTrace_data
+
+# Define fields list
+fields = [float(mediabtx), float(mediabrx), float(varbtx), float(varbrx), float(medialat),
+          float(varlat), float(openC), float(closedC), float(mean_time), float(variance_time)]
+
+# Scale the data if needed
+scaler = StandardScaler()
+fields_scaled = scaler.fit_transform(np.array(fields).reshape(1, -1))
+
+# Predict using the classifier
+y = classifierLoad.predict(fields_scaled)
+print(y)
