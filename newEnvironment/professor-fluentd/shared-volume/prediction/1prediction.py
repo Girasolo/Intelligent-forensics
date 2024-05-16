@@ -42,19 +42,25 @@ def process_log_line(log_line):
     # Predict using the classifier
     y = classifierLoad.predict(fields_scaled)
     
-    return res
+    return y
 
 # Check if there are command-line arguments
-classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
+classifierLoad = tf.keras.models.load_model('/shared-volume/prediction/MLP_11agosto.keras', compile=False)
 
 # Load the StandardScaler
-scaler = joblib.load('std_scaler.bin')
+scaler = joblib.load('/shared-volume/prediction/std_scaler.bin')
 
 
 if len(sys.argv) > 1:
-    input = open(sys.argv[-1],'r')
+    
     output = open("/shared-volume/prediction/temp.txt", "a")
+    output.write(sys.argv[-1])
+    try:
+        input = open(sys.argv[-1],'r')
         # Process each command-line argument (each log line)
+    except IOError as e:
+        output.write(str(e))
+
     lines = input.readlines()
 
     for line in lines:
@@ -62,7 +68,10 @@ if len(sys.argv) > 1:
         res = 0
         res = process_log_line(line)
 
-        output.write("Received line: " + line.strip() + '\n' + 'result: ' + res + '\n')
+        output.write("Received line: " + line.strip() + '\n' + 'result: ' + str(res) + '\n')
+
+    output.close()
+    input.close()
 else:
     output = open("/shared-volume/prediction/temp.txt", "a")
     print("No log data received.")

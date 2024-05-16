@@ -8,7 +8,8 @@ services:
       dockerfile: Dockerfile_professor-fluentd
     privileged: true
     #the container as first instruction executes the entrypoint (since the image doesn't support bash it's used sh)
-    entrypoint: sh -c "/ep_fluentd.sh"
+    #entrypoint: sh -c "entrypoints/ep_fluentd.sh" alpine version
+    entrypoint: entrypoints/ep_fluentd.sh
     #shared-volumes between fluentd and the host
     volumes:
       - ./professor-fluentd/conf/fluent.conf:/fluentd/etc/fluent.conf 

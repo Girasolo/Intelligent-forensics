@@ -1,0 +1,24 @@
+/var/lib/fluentd/predictor_dos_logs_buffer/buffer.q61891f6d1063321b01b57f8c324c1388.log/var/lib/fluentd/predictor_dos_logs_buffer/buffer.q61891fb4a3aea02efa28144caeabd89f.log/var/lib/fluentd/predictor_dos_logs_buffer/buffer.q618920b87ffae4795e3b41d4539dd1d2.log
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: 0
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: 0
+Received line: {"final result":"10.100.0.2","tx_mean":4.0,"rx_mean":5.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":129.16,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.0505,"variance_time":0.0025502500000000004}
+result: 0
+/var/lib/fluentd/predictor_dos_logs_buffer/buffer.q618921001190ab64927ad98cf14810e6.log
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: 0
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+result: 0
+/var/lib/fluentd/predictor_dos_logs_buffer/buffer.q618921aa67a83931fcfd865fb963ef16.logReceived line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":221.5,"rx_mean":1.0,"tx_var":49062.25,"rx_var":1.0,"ms_mean":35.5,"ms_var":1056.25,"open_connections":3,"closed_connections":2,"mean_time":2.5671666666666666,"variance_time":14.058876805555556}
+result: [[5.0255338e-09]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+/var/lib/fluentd/predictor_dos_logs_buffer/buffer.q618921f1ffe4110eea7608dfa614c2aa.logReceived line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":3,"closed_connections":1,"mean_time":1.3595,"variance_time":4.5146327500000005}
+result: [[0.00051414]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00510207]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]

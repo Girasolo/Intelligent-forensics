@@ -1,20 +1,27 @@
 # fluentd/Dockerfile
 
-#FROM fluent/fluentd:v1.12-1
-FROM fluentd
+FROM fluent/fluentd:v1.17.0-debian-amd64-1.0
+#FROM fluentd
 USER root
-RUN apk add --update --no-cache python3 py3-pip
-RUN pip3 install --upgrade pip
-RUN pip3 install https://github.com/better/alpine-tensorflow/releases/download/alpine3.7-tensorflow1.7.0/tensorflow-1.7.0-cp36-cp36m-linux_x86_64.whl
-RUN pip install scikit-learn
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip
+    
+RUN apt install -y python3-venv
+    
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
+RUN apt-get install -y iproute2
+# Install packages within the virtual environment
+RUN pip install tensorflow scikit-learn numpy joblib
+
 #RUN ["gem", "install", "fluent-plugin-elasticsearch", "--no-document", "--version", "5.0.3"]
 #RUN gem install faraday-net_http -v 2.8.1
 RUN gem install fluent-plugin-elasticsearch --no-document --version 5.0.3
 RUN gem update fluentd
+#RUN apt upgrade fluentd
 #RUN cat /fluentd/etc/fluent.conf >> /usr/lib/ruby/gems/3.1.0/gems/fluentd-1.16.2/fluent.conf
-
-RUN apk add python3
 #RUN cd sbin && cd ..
-COPY ep_fluentd.sh /ep_fluentd.sh
+COPY entrypoints/ep_fluentd.sh entrypoints/ep_fluentd.sh
 
-RUN chmod +x /ep_fluentd.sh
+RUN chmod +x entrypoints/ep_fluentd.sh

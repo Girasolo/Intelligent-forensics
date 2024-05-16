@@ -71,6 +71,7 @@ def sendResult():
                 "variance_time" : variance_time
                 }
                 # Send data to Fluentd
+        print(dataToSend)
         logger.emit('tracer.logs', dataToSend)
         barrier_result.wait()
 
@@ -118,24 +119,18 @@ def tcplife_receiver(client_socket):
                         # Send data to Fluentd
                         logger.emit('tracer.logs', data)
                         '''
-                        print("LIFE\tmean: ", mean, "variance", variance)
-                    else:
-                        #mean, variance = [(0,0,0),(0,0,0)]
-                        
-                        print("LIFE\tmean: ", mean, "variance", variance)
+                        #print("LIFE\tmean: ", mean, "variance", variance)
                     barrier_result.wait()
                     barrier_result.wait()
                     lifedata = []
                     mean, variance = [(0,0,0),(0,0,0)]
-
-#                    printBarrirer.wait()
-                    continue
-                data = data.strip().split()
-                #print(data)
-                tx_kb = float(data[6])
-                rx_kb = float(data[7])
-                ms = float(data[8])
-                lifedata.append((tx_kb, rx_kb, ms))
+                else:
+                    data = data.strip().split()
+                    #print(data)
+                    tx_kb = float(data[6])
+                    rx_kb = float(data[7])
+                    ms = float(data[8])
+                    lifedata.append((tx_kb, rx_kb, ms))
                 # Print the received data
     finally:
         client_socket.close()
@@ -173,28 +168,21 @@ def tcptracer_receiver(client_socket):
                     # Send data to Fluentd
                     logger.emit('tracer.logs', data)
                     '''
-                    print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
-                else:
-                    #mean_time ,variance_time = 0,0
-                    # Send data to Fluentd
-                    logger.emit('tracer.logs', data)
-                    print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
+                    #print("TRACER\topenC: ", open_connections, "closedC", closed_connections, "mean: ", mean_time, "variance", variance_time)
                 barrier_result.wait()
                 barrier_result.wait()
                 tracerTimes = []
                 open_connections = 0
                 closed_connections = 0
                 mean_time ,variance_time = 0,0
-
-#                printBarrirer.wait()
-                continue
-            data = data.strip().split()
-            #print(data)
-            if data[1] == 'C':
-                open_connections += 1
-            elif data[1] == 'X':
-                closed_connections += 1
-            tracerTimes.append(float(data[0]))
+            else:
+                data = data.strip().split()
+                #print(data)
+                if data[1] == 'C':
+                    open_connections += 1
+                elif data[1] == 'X':
+                    closed_connections += 1
+                tracerTimes.append(float(data[0]))
             # Print the received data
     finally:
         client_socket.close()
