@@ -54,7 +54,6 @@ scaler = joblib.load('/shared-volume/prediction/std_scaler.bin')
 if len(sys.argv) > 1:
     
     output = open("/shared-volume/prediction/temp.txt", "a")
-    output.write(sys.argv[-1])
     try:
         input = open(sys.argv[-1],'r')
         # Process each command-line argument (each log line)

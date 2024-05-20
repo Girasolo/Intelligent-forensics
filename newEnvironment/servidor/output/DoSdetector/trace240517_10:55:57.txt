@@ -1,0 +1,2 @@
+Tracing TCP established connections. Ctrl-C to end.
+TIME(s)  T  PID    COMM             IP SADDR            DADDR            SPORT  DPORT 

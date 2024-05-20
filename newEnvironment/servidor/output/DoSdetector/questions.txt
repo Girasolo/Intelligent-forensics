@@ -1,6 +1,0 @@
-1) in tcptrace how do I calculate the difference of time in cases in which a connection is opened but never closed and viceversa?
-2) - where can I find the compiled model?
-3) - to Ionut: shall I also copy the transformation parameters? precisely the scaler, which, as I understood, would answer to the last question present in the code
-4) how is it better to test attacks? 
-5) should I send the admin the integral files or can I just send the line to be tested? Shall I group them and then send them (for example store the lines of every 0.5 sec and send them when the admin ask for it)?
-6) until now it seems to me that I didn't do anything different from your work. How can I diversificate it?
