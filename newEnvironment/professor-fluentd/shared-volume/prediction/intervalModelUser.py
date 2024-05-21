@@ -6,6 +6,9 @@ import joblib
 
 
 def select_lines_by_time(lines, time_range):
+    '''
+    Selects the lines with a specific time range.
+    '''
     selected_lines = []
     
     for line in lines:
@@ -25,6 +28,10 @@ def select_lines_by_time(lines, time_range):
     return selected_lines
 
 def extract_values(log_line):
+    """
+    Extracts the values of the line
+    [tx_mean] [rx_mean] [tx_var] [rx_var] [ms_mean] [ms_var] [open_connections] [closed_connections] [mean_time] [variance_time]
+    """
     # Split the log line by tabs
     parts = log_line.split('\t')
     
@@ -46,7 +53,9 @@ def extract_values(log_line):
     return values_array
 
 def process_log_line(log_line):
-
+    """
+    Classifies the probability of the entry of beeing not-malicious or malicious
+    """
     
     # Extract values from the log line
     values = extract_values(log_line)
@@ -60,22 +69,29 @@ def process_log_line(log_line):
     print("Prediction:", y)
 
 def main(log_file):
+    '''
+    Main function:
+    * open the file
+    * select the interested lines
+    * process the entries
+    * print the result for each line
+    '''
     # Open the log file
     with open(log_file, 'r') as file:
         # Read lines until the first line that falls outside the time interval
-        for line in file:
-            timestamp = line.split('\t')[0]
-            hour_minute = timestamp.split('T')[1][:5]
-            if hour_minute > end_time:
-                break
-        else:
-            # If the loop completes without breaking, rewind the file pointer
-            file.seek(0)
+        # for line in file:
+        #     timestamp = line.split('\t')[0]
+        #     hour_minute = timestamp.split('T')[1][:5]
+        #     if hour_minute > end_time:
+        #         break
+        #     else:
+        #     # If the loop completes without breaking, rewind the file pointer
+        #     file.seek(0)
         
         # Read the remaining lines and select those within the time interval
         selected_lines = select_lines_by_time(file, (start_time, end_time))
         
-        # Print selected lines
+        # Print selected lines and the prediction
         if selected_lines:
             for line in selected_lines:
                 process_log_line(line)
@@ -89,7 +105,7 @@ if __name__ == "__main__":
     # Create argument parser
     parser = argparse.ArgumentParser(description="Select log lines based on time.")
     
-    # Add arguments
+    # Add arguments : the name of the logfile
     parser.add_argument("log_file", type=str, help="Path to the log file")
     
     # Parse arguments
@@ -98,9 +114,10 @@ if __name__ == "__main__":
     # Prompt the user to enter the time or time interval
     start_time, end_time = None, None
 
+    # Load the model
     classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
 
-# Load the StandardScaler
+    # Load the StandardScaler
     scaler = joblib.load('std_scaler.bin')
 
     while True:
@@ -110,6 +127,7 @@ if __name__ == "__main__":
             break
         
         # Extract time range
+        # If only one time is given it will be considered as start and end time
         if len(time_input.split()) == 1:
             start_time = time_input
             end_time = time_input

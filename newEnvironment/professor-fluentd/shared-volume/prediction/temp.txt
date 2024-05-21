@@ -106,3 +106,105 @@ Received line: {"final result":"10.100.0.2","tx_mean":64.6,"rx_mean":0.6,"tx_var
 result: [[0.0041218]]
 /var/lib/fluentd/predictor_dos_logs_buffer/buffer.q618a57d429b1fa79ad06611548a8d07c.logReceived line: {"final result":"10.100.0.2","tx_mean":80.0,"rx_mean":0.6666666666666666,"tx_var":0.0,"rx_var":0.22222222222222224,"ms_mean":1.3333333333333333,"ms_var":0.888888888888889,"open_connections":0,"closed_connections":3,"mean_time":0.3336666666666666,"variance_time":0.22266688888888886}
 result: [[0.01523222]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":35.75,"ms_var":0.0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00610651]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00510207]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":3.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":60880.06,"ms_var":0.0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+result: [[0.02042105]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":77.03,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.0195,"variance_time":0.00038025}
+result: [[0.00529602]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":207.84,"ms_var":0.0,"open_connections":2,"closed_connections":1,"mean_time":0.3075,"variance_time":0.23079825}
+result: [[0.00121158]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":32.33,"ms_var":0.0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00610583]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":3.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":60861.35,"ms_var":0.0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+result: [[0.0204151]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":66.41,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.0165,"variance_time":0.00027225000000000003}
+result: [[0.0054064]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":1,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00510207]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":2,"mean_time":7.6805,"variance_time":58.990080250000005}
+result: [[3.4122093e-06]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":211.06,"ms_var":0.0,"open_connections":3,"closed_connections":1,"mean_time":1.3024,"variance_time":4.4726614399999995}
+result: [[0.00053832]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":0.017144518837948253,"ms_var":0.011513484334459815,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":0.023458900326387148,"ms_var":0.0007268720617583303,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.00514031]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":1,"mean_time":0.054,"variance_time":0.0029159999999999998}
+result: [[0.00414993]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":2977.85,"ms_var":0.0,"open_connections":1,"closed_connections":2,"mean_time":1.1023333333333334,"variance_time":1.7806375555555558}
+result: [[0.00061235]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":83.24,"ms_var":0.0,"open_connections":21,"closed_connections":2,"mean_time":0.03173913043478262,"variance_time":0.0002003667296786389}
+result: [[0.13148473]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":48.027499999999996,"ms_var":119.51409374999999,"open_connections":659,"closed_connections":8,"mean_time":0.037484257871064464,"variance_time":4.117029191551152e-05}
+result: [[1.]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":52.446250000000006,"ms_var":532.5227234375001,"open_connections":666,"closed_connections":9,"mean_time":0.03695851851851851,"variance_time":6.306790891632373e-05}
+result: [[1.]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":29673.321898976978,"ms_var":297249883.2822679,"open_connections":237,"closed_connections":1564,"mean_time":0.004848972792892836,"variance_time":0.00015816153281491773}
+result: [[1.]]
+Received line: {"final result":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]
+Received line: {"final result":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":257.12,"ms_var":0.0,"open_connections":1,"closed_connections":1,"mean_time":0.075,"variance_time":0.005625}
+result: [[0.00361263]]

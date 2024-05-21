@@ -11,6 +11,10 @@ classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
 scaler = joblib.load('std_scaler.bin')
 
 def extract_values(log_line):
+    """
+    Extracts the values of the line
+    [tx_mean] [rx_mean] [tx_var] [rx_var] [ms_mean] [ms_var] [open_connections] [closed_connections] [mean_time] [variance_time]
+    """
     # Split the log line by tabs
     parts = log_line.split('\t')
     
@@ -31,8 +35,11 @@ def extract_values(log_line):
     
     return values_array
 
-# Function to process log lines until 'exit' is entered
 def process_log_lines():
+    """
+    Classifies the probability of the entry of beeing not-malicious or malicious
+    Processes log lines until 'exit' is entered
+    """
     while True:
         log_line = input("Enter log line (or 'exit' to quit): ")
         if log_line == 'exit':

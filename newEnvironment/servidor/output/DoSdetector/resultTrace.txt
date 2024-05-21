@@ -1,4 +1,0 @@
-Open Connections: 3
-Closed Connections: 4
-Mean Time: 1.643
-Variance Time: 6.375

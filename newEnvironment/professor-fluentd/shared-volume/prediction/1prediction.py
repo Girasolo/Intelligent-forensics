@@ -10,6 +10,10 @@ import joblib
 
 
 def extract_values(log_line):
+    """
+    Extracts the values of the line
+    [tx_mean] [rx_mean] [tx_var] [rx_var] [ms_mean] [ms_var] [open_connections] [closed_connections] [mean_time] [variance_time]
+    """
     # Split the log line by tabs
     parts = log_line.split('\t')
     
@@ -25,18 +29,20 @@ def extract_values(log_line):
     # Exclude the first value
     values_except_first = values[1:]
     
-    # Convert values to NumPy array and reshape it to (1, 10)
+    # Convert values to NumPy array and reshape it to (1, 10). This shape is needed for the model
     values_array = np.array(values_except_first).reshape(1, -1)
     
     return values_array
 
 def process_log_line(log_line):
-
+    """
+    Classifies the probability of the entry of beeing not-malicious or malicious
+    """
     
     # Extract values from the log line
     values = extract_values(log_line)
     
-    # Scale the data
+    # Scale the data with the same scaler of the training set
     fields_scaled = scaler.transform(values)
     
     # Predict using the classifier
@@ -44,7 +50,7 @@ def process_log_line(log_line):
     
     return y
 
-# Check if there are command-line arguments
+# Load the model
 classifierLoad = tf.keras.models.load_model('/shared-volume/prediction/MLP_11agosto.keras', compile=False)
 
 # Load the StandardScaler
@@ -52,9 +58,11 @@ scaler = joblib.load('/shared-volume/prediction/std_scaler.bin')
 
 
 if len(sys.argv) > 1:
-    
+    # The result is appended in a file 
     output = open("/shared-volume/prediction/temp.txt", "a")
     try:
+        # In input receives the buffer defined in the fluent.conf file
+        # The buffer contains the entries and is read as a file
         input = open(sys.argv[-1],'r')
         # Process each command-line argument (each log line)
     except IOError as e:
@@ -63,7 +71,7 @@ if len(sys.argv) > 1:
     lines = input.readlines()
 
     for line in lines:
-        # Process the line here
+        # The line is processed here
         res = 0
         res = process_log_line(line)
 

@@ -1,0 +1,488 @@
+2024-05-21T11:36:37+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-05-21T11:36:37+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-05-21T11:36:37+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-05-21T11:36:37+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-05-21T11:35:52+00:00	routerB	{"log":" * Starting system logging syslog-ng","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-21T11:35:55+00:00	routerB	{"source":"stderr","log":"[2024-05-21T11:35:55.830511] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1"}
+2024-05-21T11:36:17+00:00	routerB	{"source":"stderr","log":"[2024-05-21T11:36:17.113986] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1"}
+2024-05-21T11:36:18+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"   ...done.","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab"}
+2024-05-21T11:36:26+00:00	routerB	{"log":" * Started watchfrr","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout"}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":""}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1)."}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-21T11:36:27+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab"}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# conf t"}
+2024-05-21T11:36:27+00:00	routerB	{"container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config)# router ospf ","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab"}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.1.0.0/24 area 0"}
+2024-05-21T11:36:27+00:00	routerB	{"source":"stdout","log":"RBrouter(config-router)# network 10.2.0.0/24 area 0","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1"}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter(config-router)# network 10.3.0.0/24 area 0"}
+2024-05-21T11:36:27+00:00	routerB	{"source":"stdout","log":"RBrouter(config-router)# end","container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1"}
+2024-05-21T11:36:27+00:00	routerB	{"container_id":"68101b5a9d3c9fa123822001697134a41ffae1254222e7028b75044fb2dd65ab","container_name":"/newenvironment_rb_router_1","source":"stdout","log":"RBrouter# "}
+2024-05-21T11:35:52+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-21T11:35:55+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-21T11:35:55.830361] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89"}
+2024-05-21T11:36:17+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stderr","log":"[2024-05-21T11:36:17.096359] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-21T11:36:18+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"   ...done.","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89"}
+2024-05-21T11:36:26+00:00	routerC	{"log":" * Started watchfrr","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-21T11:36:27+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":""}
+2024-05-21T11:36:27+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1)."}
+2024-05-21T11:36:27+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-21T11:36:27+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":""}
+2024-05-21T11:36:27+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter# conf t"}
+2024-05-21T11:36:27+00:00	routerC	{"log":"RCrouter(config)# router ospf ","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-21T11:36:27+00:00	routerC	{"source":"stdout","log":"RCrouter(config-router)# network 10.2.0.0/24 area 0","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1"}
+2024-05-21T11:36:27+00:00	routerC	{"source":"stdout","log":"RCrouter(config-router)# network 10.0.1.0/24 area 0","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1"}
+2024-05-21T11:36:27+00:00	routerC	{"log":"RCrouter(config-router)# network 10.0.2.0/24 area 0","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout"}
+2024-05-21T11:36:27+00:00	routerC	{"container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter(config-router)# end","container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89"}
+2024-05-21T11:36:27+00:00	routerC	{"container_id":"74efdd0626d2251a7543d6329d39b54b29f7604fc669f04b650243f5d8e03d89","container_name":"/newenvironment_rc_router_1","source":"stdout","log":"RCrouter# "}
+2024-05-21T11:35:53+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":" * Starting system logging syslog-ng","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:35:55+00:00	routerA	{"source":"stderr","log":"[2024-05-21T11:35:55.830396] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1"}
+2024-05-21T11:36:17+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stderr","log":"[2024-05-21T11:36:17.069907] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:36:18+00:00	routerA	{"log":"   ...done.","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-21T11:36:26+00:00	routerA	{"container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout","log":" * Started watchfrr"}
+2024-05-21T11:36:27+00:00	routerA	{"source":"stdout","log":"","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1"}
+2024-05-21T11:36:27+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"Hello, this is FRRouting (version 8.1).","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:36:27+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al.","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:36:27+00:00	routerA	{"container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout","log":""}
+2024-05-21T11:36:27+00:00	routerA	{"container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter# conf t"}
+2024-05-21T11:36:27+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# log file /shared-volume/frr/frrRouterA.log","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:36:27+00:00	routerA	{"container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"can't open logfile /shared-volume/frr/frrRouterA.log"}
+2024-05-21T11:36:27+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config)# router ospf","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:36:27+00:00	routerA	{"log":"RArouter(config-router)# network 10.100.0.0/24 area 0","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout"}
+2024-05-21T11:36:27+00:00	routerA	{"source":"stdout","log":"RArouter(config-router)# network 10.200.0.0/24 area 0","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1"}
+2024-05-21T11:36:27+00:00	routerA	{"container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# network 10.1.0.0/24 area 0","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f"}
+2024-05-21T11:36:27+00:00	routerA	{"container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1","source":"stdout","log":"RArouter(config-router)# end"}
+2024-05-21T11:36:27+00:00	routerA	{"source":"stdout","log":"RArouter# ","container_id":"fad22e949986c963f23aa55d5dddd1b8d431eae6f9c3be759aad9610f57e597f","container_name":"/newenvironment_ra_router_1"}
+2024-05-21T11:35:53+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Starting system logging syslog-ng"}
+2024-05-21T11:35:55+00:00	routerD	{"log":"[2024-05-21T11:35:55.830379] WARNING: Configuration file format is too old, syslog-ng is running in compatibility mode. Please update it to use the syslog-ng 3.35 format at your time of convenience. To upgrade the configuration, please review the warnings about incompatible changes printed by syslog-ng, and once completed change the @version header at the top of the configuration file; config-version='3.27'","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stderr"}
+2024-05-21T11:36:17+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stderr","log":"[2024-05-21T11:36:17.069464] WARNING: The internal_queue_length stat counter has been renamed to internal_source.queued. The old name will be removed in future versions; config-version='3.27'"}
+2024-05-21T11:36:18+00:00	routerD	{"source":"stdout","log":"   ...done.","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1"}
+2024-05-21T11:36:26+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":" * Started watchfrr","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f"}
+2024-05-21T11:36:27+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":"","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f"}
+2024-05-21T11:36:27+00:00	routerD	{"log":"Hello, this is FRRouting (version 8.1).","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout"}
+2024-05-21T11:36:27+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"Copyright 1996-2005 Kunihiro Ishiguro, et al."}
+2024-05-21T11:36:27+00:00	routerD	{"source":"stdout","log":"","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1"}
+2024-05-21T11:36:27+00:00	routerD	{"source":"stdout","log":"RDrouter# conf t","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1"}
+2024-05-21T11:36:27+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config)# router ospf "}
+2024-05-21T11:36:27+00:00	routerD	{"source":"stdout","log":"RDrouter(config-router)# network 10.3.0.0/24 area 0","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1"}
+2024-05-21T11:36:27+00:00	routerD	{"container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# network 10.0.3.0/24 area 0","container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f"}
+2024-05-21T11:36:27+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# network 10.0.4.0/24 area 0"}
+2024-05-21T11:36:27+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter(config-router)# end"}
+2024-05-21T11:36:27+00:00	routerD	{"container_id":"af7ec8a72b52cfce4ac6c3319cb513b25c5c5c490e091559bb85563e696aef8f","container_name":"/newenvironment_rd_router_1","source":"stdout","log":"RDrouter# "}
+2024-05-21T11:36:16+00:00	servidor	{"source":"stdout","log":"Reading package lists...","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1"}
+2024-05-21T11:36:17+00:00	servidor	{"log":"Building dependency tree...","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-21T11:36:17+00:00	servidor	{"source":"stdout","log":"Reading state information...","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1"}
+2024-05-21T11:36:20+00:00	servidor	{"container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1","source":"stdout","log":"linux-headers-6.5.0-35-generic is already the newest version (6.5.0-35.35~22.04.1)."}
+2024-05-21T11:36:20+00:00	servidor	{"container_name":"/newenvironment_servidor_1","source":"stdout","log":"0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1"}
+2024-05-21T11:36:37+00:00	servidor	{"container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1","source":"stdout","log":""}
+2024-05-21T11:36:37+00:00	servidor	{"log":"> my-test-server@1.0.0 start","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-21T11:36:37+00:00	servidor	{"log":"> node server.js","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1","source":"stdout"}
+2024-05-21T11:36:37+00:00	servidor	{"container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1","source":"stdout","log":""}
+2024-05-21T11:36:38+00:00	servidor	{"source":"stdout","log":"Server is listening at http://localhost:3000","container_id":"a3f29063bc6c8c0bf652aaaf71d34d7e825d76271706adb65e02e6b3196b7fc1","container_name":"/newenvironment_servidor_1"}
+2024-05-21T11:36:17+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-21T11:36:17+00:00	syslog.syslog.err	{"host":"RArouter","ident":"syslog-ng","pid":"16","message":"Syslog connection failed; fd='15', server='AF_INET(10.200.0.2:5140)', error='Connection refused (111)', time_reopen='60'"}
+2024-05-21T11:36:17+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:21+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[YFT0P-5Q5YX] Forked background command [pid 37]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"57","message":"Cannot stop zebra: pid 57 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop staticd: pid 72 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop ospfd: pid 69 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RArouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop bgpd: pid 62 not running"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RArouter","ident":"zebra","pid":"59","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"71","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RArouter","ident":"bgpd","pid":"64","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RArouter","ident":"staticd","pid":"74","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RArouter","ident":"watchfrr","pid":"36","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-21T11:36:27+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:38+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:48+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:59+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:07+00:00	syslog.daemon.info	{"host":"RArouter","ident":"ospfd","pid":"71","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-21T11:37:09+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:17+00:00	syslog.syslog.notice	{"host":"RArouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='18', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-21T11:37:20+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:17+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"17","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-21T11:36:17+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-21T11:36:17+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:21+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[YFT0P-5Q5YX] Forked background command [pid 35]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop zebra: pid 58 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"54","message":"Cannot stop staticd: pid 73 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop bgpd: pid 63 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RBrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop ospfd: pid 70 not running"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"zebra","pid":"57","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"bgpd","pid":"62","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"staticd","pid":"72","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-21T11:36:17+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"16","message":"syslog-ng starting up; version='3.35.1'"}
+2024-05-21T11:36:17+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:21+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[YFT0P-5Q5YX] Forked background command [pid 35]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"55","message":"Cannot stop staticd: pid 73 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"51","message":"Cannot stop ospfd: pid 70 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"53","message":"Cannot stop zebra: pid 58 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RCrouter","ident":"watchfrr.sh","pid":"49","message":"Cannot stop bgpd: pid 63 not running"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"zebra","pid":"57","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"ospfd","pid":"69","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"bgpd","pid":"62","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RCrouter","ident":"staticd","pid":"72","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-21T11:36:17+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:21+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[T83RR-8SM5G] watchfrr 8.1 starting: vty@0"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[ZCJ3S-SPH5S] zebra state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[ZCJ3S-SPH5S] bgpd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[ZCJ3S-SPH5S] ospfd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[ZCJ3S-SPH5S] staticd state -> down : initial connection attempt failed"}
+2024-05-21T11:36:21+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[YFT0P-5Q5YX] Forked background command [pid 36]: /usr/lib/frr/watchfrr.sh restart all"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"50","message":"Cannot stop staticd: pid 71 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"52","message":"Cannot stop bgpd: pid 61 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"56","message":"Cannot stop ospfd: pid 68 not running"}
+2024-05-21T11:36:22+00:00	syslog.daemon.err	{"host":"RDrouter","ident":"watchfrr.sh","pid":"54","message":"Cannot stop zebra: pid 56 not running"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"zebra","pid":"58","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"70","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"bgpd","pid":"63","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"staticd","pid":"73","message":"[VTVCM-Y2NW3] Configuration Read in Took: 00:00:00"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[QDG3Y-BY5TN] zebra state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RDrouter","ident":"watchfrr","pid":"35","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-21T11:36:27+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:38+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:48+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:59+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:09+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:12+00:00	syslog.daemon.info	{"host":"RDrouter","ident":"ospfd","pid":"70","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.3.0.10 Negotiation done (Master)."}
+2024-05-21T11:37:20+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:25+00:00	syslog.syslog.notice	{"host":"RDrouter","ident":"syslog-ng","pid":"17","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RBrouter","ident":"watchfrr","pid":"34","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-21T11:36:27+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:38+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:48+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:59+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:07+00:00	syslog.daemon.info	{"host":"RBrouter","ident":"ospfd","pid":"69","message":"[S5PCG-77H23] Packet[DD]: Neighbor 10.2.0.20 Negotiation done (Master)."}
+2024-05-21T11:37:09+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:20+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:25+00:00	syslog.syslog.notice	{"host":"RBrouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] bgpd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] ospfd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[QDG3Y-BY5TN] staticd state -> up : connect succeeded"}
+2024-05-21T11:36:26+00:00	syslog.daemon.notice	{"host":"RCrouter","ident":"watchfrr","pid":"34","message":"[KWE5Q-QNGFC] all daemons up, doing startup-complete notify"}
+2024-05-21T11:36:27+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:38+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:48+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:36:59+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:09+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:20+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:25+00:00	syslog.syslog.notice	{"host":"RCrouter","ident":"syslog-ng","pid":"16","message":"Syslog connection established; fd='15', server='AF_INET(10.200.0.2:5140)', local='AF_INET(0.0.0.0:0)'"}
+2024-05-21T11:37:30+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:30+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:30+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:30+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:41+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:41+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:41+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:41+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:51+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:51+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:51+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:37:51+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:02+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:02+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:02+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:02+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:12+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:12+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:12+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:12+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:23+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:23+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:23+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:23+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:33+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:33+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:33+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:33+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:44+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:44+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:44+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:44+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:54+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:54+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:54+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:38:54+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:05+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:05+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:05+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:05+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:15+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:15+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:15+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:15+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:26+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:26+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:26+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:26+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:36+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:36+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:36+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:36+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:47+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:47+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:47+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:47+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:57+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:57+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:57+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:39:57+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:08+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:08+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:08+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:08+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:18+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:18+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:18+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:18+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:22+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:29+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:29+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:29+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:29+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: authenticate with fc:12:63:4b:06:1f"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: 80 MHz not supported, disabling VHT"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 2/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 2/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 2/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: send auth to fc:12:63:4b:06:1f (try 2/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: authenticated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: associate with fc:12:63:4b:06:1f (try 1/3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: RX AssocResp from fc:12:63:4b:06:1f (capab=0xc11 status=0 aid=3)"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:33+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: associated"}
+2024-05-21T11:40:39+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:39+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:39+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:39+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:50+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:50+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:50+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:40:50+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:00+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:00+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:00+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:00+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:11+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:11+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:11+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:11+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:21+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:21+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:21+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:21+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:32+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:32+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:32+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:32+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:42+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:42+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:42+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:42+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:53+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:53+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:53+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:41:53+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:03+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:03+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:03+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:03+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:14+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:14+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:14+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:14+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:24+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:24+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:24+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:24+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:35+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:35+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:35+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:35+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:45+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:45+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:45+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:45+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:56+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:56+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:56+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:42:56+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:06+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:06+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:06+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:06+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:17+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:17+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:17+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:17+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:27+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:27+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:27+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:27+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:38+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:38+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:38+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:38+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:48+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:48+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:48+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:48+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:59+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:59+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:59+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:43:59+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:09+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:09+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:09+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:09+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:20+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:20+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:20+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:20+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:30+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:30+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:30+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:30+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:41+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:41+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:41+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:41+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:51+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:51+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:51+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:44:51+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:02+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:02+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:02+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:02+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:12+00:00	syslog.kern.err	{"host":"RDrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:12+00:00	syslog.kern.err	{"host":"RCrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:12+00:00	syslog.kern.err	{"host":"RBrouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:12+00:00	syslog.kern.err	{"host":"RArouter","ident":"kernel","message":"Bluetooth: hci0: unexpected event for opcode 0x2005"}
+2024-05-21T11:45:13+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-ed7da7abd33f: port 2(veth739a2c9) entered disabled state"}
+2024-05-21T11:45:13+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth82af778: renamed from eth0"}
+2024-05-21T11:45:13+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-ed7da7abd33f: port 2(veth739a2c9) entered disabled state"}
+2024-05-21T11:45:13+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth82af778: renamed from eth0"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-ed7da7abd33f: port 2(veth739a2c9) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-ed7da7abd33f: port 2(veth739a2c9) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth739a2c9 (unregistering): left allmulticast mode"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth739a2c9 (unregistering): left allmulticast mode"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth739a2c9 (unregistering): left promiscuous mode"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-ed7da7abd33f: port 2(veth739a2c9) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth739a2c9 (unregistering): left promiscuous mode"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-ed7da7abd33f: port 2(veth739a2c9) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-c49106cf23ac: port 2(vethe879284) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-c49106cf23ac: port 2(vethe879284) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethd605595: renamed from eth0"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethd605595: renamed from eth0"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-f8e68c555d56: port 2(veth97cf91d) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-f8e68c555d56: port 2(veth97cf91d) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth4a25f22: renamed from eth0"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth4a25f22: renamed from eth0"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-480b72c9f33e: port 3(vethe37e75d) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-480b72c9f33e: port 3(vethe37e75d) entered disabled state"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth2ed219a: renamed from eth0"}
+2024-05-21T11:45:14+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth2ed219a: renamed from eth0"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-c49106cf23ac: port 2(vethe879284) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-c49106cf23ac: port 2(vethe879284) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethe879284 (unregistering): left allmulticast mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethe879284 (unregistering): left promiscuous mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-c49106cf23ac: port 2(vethe879284) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethe879284 (unregistering): left allmulticast mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethe879284 (unregistering): left promiscuous mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-c49106cf23ac: port 2(vethe879284) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-f8e68c555d56: port 2(veth97cf91d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-f8e68c555d56: port 2(veth97cf91d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth97cf91d (unregistering): left allmulticast mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth97cf91d (unregistering): left allmulticast mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth97cf91d (unregistering): left promiscuous mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-f8e68c555d56: port 2(veth97cf91d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth97cf91d (unregistering): left promiscuous mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-f8e68c555d56: port 2(veth97cf91d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-480b72c9f33e: port 3(vethe37e75d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethe37e75d (unregistering): left allmulticast mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"vethe37e75d (unregistering): left promiscuous mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-480b72c9f33e: port 3(vethe37e75d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethe37e75d (unregistering): left allmulticast mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"vethe37e75d (unregistering): left promiscuous mode"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-480b72c9f33e: port 3(vethe37e75d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-480b72c9f33e: port 3(vethe37e75d) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"br-480b72c9f33e: port 2(vethf431b65) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"br-480b72c9f33e: port 2(vethf431b65) entered disabled state"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"veth38448f2: renamed from eth0"}
+2024-05-21T11:45:15+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"veth38448f2: renamed from eth0"}

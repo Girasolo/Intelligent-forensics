@@ -1,4 +1,0 @@
-Metric	Mean	Variance
-TX	0.00	0.00
-RX	0.00	0.00
-MS	501.55	0.00

@@ -1,0 +1,39 @@
+FROM ubuntu:22.04
+
+USER root
+# Run the command to install the required packages
+RUN apt-get update && apt-get install -y iputils-ping && apt-get install -y iproute2 coreutils iptables && apt-get install -y frr syslog-ng
+#configure frr enabling daemon and setting ports
+RUN sed -i 's/^bgpd_options=.*/bgpd_options="  --daemon -A 127.0.0.1"/' /etc/frr/daemons && \
+    sed -i 's/^zebra_options=.*/zebra_options=" -s 90000000 --daemon -A 127.0.0.1"/' /etc/frr/daemons && \    
+    sed -i 's/^bgpd=.*/zebra=yes\nbgpd=yes/' /etc/frr/daemons && sed -i 's/^ospfd=.*/ospfd=yes/' /etc/frr/daemons &&\
+    sed -i 's/^zebra=.*/zebra=yes/' /etc/frr/daemons && \
+    sed -i 's/^ospfd_options=.*/ospfd_options="  --daemon -A 127.0.0.1"/' /etc/frr/daemons    
+RUN echo "zebrasrv 2600/tcp" > /etc/services && echo "zebra 2601/tcp" >> /etc/services && echo "bgpd 2605/tcp" >> /etc/services \
+    && echo "ospfd 2604/tcp" >> /etc/services
+#allow ipforwarding
+RUN sed -i 's/^#net.ipv4.ip_forward=1.*/net.ipv4.ip_forward=1/' /etc/sysctl.conf && \
+    sed -i 's/^#net.ipv6.conf.all.forwarding=1.*/net.ipv6.conf.all.forwarding=1/' /etc/sysctl.conf && sysctl -p
+#redirect syslog to fluentd node
+RUN echo 'destination fluentdContainer { tcp("10.200.0.2" port(5140)); };\n' >> /etc/syslog-ng/syslog-ng.conf && \
+    echo 'log { source(s_src); filter(f_syslog3); destination(fluentdContainer); };' >> /etc/syslog-ng/syslog-ng.conf
+
+
+#add the entryscripts to the common image of the router
+COPY entrypoints/ep_routerA.sh entrypoints/ep_routerA.sh
+COPY entrypoints/ep_routerB.sh entrypoints/ep_routerB.sh
+COPY entrypoints/ep_routerC.sh entrypoints/ep_routerC.sh
+COPY entrypoints/ep_routerD.sh entrypoints/ep_routerD.sh
+
+
+
+
+#make the scripts executable 
+RUN chmod +x /entrypoints/ep_routerA.sh /entrypoints/ep_routerB.sh /entrypoints/ep_routerC.sh /entrypoints/ep_routerD.sh
+
+
+CMD ["/bin/bash"]
+
+
+
+

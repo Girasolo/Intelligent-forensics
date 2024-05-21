@@ -1,4 +1,0 @@
-Tracing TCP established connections. Ctrl-C to end.
-T  PID    COMM             IP SADDR            DADDR            SPORT  DPORT 
-C  8255   code             4  192.168.1.137    104.208.16.89    56166  443   
-X  8255   code             4  192.168.1.137    104.208.16.89    56166  443   

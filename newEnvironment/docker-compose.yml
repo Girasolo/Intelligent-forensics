@@ -68,7 +68,7 @@ services:
     hostname: RArouter
     build: 
       context: ./router
-      dockerfile: Dockerfile_router_A
+      dockerfile: Dockerfile_router
     #the container as first instruction executes the entrypoint
     entrypoint: entrypoints/ep_routerA.sh
     #set the network and system priviledges high to make it possible to add static route and set the flag for forwarding to 1. Done for all the containers in this primal phase.
@@ -108,7 +108,7 @@ services:
     hostname: RBrouter
     build: 
       context: ./router
-      dockerfile: Dockerfile_router_A
+      dockerfile: Dockerfile_router
     #the container as first instruction executes the entrypoint
     entrypoint: entrypoints/ep_routerB.sh
     #set the network and system priviledges high to make it possible to add static route and set the flag for forwarding to 1. Done for all the containers in this primal phase.
@@ -148,7 +148,7 @@ services:
     hostname: RCrouter
     build: 
       context: ./router
-      dockerfile: Dockerfile_router_A
+      dockerfile: Dockerfile_router
     #the container as first instruction executes the entrypoint
     entrypoint: entrypoints/ep_routerC.sh
     #set the network and system priviledges high to make it possible to add static route and set the flag for forwarding to 1. Done for all the containers in this primal phase.
@@ -189,7 +189,7 @@ services:
     hostname: RDrouter
     build: 
       context: ./router
-      dockerfile: Dockerfile_router_A
+      dockerfile: Dockerfile_router
     #the container as first instruction executes the entrypoint
     entrypoint: entrypoints/ep_routerD.sh
     #set the network and system priviledges high to make it possible to add static route and set the flag for forwarding to 1. Done for all the containers in this primal phase.
