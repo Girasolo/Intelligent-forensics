@@ -30,7 +30,7 @@ import os
 #
 
 #added by Girasolo
-timestamp = datetime.now().strftime("%y%m%d_%H:%M:%S")
+timestamp = datetime.now().strftime("%y%m%d_%H:%M:%S")                      # Save the time at the beginning of the program
 #
 parser = ap.ArgumentParser(description="Trace TCP connections",
                            formatter_class=ap.RawDescriptionHelpFormatter)
@@ -55,7 +55,9 @@ parser.add_argument("--ebpf", action="store_true",
                     help=ap.SUPPRESS)
 
 #added by Girasolo
+# Option of writing the result on a file with the name of the timestamp
 parser.add_argument("-f","--file", const=f"trace{timestamp}.txt", nargs='?', help="print on one or a timestamp series of output files.")
+# Option of communicating the result with a socketconnection by default
 parser.add_argument("-sc","--socketconnection", action='store_true', help="send the print straight to the 1clock connection. Every SIGUSR1 sends a divisor message")
 #
 args = parser.parse_args()
@@ -552,6 +554,9 @@ verbose_types = {"C": "connect", "A": "accept",
 
 #added by Girasolo
 def fill_string_to_bytes(input_string, target_bytes, fill_character=' '):
+    """
+    Fill a string to reach a certain number of bytes (not used)
+    """
     current_bytes = len(input_string.encode())
     if current_bytes >= target_bytes:
         return input_string
@@ -566,9 +571,9 @@ def print_ipv4_event(cpu, data, size):
     global start_ts
 
     #added by Girasolo
-    global tdif1 
+    global tdif1                                                            # Used to calculate the difference of time between a open/accept/close event and the next
     global tbef1
-    if args.file:
+    if args.file:                                                           # Print on file
         if args.timestamp:
             if start_ts == 0:
                 start_ts = event.ts_ns
@@ -610,7 +615,7 @@ def print_ipv4_event(cpu, data, size):
             f.write(" %-8d" % event.netns)
         else:
             f.write("\n")
-    elif args.socketconnection:
+    elif args.socketconnection:                                              # Print on socket channel
         global client_socket
         message = ""
         if args.timestamp:
@@ -656,7 +661,7 @@ def print_ipv4_event(cpu, data, size):
             message = message + ("\n")
         try:
             #message = fill_string_to_bytes(message, 15)
-            client_socket.sendall(message.encode())
+            client_socket.sendall(message.encode())                         # Send the entry
         except OSError as e:
             print("Socket error:", e)
         # Handle the error gracefully, possibly by closing the socket and/or retrying
@@ -742,19 +747,24 @@ def print_ipv6_event(cpu, data, size):
 
 #added by Girasolo
 def send_interrupt(time):
-    #open a new file each 25 secs. If the file fails to open continue to write on the previous one
+    """
+    Close the program after time secs
+    """
     def handler(signum, frame):
         print("Timeout reached. Sending KeyboardInterrupt.")
         raise KeyboardInterrupt
-
-    # Set up the signal handler for SIGALRM
-    signal.signal(signal.SIGALRM, handler)
-
-    # Set the alarm to go off after 25 seconds
+  
+    signal.signal(signal.SIGALRM, handler)                                      # Set up the signal handler for SIGALRM   
     signal.alarm(time)
 #
+
 #added by Girasolo
 def handlerFile(signum, frame):
+    """
+    Signal handler for the file option.
+    SIGTERM terminates
+    SIGUSR1 close the previous and creates a new file with a new timestamp
+    """
     global f
     global start_ts
     if signum == signal.SIGTERM:
@@ -787,6 +797,11 @@ def handlerFile(signum, frame):
 
 #added by Girasolo
 def handlerSocket(signum, frame):
+    """
+    Signal handler for the socket option.
+    SIGTERM terminates
+    SIGUSR1 send a string SIGNAL HERE to communicate that the SIGUSR1 has been received (it is sent by 1clock every 25 secs)
+    """
     global client_socket
     global start_ts
     if signum == signal.SIGTERM:
@@ -795,7 +810,7 @@ def handlerSocket(signum, frame):
     if signum == signal.SIGUSR1:
         print("TRACER (pid: ", os.getpid(), ")RECEIVED THE SIGNAL SIGUSR1")
         separation = "SIGNAL HERE ---\n"
-        start_ts = 0 #??? should it be reset or not? better continuity?
+        start_ts = 0 #??? should it be reset or not? better continuity?             # Every 25 seconds the starting time of the open/accept/close event is reset, so the first event is always at time 0
         #separation = fill_string_to_bytes(separation, 15)
         client_socket.send(separation.encode())   
     else: 
@@ -822,7 +837,7 @@ bpf_text = filter_by_containers(args) + bpf_text
 
 #added by Girasolo
 if args.file: 
-    f = open(args.file, 'a')
+    f = open(args.file, 'a')                                                # Open the first file
 #
 
 if args.ebpf:
@@ -830,11 +845,10 @@ if args.ebpf:
     exit()
 #added by Girasolo
 if args.socketconnection:  
-    # Define host and port
-    HOST = '127.0.0.1'
+    
+    HOST = '127.0.0.1'                                                      # Define host and port (the same as 1clock)
     PORT = 65433
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    # Connect to the server
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)       # Create and connect socket to the server (1clock)
     client_socket.connect((HOST, PORT))   
 #
 
@@ -862,6 +876,7 @@ else:
     print("Tracing TCP established connections. Ctrl-C to end.")
 
 # header
+#added by GIrasolo
 if args.file:
     if args.verbose:
         if args.timestamp:
@@ -883,6 +898,7 @@ elif args.socketconnection:
     print("useless headers")
     start_ts = 0
 else:
+    #
     if args.verbose:
         if args.timestamp:
             print("%-14s" % ("TIME(ns)"), end="")
@@ -905,15 +921,16 @@ b["tcp_ipv4_event"].open_perf_buffer(print_ipv4_event)
 b["tcp_ipv6_event"].open_perf_buffer(print_ipv6_event)
 
 #added by Girasolo
-if args.file:
+if args.file:                                                               # Signal handler for file
     print("tracer starts here")
     signal.signal(signal.SIGUSR1, handlerFile)
     signal.signal(signal.SIGTERM, handlerFile)
 #    send_interrupt(25)
 #
-#added by Girasolo
 
-if args.socketconnection:
+
+#added by Girasolo
+if args.socketconnection:                                                   # Signal handler for socket
     print("handler here")
     signal.signal(signal.SIGUSR1, handlerSocket)
     signal.signal(signal.SIGTERM, handlerSocket)

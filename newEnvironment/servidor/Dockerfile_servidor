@@ -1,10 +1,9 @@
 FROM ubuntu:22.04
 
-# Run the command to install the required packages
-RUN cd sbin && cd ..
+# Basic packages for iprouting and log
 RUN apt-get update && apt-get install -y  && apt-get install -y iproute2 iptables coreutils iputils-ping syslog-ng 
 
-   
+# Packages needed for the installation of libbpf and bpftool   
 RUN apt-get install -y apt-transport-https ca-certificates curl clang llvm jq && \
 apt-get install -y libelf-dev libpcap-dev libbfd-dev binutils-dev build-essential make && \
 apt-get install -y linux-tools-common && \
@@ -12,36 +11,41 @@ apt-get install -y bpfcc-tools && \
 apt-get install -y python3-pip
 
 
-RUN apt-get install -y nodejs npm
 
+# Libbpf installation
 RUN git clone https://github.com/libbpf/libbpf && \
 cd libbpf/src && \
 make && \
 make install && \
 cd ../..
 
+# Bpftool installation
 RUN git clone --recurse-submodules https://github.com/libbpf/bpftool.git && \
     cd bpftool/src && \
     make install && \
     cd ../..
 
-RUN apt-get install nodejs npm
+# Packages to run a very basic server
+RUN apt-get install -y nodejs npm
 
+# Starting of the very basic server
 COPY ./server/package.json /app/package.json
 COPY ./server/server.js	/app/server.js	
 WORKDIR /app
-
 RUN npm install
-
 EXPOSE 3000 
 
 WORKDIR /
 
+# Package to communicate with flentd
 RUN pip install numpy fluent-logger
-RUN apt-get install socat   
-COPY entrypoints/ep_servidor.sh entrypoints/ep_servidor.sh
 
-#make the scripts executable 
+# Package to test tcp comunication
+RUN apt-get install socat   
+
+# Copy of the entrypoint in the image
+COPY entrypoints/ep_servidor.sh entrypoints/ep_servidor.sh
+# Make the scripts executable 
 RUN chmod +x /entrypoints/ep_servidor.sh
 
 

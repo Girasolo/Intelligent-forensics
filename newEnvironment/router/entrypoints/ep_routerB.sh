@@ -1,9 +1,9 @@
 #!/bin/bash
 
-service syslog-ng start
-service frr start
+service syslog-ng start         #start the syslog
+service frr start               #start frr (routing service)
 
-
+#set frr and set the frrRouter log
 vtysh << EOF
 conf t
 router ospf 

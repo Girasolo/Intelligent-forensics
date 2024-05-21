@@ -5,7 +5,7 @@ iproute2 -> for the command ip route
 coreutils -> for the shell scripting and basic operationlike cat, grep, ls, cp
 iptables -> to retrieve the iptables
 
-frr -> software
+frr -> routing software
 syslog-ng -> to collect logs relative to the system
 
 ##Configuration section

@@ -21,16 +21,16 @@
 5d) mettere su un server -> fatto
 5e) testare slow -> fatto ma il server non va giù
 5f) testare hulk -> fatto ma il server non va giù
-5g) prendere dati con slow e testare model
-5h) prendere dati con Hulk e testare model
+5g) prendere dati con slow e testare model -> fatto
+5h) prendere dati con Hulk e testare model -> non funziona
 
 
 
-6)provare a fare il merge di entrambe le funzioni:
+6)provare a fare il merge di entrambe le funzioni:	-> fatto
 	- runnare di volta in volta i programmi e creare un programma che unisca gli output all'interno dello stesso
 	- runnare una volta i programmi, unire gli output e metterli in un file diverso di volta in volta
 	
-7)mandare all'admin il file e la linea da testare
+7)mandare all'admin il file e la linea da testare      -> fatto
 
 
 8a)studiare i file bpf e pensare a possibili merge o migliorie

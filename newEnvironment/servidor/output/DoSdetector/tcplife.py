@@ -81,7 +81,9 @@ group.add_argument("-6", "--ipv6", action="store_true",
 parser.add_argument("--ebpf", action="store_true",
     help=argparse.SUPPRESS)
 #added by Girasolo
+# Option of writing the result on a file with the name of the timestamp
 parser.add_argument("-f","--file", const=f"life{timestamp}.txt", nargs='?', help="print on one or a timestamp series of output files.")
+# Option of communicating the result with a socketconnection by default
 parser.add_argument("-sc","--socketconnection", action='store_true', help="send the print straight to the 1clock connection. Every SIGUSR1 sends a divisor message")
 #
 args = parser.parse_args()
@@ -417,7 +419,7 @@ elif args.ipv6:
         'if (family != AF_INET6) { return 0; }')
 #added by Girasolo
 if args.file:
-    f = open(args.file, 'a')
+    f = open(args.file, 'a')                                                    # Open the first file
 #
 
 
@@ -450,6 +452,9 @@ if args.csv:
 
 #added by Girasolo
 def fill_string_to_bytes(input_string, target_bytes, fill_character=' '):
+    """
+    Fill a string to reach a certain number of bytes (not used)
+    """
     current_bytes = len(input_string.encode('utf-8'))
     if current_bytes >= target_bytes:
         return input_string
@@ -464,7 +469,7 @@ def print_ipv4_event(cpu, data, size):
     event = b["ipv4_events"].event(data)
     global start_ts
     #added by Girasolo
-    if args.file:
+    if args.file:                                                                           # Print on file
         if args.time:
             if args.csv:
                 f.write("%s," % strftime("%H:%M:%S"))
@@ -483,7 +488,7 @@ def print_ipv4_event(cpu, data, size):
         inet_ntop(AF_INET, pack("I", event.saddr)), event.ports >> 32,
         inet_ntop(AF_INET, pack("I", event.daddr)), event.ports & 0xffffffff,
         event.tx_b / 1024, event.rx_b / 1024, float(event.span_us) / 1000) + "\n")
-    elif args.socketconnection:
+    elif args.socketconnection:                                                             # Print on socket channel
         global client_socket
         message = ""
         if args.time:
@@ -507,7 +512,7 @@ def print_ipv4_event(cpu, data, size):
         try:
             #fill the message to 15 bytes approx the longest
             #message = fill_string_to_bytes(message,15)
-            client_socket.sendall(message.encode())
+            client_socket.sendall(message.encode())                                         # Send the entry
         except OSError as e:
             print("Socket error:", e)
 
@@ -557,20 +562,26 @@ def print_ipv6_event(cpu, data, size):
 
 #added by Girasolo
 def send_interrupt(time):
+    """
+    Close the program after time secs
+    """
     #open a new file each 25 secs. If the file fails to open continue to write on the previous one
     def handler(signum, frame):
         print("Timeout reached. Sending KeyboardInterrupt.")
         raise KeyboardInterrupt
 
-    # Set up the signal handler for SIGALRM
-    signal.signal(signal.SIGALRM, handler)
-
-    # Set the alarm to go off after 25 seconds
+    
+    signal.signal(signal.SIGALRM, handler)                                              # Set up the signal handler for SIGALRM
     signal.alarm(time)
 #
 
 #added by Girasolo
 def handlerFile(signum, frame):
+    """
+    Signal handler for the file option.
+    SIGTERM terminates
+    SIGUSR1 close the previous and creates a new file with a new timestamp
+    """
     global f
     if signum == signal.SIGTERM:
         f.close()
@@ -599,6 +610,11 @@ def handlerFile(signum, frame):
 
 #added by Girasolo
 def handlerSocket(signum, frame):
+    """
+    Signal handler for the socket option.
+    SIGTERM terminates
+    SIGUSR1 send a string SIGNAL HERE to communicate that the SIGUSR1 has been received (it is sent by 1clock every 25 secs)
+    """
     global client_socket
     if signum == signal.SIGTERM:
         client_socket.close()
@@ -614,11 +630,9 @@ def handlerSocket(signum, frame):
 
 #added by Girasolo
 if args.socketconnection:  
-    # Define host and port
-    HOST = '127.0.0.1'
+    HOST = '127.0.0.1'                                                      # Define host and port (the same as 1clock)
     PORT = 65432
-    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    # Connect to the server
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)       # Create and connect socket to the server (1clock)
     client_socket.connect((HOST, PORT))   
 #
 
@@ -665,7 +679,7 @@ start_ts = 0
 b["ipv4_events"].open_perf_buffer(print_ipv4_event, page_cnt=64)
 b["ipv6_events"].open_perf_buffer(print_ipv6_event, page_cnt=64)
 #added by Girasolo
-if args.file:
+if args.file:                                                                  # Signal handler for file
     print("life starts here")
     signal.signal(signal.SIGUSR1, handlerFile)
     signal.signal(signal.SIGTERM, handlerFile)
@@ -674,7 +688,7 @@ if args.file:
 
 #added by Girasolo
 
-if args.socketconnection:
+if args.socketconnection:                                                      # Signal handler for socket
     print("handler here")
     signal.signal(signal.SIGUSR1, handlerSocket)
     signal.signal(signal.SIGTERM, handlerSocket)
