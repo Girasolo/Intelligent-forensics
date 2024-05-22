@@ -1,6 +1,6 @@
 # Intelligent-forensics-for-the-automatic-anomaly-detection-in-distributed-infrastructures
 
-![architecture](./images/architecture_temp2.png)
+![architecture](./images/virtual.png)
 
 # NEW VERSION
 

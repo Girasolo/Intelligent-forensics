@@ -2,19 +2,19 @@ version: '3'
 services:
   #to add a new router copy and paste this configuration. Define its ip address and assign a network consistenlty with the architecture required
   
-  professor-fluentd:
+  admin-fluentd:
     build: 
-      context: ./professor-fluentd
-      dockerfile: Dockerfile_professor-fluentd
+      context: ./admin-fluentd
+      dockerfile: Dockerfile_admin-fluentd
     privileged: true
     #the container as first instruction executes the entrypoint (since the image doesn't support bash it's used sh)
     #entrypoint: sh -c "entrypoints/ep_fluentd.sh" alpine version
     entrypoint: entrypoints/ep_fluentd.sh
     #shared-volumes between fluentd and the host
     volumes:
-      - ./professor-fluentd/conf/fluent.conf:/fluentd/etc/fluent.conf 
-      - ./professor-fluentd/shared-volume:/shared-volume
-      - ./professor-fluentd/output:/fluentd/output/
+      - ./admin-fluentd/conf/fluent.conf:/fluentd/etc/fluent.conf 
+      - ./admin-fluentd/shared-volume:/shared-volume
+      - ./admin-fluentd/output:/fluentd/output/
     #hostPort:containerPort
     #indicates a connection between these 2 ports
     ports:
@@ -38,14 +38,14 @@ services:
     entrypoint: entrypoints/ep_servidor.sh
     #shared-volumes between fluentd and the host
     volumes:
-      - ./professor-fluentd/shared-volume:/shared-volume
+      - ./admin-fluentd/shared-volume:/shared-volume
       - ./servidor/output:/servidor/output
     depends_on:
-      - professor-fluentd
+      - admin-fluentd
     #links establishes a link to the fluentd service enabling communication with that container
     #Started after fluentd (that should collect all the logs)
     links:
-      - professor-fluentd
+      - admin-fluentd
     #set as logging driver fluentd (to check if it's actually needed)
     logging:
       driver: "fluentd"
@@ -80,10 +80,10 @@ services:
       - ./fluentd/shared-volume:/shared-volume
     #Started after fluentd (that should collect all the logs)
     depends_on:
-      - professor-fluentd
+      - admin-fluentd
     #links establishes a link to the fluentd service enabling communication with that container
     links:
-      - professor-fluentd
+      - admin-fluentd
     #set as logging driver fluentd (to check if it's actually needed)
     logging:
       driver: "fluentd"
@@ -120,10 +120,10 @@ services:
       - ./fluentd/shared-volume:/shared-volume
     #Started after fluentd (that should collect all the logs)
     depends_on:
-      - professor-fluentd
+      - admin-fluentd
     #links establishes a link to the fluentd service enabling communication with that container
     links:
-      - professor-fluentd
+      - admin-fluentd
     #set as logging driver fluentd (to check if it's actually needed)
     logging:
       driver: "fluentd"
@@ -160,10 +160,10 @@ services:
       - ./fluentd/shared-volume:/shared-volume
     #Started after fluentd (that should collect all the logs)
     depends_on:
-      - professor-fluentd
+      - admin-fluentd
     #links establishes a link to the fluentd service enabling communication with that container
     links:
-      - professor-fluentd
+      - admin-fluentd
     #set as logging driver fluentd (to check if it's actually needed)
     logging:
       driver: "fluentd"
@@ -201,10 +201,10 @@ services:
       - ./fluentd/shared-volume:/shared-volume
     #Started after fluentd (that should collect all the logs)
     depends_on:
-      - professor-fluentd
+      - admin-fluentd
     #links establishes a link to the fluentd service enabling communication with that container
     links:
-      - professor-fluentd
+      - admin-fluentd
     #set as logging driver fluentd (to check if it's actually needed)
     logging:
       driver: "fluentd"
