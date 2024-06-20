@@ -155,7 +155,7 @@ def tcplife_receiver(client_socket):
 
 
 
-def tcptracer_receiver(client_socket):ù
+def tcptracer_receiver(client_socket):
     """
     Set the mean and variance of difference of time between open/accept/close connection event, 
     the number open connection and the number of closed connection, receiving data from tcptracer.
