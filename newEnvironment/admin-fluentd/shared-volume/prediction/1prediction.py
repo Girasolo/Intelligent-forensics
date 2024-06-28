@@ -5,6 +5,7 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler
 import json
 import joblib
+from datetime import datetime
 
 
 
@@ -26,8 +27,8 @@ def extract_values(log_line):
     # Extract values from the dictionary
     values = list(data.values())
     
-    # Exclude the first value
-    values_except_first = values[1:]
+    # Exclude the first two value
+    values_except_first = values[2:]
     
     # Convert values to NumPy array and reshape it to (1, 10). This shape is needed for the model
     values_array = np.array(values_except_first).reshape(1, -1)
@@ -59,7 +60,8 @@ scaler = joblib.load('/shared-volume/prediction/std_scaler.bin')
 
 if len(sys.argv) > 1:
     # The result is appended in a file 
-    output = open("/shared-volume/prediction/temp.txt", "a")
+    pathfile = "/shared-volume/prediction/livePrediction/" + datetime.now().strftime('%Y-%m-%d')
+    output = open(pathfile, "a")
     try:
         # In input receives the buffer defined in the fluent.conf file
         # The buffer contains the entries and is read as a file
@@ -74,8 +76,15 @@ if len(sys.argv) > 1:
         # The line is processed here
         res = 0
         res = process_log_line(line)
+        
+        if res < 0.2:
+            res_str = 'NO'
+        elif res > 0.8:
+            res_str = 'YES'
+        else:
+            res_str = 'MAYBE'
 
-        output.write("Received line: " + line.strip() + '\n' + 'result: ' + str(res) + '\n')
+        output.write(datetime.now().strftime('%Y-%m-%d %H:%M:%S') + '\t' + line.strip() + '\n' + 'result: ' + str(res) + res_str + '\n')
 
     output.close()
     input.close()

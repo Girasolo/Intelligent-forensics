@@ -1,0 +1,28 @@
+2024-06-26T17:37:55+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T17:37:55+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T17:37:55+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T17:37:55+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-06-26T17:53:11+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T17:53:11+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T17:53:11+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T17:53:11+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-06-26T17:59:53+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T17:59:53+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T17:59:53+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T17:59:53+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-06-26T18:04:44+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T18:04:44+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T18:04:44+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T18:04:44+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-06-26T18:18:35+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T18:18:35+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T18:18:35+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T18:18:35+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-06-26T18:40:46+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T18:40:46+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T18:40:46+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T18:40:46+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}
+2024-06-26T19:41:12+00:00	fluent.info	{"pid":15,"ppid":9,"worker":0,"message":"starting fluentd worker pid=15 ppid=9 worker=0"}
+2024-06-26T19:41:12+00:00	fluent.info	{"message":"listening syslog socket on 0.0.0.0:5140 with tcp"}
+2024-06-26T19:41:12+00:00	fluent.info	{"port":24224,"bind":"0.0.0.0","message":"listening port port=24224 bind=\"0.0.0.0\""}
+2024-06-26T19:41:12+00:00	fluent.info	{"worker":0,"message":"fluentd worker is now running worker=0"}

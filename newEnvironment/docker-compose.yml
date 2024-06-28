@@ -38,7 +38,6 @@ services:
     entrypoint: entrypoints/ep_servidor.sh
     #shared-volumes between fluentd and the host
     volumes:
-      - ./admin-fluentd/shared-volume:/shared-volume
       - ./servidor/output:/servidor/output
     depends_on:
       - admin-fluentd
@@ -248,6 +247,9 @@ services:
       context: ./attacker
       dockerfile: Dockerfile_attacker
     entrypoint: entrypoints/ep_attacker.sh
+    volumes:
+      - ./attacker/pingOfDeath/:/pingOfDeath 
+      - ./attacker/hulkBasic/:/hulkBasic 
     #privedges for network needed to add a new ip route
     cap_add:
       - NET_ADMIN

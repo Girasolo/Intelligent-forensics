@@ -8,7 +8,8 @@ ip route add 10.0.0.0/8 via 10.200.0.10
 
 # Temporary file that contains live prediction of dos.logs
 # It is created here to ensure it to be only readable outside of the node
-touch /shared-volume/prediction/temp.txt
+chmod +x shared-volume/prediction/livePrediction/liveLogFileCreator.sh
+/shared-volume/prediction/livePrediction/liveLogFileCreator.sh
 
 # Apline version of the command to make fluentd start
 #/usr/bin/fluentd -c /fluentd/etc/fluent.conf & 

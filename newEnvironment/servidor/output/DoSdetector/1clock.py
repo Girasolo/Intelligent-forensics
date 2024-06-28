@@ -6,7 +6,7 @@ import numpy as np
 import threading
 import logging
 from fluent import sender
-
+from datetime import datetime
 import socket
 
 
@@ -74,7 +74,8 @@ def sendResult():
         barrier_result.wait()                                                                               # Barrier1: waits for tcplife and tcptrace to send their data
         #mediaBT	mediaRX	varBT	varRX	medialat	varlat	Open	Close	mediadift	varDifT	Attack
         dataToSend = {
-                'final result' : socket.gethostbyname(socket.gethostname()),
+        	'TIME' : datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                'IP address' : socket.gethostbyname(socket.gethostname()),
                 'tx_mean' : mean[0],
                 'rx_mean' : mean[1],
                 "tx_var" : variance[0],
