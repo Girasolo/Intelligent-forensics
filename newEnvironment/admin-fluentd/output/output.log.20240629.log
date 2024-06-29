@@ -1,0 +1,8 @@
+2024-06-29T00:35:46+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"wlp2s0: deauthenticating from f4:b5:aa:97:e7:fc by local choice (Reason: 3=DEAUTH_LEAVING)"}
+2024-06-29T00:35:46+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"wlp2s0: deauthenticating from f4:b5:aa:97:e7:fc by local choice (Reason: 3=DEAUTH_LEAVING)"}
+2024-06-29T00:35:46+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"wlp2s0: deauthenticating from f4:b5:aa:97:e7:fc by local choice (Reason: 3=DEAUTH_LEAVING)"}
+2024-06-29T00:35:46+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"wlp2s0: deauthenticating from f4:b5:aa:97:e7:fc by local choice (Reason: 3=DEAUTH_LEAVING)"}
+2024-06-29T00:35:50+00:00	syslog.kern.info	{"host":"RArouter","ident":"kernel","message":"PM: suspend entry (deep)"}
+2024-06-29T00:35:50+00:00	syslog.kern.info	{"host":"RBrouter","ident":"kernel","message":"PM: suspend entry (deep)"}
+2024-06-29T00:35:50+00:00	syslog.kern.info	{"host":"RDrouter","ident":"kernel","message":"PM: suspend entry (deep)"}
+2024-06-29T00:35:50+00:00	syslog.kern.info	{"host":"RCrouter","ident":"kernel","message":"PM: suspend entry (deep)"}
