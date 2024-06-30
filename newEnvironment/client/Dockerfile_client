@@ -3,7 +3,14 @@ FROM ubuntu:22.04
 # Installed generic ip packages to set the routing table and test the network
 RUN apt-get update && apt-get install -y iputils-ping && apt-get install -y iproute2 iptables socat
 
+# Preconfigure tzdata with the desired timezone
+RUN ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && \
+    echo "Europe/Madrid" > /etc/timezone && \
+    apt-get update && \
+    apt-get install -y tzdata && \
+    dpkg-reconfigure --frontend noninteractive tzdata
 
+RUN apt-get install -y hping3
 
 # Since it is used a unique dockerfile for the client of all the networks, all the entrypoints are copied and made executable
 COPY entrypoints/ep_red1.sh entrypoints/ep_red1.sh

@@ -19,6 +19,15 @@ RUN echo 'destination fluentdContainer { tcp("10.200.0.2" port(5140)); };\n' >> 
     echo 'log { source(s_src); filter(f_syslog3); destination(fluentdContainer); };' >> /etc/syslog-ng/syslog-ng.conf
 
 
+# Preconfigure tzdata with the desired timezone
+RUN ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && \
+    echo "Europe/Madrid" > /etc/timezone && \
+    apt-get update && \
+    apt-get install -y tzdata && \
+    dpkg-reconfigure --frontend noninteractive tzdata
+
+RUN apt-get install -y hping3
+
 # Add the entryscripts to the common image of the router
 COPY entrypoints/ep_routerA.sh entrypoints/ep_routerA.sh
 COPY entrypoints/ep_routerB.sh entrypoints/ep_routerB.sh

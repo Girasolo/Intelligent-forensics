@@ -60,7 +60,7 @@ scaler = joblib.load('/shared-volume/prediction/std_scaler.bin')
 
 if len(sys.argv) > 1:
     # The result is appended in a file 
-    pathfile = "/shared-volume/prediction/livePrediction/" + datetime.now().strftime('%Y-%m-%d')
+    pathfile = "/shared-volume/prediction/livePrediction/" + datetime.now().strftime('%Y-%m-%d') + ".txt"
     output = open(pathfile, "a")
     try:
         # In input receives the buffer defined in the fluent.conf file

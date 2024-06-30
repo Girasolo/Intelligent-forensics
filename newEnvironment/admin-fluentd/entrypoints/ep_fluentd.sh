@@ -11,6 +11,9 @@ ip route add 10.0.0.0/8 via 10.200.0.10
 chmod +x shared-volume/prediction/livePrediction/liveLogFileCreator.sh
 /shared-volume/prediction/livePrediction/liveLogFileCreator.sh
 
+systemctl enable cron
+systemctl start cron
+
 # Apline version of the command to make fluentd start
 #/usr/bin/fluentd -c /fluentd/etc/fluent.conf & 
 

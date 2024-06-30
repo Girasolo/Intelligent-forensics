@@ -1,0 +1,8 @@
+2024-07-01T00:00:04+02:00	syslog.kern.warn	{"host":"RBrouter","ident":"kernel","message":"kauditd_printk_skb: 2 callbacks suppressed"}
+2024-07-01T00:00:04+02:00	syslog.kern.notice	{"host":"RBrouter","ident":"kernel","message":"audit: type=1400 audit(1719784804.646:136): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"/usr/sbin/cupsd\" pid=54364 comm=\"cupsd\" capability=12  capname=\"net_admin\""}
+2024-07-01T00:00:04+02:00	syslog.kern.warn	{"host":"RDrouter","ident":"kernel","message":"kauditd_printk_skb: 2 callbacks suppressed"}
+2024-07-01T00:00:04+02:00	syslog.kern.notice	{"host":"RDrouter","ident":"kernel","message":"audit: type=1400 audit(1719784804.646:136): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"/usr/sbin/cupsd\" pid=54364 comm=\"cupsd\" capability=12  capname=\"net_admin\""}
+2024-07-01T00:00:04+02:00	syslog.kern.warn	{"host":"RCrouter","ident":"kernel","message":"kauditd_printk_skb: 2 callbacks suppressed"}
+2024-07-01T00:00:04+02:00	syslog.kern.notice	{"host":"RCrouter","ident":"kernel","message":"audit: type=1400 audit(1719784804.646:136): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"/usr/sbin/cupsd\" pid=54364 comm=\"cupsd\" capability=12  capname=\"net_admin\""}
+2024-07-01T00:00:04+02:00	syslog.kern.warn	{"host":"RArouter","ident":"kernel","message":"kauditd_printk_skb: 2 callbacks suppressed"}
+2024-07-01T00:00:04+02:00	syslog.kern.notice	{"host":"RArouter","ident":"kernel","message":"audit: type=1400 audit(1719784804.646:136): apparmor=\"DENIED\" operation=\"capable\" class=\"cap\" profile=\"/usr/sbin/cupsd\" pid=54364 comm=\"cupsd\" capability=12  capname=\"net_admin\""}

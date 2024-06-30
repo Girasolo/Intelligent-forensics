@@ -45,7 +45,7 @@ def extract_values(log_line):
     values = list(data.values())
     
     # Exclude the first value
-    values_except_first = values[1:]
+    values_except_first = values[2:]
     
     # Convert values to NumPy array and reshape it to (1, 10)
     values_array = np.array(values_except_first).reshape(1, -1)

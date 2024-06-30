@@ -18,6 +18,18 @@ RUN gem install fluent-plugin-elasticsearch --no-document --version 5.0.3
 RUN gem update fluentd
 
 
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Preconfigure tzdata with the desired timezone
+RUN ln -fs /usr/share/zoneinfo/Europe/Madrid /etc/localtime && \
+    echo "Europe/Madrid" > /etc/timezone && \
+    apt-get update && \
+    apt-get install -y tzdata && \
+    dpkg-reconfigure --frontend noninteractive tzdata
+    
+RUN apt-get install -y systemctl cron
+RUN echo "00 00 * * * /bin/bash /shared-volume/prediction/livePrediction/liveLogfileCreator.sh" | crontab -
+
 
 COPY entrypoints/ep_fluentd.sh entrypoints/ep_fluentd.sh
 RUN chmod +x entrypoints/ep_fluentd.sh

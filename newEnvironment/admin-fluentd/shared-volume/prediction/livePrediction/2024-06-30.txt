@@ -1,0 +1,44 @@
+2024-06-30 22:59:22	{"TIME":"2024-06-30 22:58:19","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 22:59:22	{"TIME":"2024-06-30 22:58:44","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":2,"closed_connections":0,"mean_time":0.4676666666666667,"variance_time":0.4374242222222222}
+result: [[0.0010368]]NO
+2024-06-30 22:59:23	{"TIME":"2024-06-30 22:59:09","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:00:39	{"TIME":"2024-06-30 22:59:34","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:00:39	{"TIME":"2024-06-30 22:59:59","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:00:39	{"TIME":"2024-06-30 23:00:24","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:01:56	{"TIME":"2024-06-30 23:00:49","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:29:59	{"TIME":"2024-06-30 23:28:50","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:29:59	{"TIME":"2024-06-30 23:29:15","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]NO
+2024-06-30 23:29:59	{"TIME":"2024-06-30 23:29:40","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":2,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00506411]]NO
+2024-06-30 23:55:41	{"TIME":"2024-06-30 23:54:37","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:55:42	{"TIME":"2024-06-30 23:55:02","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]NO
+2024-06-30 23:55:42	{"TIME":"2024-06-30 23:55:27","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:56:59	{"TIME":"2024-06-30 23:55:52","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:56:59	{"TIME":"2024-06-30 23:56:17","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:56:59	{"TIME":"2024-06-30 23:56:42","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:58:15	{"TIME":"2024-06-30 23:57:07","IP address":"10.100.0.2","tx_mean":0.0,"rx_mean":0.0,"tx_var":0.0,"rx_var":0.0,"ms_mean":418.11,"ms_var":0.0,"open_connections":1,"closed_connections":3,"mean_time":0.7264999999999999,"variance_time":1.29401725}
+result: [[0.00083678]]NO
+2024-06-30 23:58:15	{"TIME":"2024-06-30 23:57:32","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":1,"closed_connections":0,"mean_time":0.0,"variance_time":0.0}
+result: [[0.00609942]]NO
+2024-06-30 23:58:15	{"TIME":"2024-06-30 23:57:57","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:59:26	{"TIME":"2024-06-30 23:58:22","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:59:26	{"TIME":"2024-06-30 23:58:47","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
+2024-06-30 23:59:26	{"TIME":"2024-06-30 23:59:12","IP address":"10.100.0.2","tx_mean":0,"rx_mean":0,"tx_var":0,"rx_var":0,"ms_mean":0,"ms_var":0,"open_connections":0,"closed_connections":0,"mean_time":0,"variance_time":0}
+result: [[0.0051403]]NO
