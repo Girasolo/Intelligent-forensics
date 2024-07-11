@@ -1,4 +1,4 @@
-# Intelligent-forensics-for-the-automatic-anomaly-detection-in-distributed-infrastructures
+# Intelligent forensics for the automatic anomaly detection in distributed infrastructures
 
 ![architecture](./images/virtual.png)
 
