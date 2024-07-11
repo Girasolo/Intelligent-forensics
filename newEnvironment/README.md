@@ -107,5 +107,5 @@ It is also possible to predict a single line of log by running manualModelUser.p
 
 
 
-# advices
-If the images gets modified by changing the dockerfiles, to be effective the image should be mounted again or simply deleted before using again "docker-compose up -d". Fast way is deleting the images.
+# Advices
+If the images gets modified by changing the dockerfiles, to be effective the image should be builded again. To do so run "docker-compose build". Then again "docker-compose up -d".
