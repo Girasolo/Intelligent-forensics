@@ -17,6 +17,7 @@ systemctl start cron
 # Apline version of the command to make fluentd start
 #/usr/bin/fluentd -c /fluentd/etc/fluent.conf & 
 
+pip install --upgrade tensorflow
 
 #fluentd -c /fluentd/etc/fluent.conf &
 

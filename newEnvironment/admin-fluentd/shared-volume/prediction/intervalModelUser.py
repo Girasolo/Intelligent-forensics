@@ -54,7 +54,7 @@ def extract_values(log_line):
 
 def process_log_line(log_line):
     """
-    Classifies the probability of the entry of beeing not-malicious or malicious
+    Classifies the probability of the entry of being not-malicious or malicious
     """
     
     # Extract values from the log line
@@ -66,7 +66,14 @@ def process_log_line(log_line):
     # Predict using the classifier
     y = classifierLoad.predict(fields_scaled)
     
-    print("Prediction:", y)
+    if y < 0.2:
+        res_str = 'NO'
+    elif y > 0.8:
+        res_str = 'YES'
+    else:
+        res_str = 'MAYBE'
+    
+    print("Prediction:", y, res_str)
 
 def main(log_file):
     '''
@@ -115,10 +122,10 @@ if __name__ == "__main__":
     start_time, end_time = None, None
 
     # Load the model
-    classifierLoad = tf.keras.models.load_model('MLP_11agosto.keras', compile=False)
+    classifierLoad = tf.keras.models.load_model('/shared-volume/prediction/MLP_11agosto.keras', compile=False)
 
     # Load the StandardScaler
-    scaler = joblib.load('std_scaler.bin')
+    scaler = joblib.load('/shared-volume/prediction/std_scaler.bin')
 
     while True:
         time_input = input("Enter time or time interval (HH:MM or HH:MM - HH:MM), or 'exit'/'quit' to quit: ")
